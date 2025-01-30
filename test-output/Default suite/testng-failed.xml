@@ -5,11 +5,14 @@
     <classes>
       <class name="dsAlgoTests.GraphTest">
         <methods>
-          <include name="verifyCodeExecution" invocation-numbers="0 1"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeInGraphPage"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeInGraphReprePage"/>
           <include name="tearDownTest"/>
           <include name="before"/>
           <include name="tearDownSuite"/>
+          <include name="seeListOfPracticeQuestionsonGraphReprePage"/>
           <include name="navigateGraphPage"/>
+          <include name="seeListOfPracticeQuestionsonGraphPage"/>
           <include name="setupSuite"/>
         </methods>
       </class> <!-- dsAlgoTests.GraphTest -->

@@ -47,7 +47,7 @@ public class HomeTest extends Hooks {
 
 	}
 
-	@Test()
+	@Test
 	public void errorMessageWhenClickedOnDataStructureBeforeSignin() {
 
 		homePage.getStartedDataStructureIntroduction();
@@ -96,7 +96,7 @@ public class HomeTest extends Hooks {
 	}
 
 	@Test()
-	public void GetstartedLinkedListerrorBeforeSignin() {
+	public void getstartedLinkedListerrorBeforeSignin() {
 
 		homePage.getStartedLinkedlist();
 		String actualMessage = homePage.errorMessageGetStarted();

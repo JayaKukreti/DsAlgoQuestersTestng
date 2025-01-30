@@ -9,11 +9,139 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">12,070</td><td></td><td></td></tr>
+<tr><td><a href="#t0">Default test</a></td><td class="num">10</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">71,472</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="2">dsAlgoTests.GraphTest</td><td><a href="#m0">verifyCodeExecutionforGraphRepresentationPage</a></td><td rowspan="2">1738217482001</td><td rowspan="2">1480</td></tr><tr class="passedeven"><td><a href="#m1">verifyCodeExecutionforGraphRepresentationPage</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="4">dsAlgoTests.GraphTest</td><td><a href="#m0">checkErrorMessageWhenExecutingWithoutCodeInGraphPage</a></td><td rowspan="1">1738273997429</td><td rowspan="1">1326</td></tr><tr class="failedeven"><td><a href="#m1">checkErrorMessageWhenExecutingWithoutCodeInGraphReprePage</a></td><td rowspan="1">1738274002417</td><td rowspan="1">1331</td></tr><tr class="failedeven"><td><a href="#m2">seeListOfPracticeQuestionsonGraphPage</a></td><td rowspan="1">1738274037223</td><td rowspan="1">735</td></tr><tr class="failedeven"><td><a href="#m3">seeListOfPracticeQuestionsonGraphReprePage</a></td><td rowspan="1">1738274041716</td><td rowspan="1">689</td></tr><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="10">dsAlgoTests.GraphTest</td><td><a href="#m4">navigateToGraphModuleTryEditor</a></td><td rowspan="1">1738274008667</td><td rowspan="1">1137</td></tr><tr class="passedeven"><td><a href="#m5">navigateToGraphOption</a></td><td rowspan="1">1738274013875</td><td rowspan="1">387</td></tr><tr class="passedeven"><td><a href="#m6">navigateToGraphPracticeQuestions</a></td><td rowspan="1">1738274017927</td><td rowspan="1">859</td></tr><tr class="passedeven"><td><a href="#m7">navigateToGraphRepresentationPracticeQuestions</a></td><td rowspan="1">1738274022576</td><td rowspan="1">982</td></tr><tr class="passedeven"><td><a href="#m8">navigateToGraphRepresentationTryEditor</a></td><td rowspan="1">1738274027591</td><td rowspan="1">1378</td></tr><tr class="passedeven"><td><a href="#m9">navigatetoGraphRepresentation</a></td><td rowspan="1">1738274032907</td><td rowspan="1">534</td></tr><tr class="passedeven"><td><a href="#m10">verifyInValidCodeExecutionforGraphPage</a></td><td rowspan="1">1738274046402</td><td rowspan="1">1464</td></tr><tr class="passedeven"><td><a href="#m11">verifyInValidCodeExecutionforGraphRepresentationPage</a></td><td rowspan="1">1738274051765</td><td rowspan="1">1577</td></tr><tr class="passedeven"><td><a href="#m12">verifyValidCodeExecutionforGraphPage</a></td><td rowspan="1">1738274057347</td><td rowspan="1">1680</td></tr><tr class="passedeven"><td><a href="#m13">verifyValidCodeExecutionforGraphRepresentationPage</a></td><td rowspan="1">1738274062722</td><td rowspan="1">1705</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">dsAlgoTests.GraphTest#verifyCodeExecutionforGraphRepresentationPage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>invalid</td><td>NameError: name &apos;invalid&apos; is not defined on line 1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">dsAlgoTests.GraphTest#verifyCodeExecutionforGraphRepresentationPage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>print &quot;hello&quot;</td><td>hello</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Default test</h2><h3 id="m0">dsAlgoTests.GraphTest#checkErrorMessageWhenExecutingWithoutCodeInGraphPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test failed: Expected an error message when clicking the &apos;Run&apos; button without entering code, but no message was displayed.
+	at org.testng.Assert.fail(Assert.java:99)
+	at dsAlgoTests.GraphTest.checkErrorMessageWhenExecutingWithoutCodeInGraphPage(GraphTest.java:121)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">dsAlgoTests.GraphTest#checkErrorMessageWhenExecutingWithoutCodeInGraphReprePage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: Test failed: Expected an error message when clicking the &apos;Run&apos; button without entering code, but no message was displayed.
+	at org.testng.Assert.fail(Assert.java:99)
+	at dsAlgoTests.GraphTest.checkErrorMessageWhenExecutingWithoutCodeInGraphReprePage(GraphTest.java:131)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">dsAlgoTests.GraphTest#seeListOfPracticeQuestionsonGraphPage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: No practice questions found on the Practice Questions Page!
+	at org.testng.Assert.fail(Assert.java:99)
+	at dsAlgoTests.GraphTest.seeListOfPracticeQuestionsonGraphPage(GraphTest.java:104)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">dsAlgoTests.GraphTest#seeListOfPracticeQuestionsonGraphReprePage</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: No practice questions found on the Practice Questions Page!
+	at org.testng.Assert.fail(Assert.java:99)
+	at dsAlgoTests.GraphTest.seeListOfPracticeQuestionsonGraphReprePage(GraphTest.java:112)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">dsAlgoTests.GraphTest#navigateToGraphModuleTryEditor</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>https://dsportalapp.herokuapp.com/tryEditor</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">dsAlgoTests.GraphTest#navigateToGraphOption</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>https://dsportalapp.herokuapp.com/graph/graph/</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">dsAlgoTests.GraphTest#navigateToGraphPracticeQuestions</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>https://dsportalapp.herokuapp.com/graph/practice</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">dsAlgoTests.GraphTest#navigateToGraphRepresentationPracticeQuestions</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>https://dsportalapp.herokuapp.com/graph/practice</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">dsAlgoTests.GraphTest#navigateToGraphRepresentationTryEditor</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>https://dsportalapp.herokuapp.com/tryEditor</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">dsAlgoTests.GraphTest#navigatetoGraphRepresentation</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>https://dsportalapp.herokuapp.com/graph/graph-representations/</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">dsAlgoTests.GraphTest#verifyInValidCodeExecutionforGraphPage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>invalid</td><td>NameError: name &apos;invalid&apos; is not defined on line 1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">dsAlgoTests.GraphTest#verifyInValidCodeExecutionforGraphRepresentationPage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>invalid</td><td>NameError: name &apos;invalid&apos; is not defined on line 1</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">dsAlgoTests.GraphTest#verifyValidCodeExecutionforGraphPage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>print &quot;hello&quot;</td><td>hello</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">dsAlgoTests.GraphTest#verifyValidCodeExecutionforGraphRepresentationPage</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>print &quot;hello&quot;</td><td>hello</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
