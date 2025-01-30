@@ -3,16 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dsAlgoTests.GraphTest">
+      <class name="dsAlgoTests.SigninTest">
         <methods>
-          <include name="verifyCodeExecution" invocation-numbers="0 1"/>
           <include name="tearDownTest"/>
+          <include name="verifyLoginWithInValidUsernameValidPassword" invocation-numbers="0"/>
           <include name="before"/>
           <include name="tearDownSuite"/>
-          <include name="navigateGraphPage"/>
+          <include name="navigateToDsAlgoApplication"/>
           <include name="setupSuite"/>
+          <include name="verifyLoginWithValidcreditionals" invocation-numbers="1"/>
         </methods>
-      </class> <!-- dsAlgoTests.GraphTest -->
+      </class> <!-- dsAlgoTests.SigninTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

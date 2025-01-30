@@ -22,4 +22,22 @@ public class TestDataProvider {
 //
 //        return ExcelReader.readExcel(sheetName);
 //    }
+
+@DataProvider(name = "Credtionals")
+public Object[][] getDataFromExcel() {
+    return ExcelDataReader.readExcel("Signin"); 
 }
+
+   }
+
+
+
+
+
+
+
+
+
+
+
+
