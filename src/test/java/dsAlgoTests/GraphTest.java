@@ -1,16 +1,16 @@
 package dsAlgoTests;
 
 import java.util.Properties;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import dsAlgoHooks.Hooks;
-import dsAlgoPages.*;
+import dsAlgoPages.GraphPage;
+import dsAlgoPages.HomePage;
 import dsAlgoPages.RegisterPage;
 import dsAlgoPages.SigninPage;
+import dsAlgoPages.TryEditorPage;
 import dsAlgoUtils.ConfigReader;
 import dsAlgoUtils.TestDataProvider;
 
@@ -38,59 +38,59 @@ public class GraphTest extends Hooks {
 		GraphPage = new GraphPage(driver);
 	}
 
-	@Test()
-	public void navigatetoGraphModule() {
+	@Test(dataProvider = "testdata", dataProviderClass = TestDataProvider.class)
+	public void navigateToGraphOption(String expectedurl) {
+		System.out.println("Navigating to Graph Option with URL: " + expectedurl);
 		GraphPage = new GraphPage(driver);
 		GraphPage.clickgraphpagegraphoption();
-		Assert.assertTrue(GraphPage.textconfirmforgraphmodule());
+		String actualurl = driver.getCurrentUrl();
+		Assert.assertEquals(actualurl, expectedurl, "URL not matched");
 	}
 
-	@Test()
-	public void navigatetoGraphRepresentation() {
+	@Test(dataProvider = "testdata", dataProviderClass = TestDataProvider.class)
+	public void navigatetoGraphRepresentation(String expectedurl) {
 		GraphPage = new GraphPage(driver);
 		GraphPage.Graphrepresentation();
-		Assert.assertTrue(GraphPage.isGraphRepresentationTextDisplayed());
+		String actualurl = driver.getCurrentUrl();
+		Assert.assertEquals(actualurl, expectedurl, "URL not matched");
 
 	}
 
-	@Test()
-	public void navigatetoGraphModuletryeditor() {
+	@Test(dataProvider = "testdata", dataProviderClass = TestDataProvider.class)
+	public void navigateToGraphModuleTryEditor(String expectedurl) {
 		GraphPage = new GraphPage(driver);
 		GraphPage.clickgraphpagegraphoption();
 		GraphPage.tryherebutton();
 		String actualurl = driver.getCurrentUrl();
-		String expectedurl = prop.getProperty("tryeditorurl");
+
 		Assert.assertEquals(actualurl, expectedurl, "URL not matched");
 
 	}
 
-	@Test()
-	public void navigatetoGraphRepresentationtryeditor() {
+	@Test(dataProvider = "testdata", dataProviderClass = TestDataProvider.class)
+	public void navigateToGraphRepresentationTryEditor(String expectedurl) {
 		GraphPage = new GraphPage(driver);
 		GraphPage.Graphrepresentation();
 		GraphPage.tryherebutton();
 		String actualurl = driver.getCurrentUrl();
-		String expectedurl = prop.getProperty("tryeditorurl");
 		Assert.assertEquals(actualurl, expectedurl, "URL not matched");
 
 	}
 
-	@Test
-	public void navigateToGraphPracticeQuestions() {
+	@Test(dataProvider = "testdata", dataProviderClass = TestDataProvider.class)
+	public void navigateToGraphPracticeQuestions(String expectedurl) {
 		GraphPage.clickgraphpagegraphoption();
 		GraphPage.clickpracticequestions();
 		String actualurl = driver.getCurrentUrl();
-		String expectedurl = prop.getProperty("practicequestionspageurl");
 		Assert.assertEquals(actualurl, expectedurl, "URL not matched");
 
 	}
 
-	@Test
-	public void navigateToGraphRepresentationPracticeQuestions() {
+	@Test(dataProvider = "testdata", dataProviderClass = TestDataProvider.class)
+	public void navigateToGraphRepresentationPracticeQuestions(String expectedurl) {
 		GraphPage.Graphrepresentation();
 		GraphPage.clickpracticequestions();
 		String actualurl = driver.getCurrentUrl();
-		String expectedurl = prop.getProperty("practicequestionspageurl");
 		Assert.assertEquals(actualurl, expectedurl, "URL not matched");
 
 	}
@@ -131,8 +131,8 @@ public class GraphTest extends Hooks {
 
 	}
 
-	@Test(dataProvider = "codeExecutionData", dataProviderClass = TestDataProvider.class)
-	public void verifyCodeExecutionforGraphPage(String code, String expectedResult) {
+	@Test(dataProvider = "tryeditordata", dataProviderClass = TestDataProvider.class)
+	public void verifyValidCodeExecutionforGraphPage(String code, String expectedResult) {
 		GraphPage.clickgraphpagegraphoption();
 		GraphPage.tryherebutton();
 		System.out.println("Executing code: " + code);
@@ -144,8 +144,22 @@ public class GraphTest extends Hooks {
 
 	}
 
-	@Test(dataProvider = "codeExecutionData", dataProviderClass = TestDataProvider.class)
-	public void verifyCodeExecutionforGraphRepresentationPage(String code, String expectedResult) {
+	@Test(dataProvider = "tryeditordata", dataProviderClass = TestDataProvider.class)
+	public void verifyInValidCodeExecutionforGraphPage(String code, String expectedResult) {
+
+		GraphPage.clickgraphpagegraphoption();
+		GraphPage.tryherebutton();
+		System.out.println("Executing code: " + code);
+		TryEditorPage = new TryEditorPage(driver);
+		TryEditorPage.enteringCode(code);
+		TryEditorPage.runButton();
+		String actualResult = TryEditorPage.output();
+		Assert.assertEquals(actualResult, expectedResult, "Output does not match for code: " + code);
+
+	}
+
+	@Test(dataProvider = "tryeditordata", dataProviderClass = TestDataProvider.class)
+	public void verifyValidCodeExecutionforGraphRepresentationPage(String code, String expectedResult) {
 		GraphPage.Graphrepresentation();
 		GraphPage.tryherebutton();
 		System.out.println("Executing code: " + code);
@@ -157,4 +171,16 @@ public class GraphTest extends Hooks {
 
 	}
 
+	@Test(dataProvider = "tryeditordata", dataProviderClass = TestDataProvider.class)
+	public void verifyInValidCodeExecutionforGraphRepresentationPage(String code, String expectedResult) {
+		GraphPage.Graphrepresentation();
+		GraphPage.tryherebutton();
+		System.out.println("Executing code: " + code);
+		TryEditorPage = new TryEditorPage(driver);
+		TryEditorPage.enteringCode(code);
+		TryEditorPage.runButton();
+		String actualResult = TryEditorPage.output();
+		Assert.assertEquals(actualResult, expectedResult, "Output does not match for code: " + code);
+
+	}
 }
