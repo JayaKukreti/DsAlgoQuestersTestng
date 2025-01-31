@@ -1,105 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-30T00:11:11 CST" name="Default suite" finished-at="2025-01-30T00:11:23 CST" duration-ms="12070">
+  <suite started-at="2025-01-30T13:47:56 EST" name="TestSuite" finished-at="2025-01-30T13:47:56 EST" duration-ms="10">
     <groups>
     </groups>
-    <test started-at="2025-01-30T00:11:11 CST" name="Default test" finished-at="2025-01-30T00:11:23 CST" duration-ms="12070">
-      <class name="dsAlgoTests.GraphTest">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:dsAlgoTests.GraphTest@5c86a017]" started-at="2025-01-30T00:11:11 CST" name="setupSuite" finished-at="2025-01-30T00:11:11 CST" duration-ms="12" status="PASS">
+    <test started-at="2025-01-30T13:47:56 EST" name="Test" finished-at="2025-01-30T13:47:56 EST" duration-ms="10">
+      <class name="dsAlgoTests.LinkedListTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:dsAlgoTests.LinkedListTest@1e4f4a5c]" started-at="2025-01-30T13:47:56 EST" name="setupSuite" finished-at="2025-01-30T13:47:56 EST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.GraphTest@5c86a017]" started-at="2025-01-30T00:11:12 CST" name="before" finished-at="2025-01-30T00:11:14 CST" duration-ms="2176" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method is-config="true" signature="navigateGraphPage()[pri:0, instance:dsAlgoTests.GraphTest@5c86a017]" started-at="2025-01-30T00:11:14 CST" name="navigateGraphPage" finished-at="2025-01-30T00:11:16 CST" duration-ms="1949" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateGraphPage -->
-        <test-method signature="verifyCodeExecutionforGraphRepresentationPage(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.GraphTest@5c86a017]" started-at="2025-01-30T00:11:16 CST" name="verifyCodeExecutionforGraphRepresentationPage" data-provider="codeExecutionData" finished-at="2025-01-30T00:11:18 CST" duration-ms="1518" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[print "hello"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[hello]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCodeExecutionforGraphRepresentationPage -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.GraphTest@5c86a017]" started-at="2025-01-30T00:11:18 CST" name="tearDownTest" finished-at="2025-01-30T00:11:18 CST" duration-ms="219" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyCodeExecutionforGraphRepresentationPage status=SUCCESS method=GraphTest.verifyCodeExecutionforGraphRepresentationPage(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.GraphTest@5c86a017] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.GraphTest@5c86a017]" started-at="2025-01-30T00:11:18 CST" name="before" finished-at="2025-01-30T00:11:19 CST" duration-ms="1627" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method is-config="true" signature="navigateGraphPage()[pri:0, instance:dsAlgoTests.GraphTest@5c86a017]" started-at="2025-01-30T00:11:19 CST" name="navigateGraphPage" finished-at="2025-01-30T00:11:22 CST" duration-ms="2004" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateGraphPage -->
-        <test-method signature="verifyCodeExecutionforGraphRepresentationPage(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.GraphTest@5c86a017]" started-at="2025-01-30T00:11:22 CST" name="verifyCodeExecutionforGraphRepresentationPage" data-provider="codeExecutionData" finished-at="2025-01-30T00:11:23 CST" duration-ms="1480" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[invalid]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[NameError: name 'invalid' is not defined on line 1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyCodeExecutionforGraphRepresentationPage -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.GraphTest@5c86a017]" started-at="2025-01-30T00:11:23 CST" name="tearDownTest" finished-at="2025-01-30T00:11:23 CST" duration-ms="206" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyCodeExecutionforGraphRepresentationPage status=SUCCESS method=GraphTest.verifyCodeExecutionforGraphRepresentationPage(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.GraphTest@5c86a017] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:dsAlgoTests.GraphTest@5c86a017]" started-at="2025-01-30T00:11:23 CST" name="tearDownSuite" finished-at="2025-01-30T00:11:23 CST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:dsAlgoTests.LinkedListTest@1e4f4a5c]" started-at="2025-01-30T13:47:56 EST" name="tearDownSuite" finished-at="2025-01-30T13:47:56 EST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->
-      </class> <!-- dsAlgoTests.GraphTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- dsAlgoTests.LinkedListTest -->
+    </test> <!-- Test -->
+  </suite> <!-- TestSuite -->
 </testng-results>
