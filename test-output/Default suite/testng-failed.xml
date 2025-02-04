@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dsAlgoTests.GraphTest">
+      <class name="dsAlgoTests.TreeTest">
         <methods>
-          <include name="verifyCodeExecution" invocation-numbers="0 1"/>
           <include name="tearDownTest"/>
+          <include name="verifyTreeTryEditorWithoutCodeOfOverviewOfTrees"/>
           <include name="before"/>
           <include name="tearDownSuite"/>
-          <include name="navigateGraphPage"/>
+          <include name="navigateToTreePage"/>
           <include name="setupSuite"/>
         </methods>
-      </class> <!-- dsAlgoTests.GraphTest -->
+      </class> <!-- dsAlgoTests.TreeTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -17,7 +17,7 @@ public class ConfigReader {
                 FileInputStream testDataFile = new FileInputStream(
                         System.getProperty("user.dir") + "/src/test/resources/dsAlgoProperties/testdata.properties");
                 prop.load(testDataFile);
-                testDataFile.close();
+               testDataFile.close();
 
                 // Load Config.properties
                 FileInputStream configFile = new FileInputStream(
