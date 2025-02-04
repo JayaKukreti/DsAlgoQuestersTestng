@@ -63,7 +63,7 @@ public class QueuePage {
 
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
-		this.prop = ConfigReader.initializeProp();
+		//this.prop = ConfigReader.initializeProp();
 	}
 	//3. Methods to interact with elements
 	public boolean textconfirmImplementationofQueue() {

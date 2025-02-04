@@ -21,7 +21,7 @@ public class TreeTest extends Hooks {
 	HomePage homepage;
 	SigninPage signinpage;
 	TryEditorPage tryeditorpage;
-	Properties prop = ConfigReader.initializeProp();
+	//Properties prop = ConfigReader.initializeprop();
 	TreePage treepage;
 	
 	@BeforeMethod	

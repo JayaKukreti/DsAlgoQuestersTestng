@@ -35,7 +35,7 @@ public class TreePage {
 //1.Create constructor
 	public TreePage(WebDriver driver) {
 		this.driver=driver; 
-		this.prop= ConfigReader. initializeProp();
+		//this.prop= ConfigReader. initializeProp();
 		PageFactory.initElements(driver, this);
 	}
 //2. Locators
