@@ -3,16 +3,16 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dsAlgoTests.RegisterTest">
+      <class name="dsAlgoTests.DataStructureTest">
         <methods>
+          <include name="DataStructureIntroductionPage"/>
+          <include name="seeListOfPracticeQuestionsonDataStructureIntroductionPage"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage"/>
           <include name="tearDownTest"/>
-          <include name="before"/>
-          <include name="tearDownSuite"/>
-          <include name="navigateToDsAlgoApplication"/>
-          <include name="enterCredentials"/>
+          <include name="setup"/>
           <include name="setupSuite"/>
         </methods>
-      </class> <!-- dsAlgoTests.RegisterTest -->
+      </class> <!-- dsAlgoTests.DataStructureTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

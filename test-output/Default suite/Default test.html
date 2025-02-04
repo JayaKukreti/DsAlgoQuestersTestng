@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>7/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>5/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Feb 04 00:01:23 IST 2025</td>
+<td>Started on:</td><td>Tue Feb 04 20:47:12 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>31 seconds (31097 ms)</td>
+<tr><td>Total time:</td><td>38 seconds (38030 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,142 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='dsAlgoTests.DataStructureTest.checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage()'><b>checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage</b><br>Test class: dsAlgoTests.DataStructureTest</td>
+<td><div><pre>java.lang.AssertionError: Test failed: Expected an error message when clicking the &apos;Run&apos; button without entering code, but no message was displayed.
+	at org.testng.Assert.fail(Assert.java:99)
+	at dsAlgoTests.DataStructureTest.checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage(DataStructureTest.java:78)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace211973922", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace211973922'><pre>java.lang.AssertionError: Test failed: Expected an error message when clicking the &apos;Run&apos; button without entering code, but no message was displayed.
+	at org.testng.Assert.fail(Assert.java:99)
+	at dsAlgoTests.DataStructureTest.checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage(DataStructureTest.java:78)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>1</td>
+<td>dsAlgoTests.DataStructureTest@fa36558</td></tr>
+<tr>
+<td title='dsAlgoTests.DataStructureTest.seeListOfPracticeQuestionsonDataStructureIntroductionPage()'><b>seeListOfPracticeQuestionsonDataStructureIntroductionPage</b><br>Test class: dsAlgoTests.DataStructureTest</td>
+<td><div><pre>java.lang.AssertionError: No practice questions found on the Practice Questions Page!
+	at org.testng.Assert.fail(Assert.java:99)
+	at dsAlgoTests.DataStructureTest.seeListOfPracticeQuestionsonDataStructureIntroductionPage(DataStructureTest.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1454136448", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1454136448'><pre>java.lang.AssertionError: No practice questions found on the Practice Questions Page!
+	at org.testng.Assert.fail(Assert.java:99)
+	at dsAlgoTests.DataStructureTest.seeListOfPracticeQuestionsonDataStructureIntroductionPage(DataStructureTest.java:69)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+	at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+	at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+	at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.testng.TestRunner.privateRun(TestRunner.java:794)
+	at org.testng.TestRunner.run(TestRunner.java:596)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>dsAlgoTests.DataStructureTest@fa36558</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -75,40 +211,30 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='dsAlgoTests.RegisterTest.enterCredentials()'><b>enterCredentials</b><br>Test class: dsAlgoTests.RegisterTest<br>Parameters: Questers, Aweso, Aweso, password_mismatch:The two password fields didn’t match.</td>
+<td title='dsAlgoTests.DataStructureTest.navigatetoTimeComplexitytryeditor()'><b>navigatetoTimeComplexitytryeditor</b><br>Test class: dsAlgoTests.DataStructureTest</td>
 <td></td>
 <td>0</td>
-<td>dsAlgoTests.RegisterTest@32115b28</td></tr>
+<td>dsAlgoTests.DataStructureTest@fa36558</td></tr>
 <tr>
-<td title='dsAlgoTests.RegisterTest.enterCredentials()'><b>enterCredentials</b><br>Test class: dsAlgoTests.RegisterTest<br>Parameters: Questers, 14953.0, 14953.0, password_mismatch:The two password fields didn’t match.</td>
+<td title='dsAlgoTests.DataStructureTest.verifyCodeExecutionforDataStructureIntroductionPage()'><b>verifyCodeExecutionforDataStructureIntroductionPage</b><br>Test class: dsAlgoTests.DataStructureTest<br>Parameters: print "hello", hello</td>
 <td></td>
 <td>1</td>
-<td>dsAlgoTests.RegisterTest@32115b28</td></tr>
+<td>dsAlgoTests.DataStructureTest@fa36558</td></tr>
 <tr>
-<td title='dsAlgoTests.RegisterTest.enterCredentials()'><b>enterCredentials</b><br>Test class: dsAlgoTests.RegisterTest<br>Parameters: Questers, , , Please fill out this field</td>
+<td title='dsAlgoTests.DataStructureTest.verifyCodeExecutionforDataStructureIntroductionPage()'><b>verifyCodeExecutionforDataStructureIntroductionPage</b><br>Test class: dsAlgoTests.DataStructureTest<br>Parameters: invalid, NameError: name 'invalid' is not defined on line 1</td>
+<td></td>
+<td>1</td>
+<td>dsAlgoTests.DataStructureTest@fa36558</td></tr>
+<tr>
+<td title='dsAlgoTests.DataStructureTest.navigateToDataStructureIntroductionPagePracticeQuestions()'><b>navigateToDataStructureIntroductionPagePracticeQuestions</b><br>Test class: dsAlgoTests.DataStructureTest</td>
 <td></td>
 <td>0</td>
-<td>dsAlgoTests.RegisterTest@32115b28</td></tr>
+<td>dsAlgoTests.DataStructureTest@fa36558</td></tr>
 <tr>
-<td title='dsAlgoTests.RegisterTest.enterCredentials()'><b>enterCredentials</b><br>Test class: dsAlgoTests.RegisterTest<br>Parameters: Questers, test@9991, Tester@4441, password_mismatch:The two password fields didn’t match.</td>
+<td title='dsAlgoTests.DataStructureTest.navigatetoTimeComplexityModule()'><b>navigatetoTimeComplexityModule</b><br>Test class: dsAlgoTests.DataStructureTest</td>
 <td></td>
 <td>0</td>
-<td>dsAlgoTests.RegisterTest@32115b28</td></tr>
-<tr>
-<td title='dsAlgoTests.RegisterTest.enterCredentials()'><b>enterCredentials</b><br>Test class: dsAlgoTests.RegisterTest<br>Parameters: Questers$, Awesome@2025, Awesome@2025, password_mismatch:The two password fields didn’t match.</td>
-<td></td>
-<td>0</td>
-<td>dsAlgoTests.RegisterTest@32115b28</td></tr>
-<tr>
-<td title='dsAlgoTests.RegisterTest.enterCredentials()'><b>enterCredentials</b><br>Test class: dsAlgoTests.RegisterTest<br>Parameters: Questers, Awesome@2025, , Please fill out this field</td>
-<td></td>
-<td>0</td>
-<td>dsAlgoTests.RegisterTest@32115b28</td></tr>
-<tr>
-<td title='dsAlgoTests.RegisterTest.enterCredentials()'><b>enterCredentials</b><br>Test class: dsAlgoTests.RegisterTest<br>Parameters: , , , Please fill out this field</td>
-<td></td>
-<td>0</td>
-<td>dsAlgoTests.RegisterTest@32115b28</td></tr>
+<td>dsAlgoTests.DataStructureTest@fa36558</td></tr>
 </table><p>
 </body>
 </html>

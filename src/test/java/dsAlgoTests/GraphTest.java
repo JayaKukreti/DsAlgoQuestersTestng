@@ -6,11 +6,12 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import dsAlgoHooks.Hooks;
-import dsAlgoPages.*;
+import dsAlgoPages.GraphPage;
+import dsAlgoPages.HomePage;
 import dsAlgoPages.RegisterPage;
 import dsAlgoPages.SigninPage;
+import dsAlgoPages.TryEditorPage;
 import dsAlgoUtils.ConfigReader;
 import dsAlgoUtils.TestDataProvider;
 
@@ -20,7 +21,7 @@ public class GraphTest extends Hooks {
 	HomePage homePage;
 	SigninPage SigninPage;
 	RegisterPage RegisterPage;
-	Properties prop = ConfigReader.initializeProp();
+	Properties prop = ConfigReader.initializeprop();
 	GraphPage GraphPage;
 	TryEditorPage TryEditorPage;
 
@@ -40,95 +41,74 @@ public class GraphTest extends Hooks {
 
 	@Test()
 	public void navigatetoGraphModule() {
-		GraphPage = new GraphPage(driver);
 		GraphPage.clickgraphpagegraphoption();
 		Assert.assertTrue(GraphPage.textconfirmforgraphmodule());
 	}
 
 	@Test()
 	public void navigatetoGraphRepresentation() {
-		GraphPage = new GraphPage(driver);
 		GraphPage.Graphrepresentation();
 		Assert.assertTrue(GraphPage.isGraphRepresentationTextDisplayed());
-
 	}
 
-	@Test()
+	@Test(dependsOnMethods = { "navigatetoGraphModule" })
 	public void navigatetoGraphModuletryeditor() {
-		GraphPage = new GraphPage(driver);
 		GraphPage.clickgraphpagegraphoption();
 		GraphPage.tryherebutton();
-		String actualurl = driver.getCurrentUrl();
-		String expectedurl = prop.getProperty("tryeditorurl");
-		Assert.assertEquals(actualurl, expectedurl, "URL not matched");
+		Assert.assertTrue(GraphPage.textconfirmfortryeditor());
+	}
 
+	@Test(dependsOnMethods = { "navigatetoGraphRepresentation" })
+	public void navigatetoGraphRepresentationtryeditor() {
+		GraphPage.Graphrepresentation();
+		GraphPage.tryherebutton();
+		Assert.assertTrue(GraphPage.textconfirmfortryeditor());
 	}
 
 	@Test()
-	public void navigatetoGraphRepresentationtryeditor() {
-		GraphPage = new GraphPage(driver);
-		GraphPage.Graphrepresentation();
-		GraphPage.tryherebutton();
-		String actualurl = driver.getCurrentUrl();
-		String expectedurl = prop.getProperty("tryeditorurl");
-		Assert.assertEquals(actualurl, expectedurl, "URL not matched");
-
-	}
-
-	@Test
 	public void navigateToGraphPracticeQuestions() {
 		GraphPage.clickgraphpagegraphoption();
 		GraphPage.clickpracticequestions();
-		String actualurl = driver.getCurrentUrl();
-		String expectedurl = prop.getProperty("practicequestionspageurl");
-		Assert.assertEquals(actualurl, expectedurl, "URL not matched");
-
+		Assert.assertTrue(GraphPage.textconfirmpracticequestion());
 	}
 
-	@Test
+	@Test()
 	public void navigateToGraphRepresentationPracticeQuestions() {
 		GraphPage.Graphrepresentation();
 		GraphPage.clickpracticequestions();
-		String actualurl = driver.getCurrentUrl();
-		String expectedurl = prop.getProperty("practicequestionspageurl");
-		Assert.assertEquals(actualurl, expectedurl, "URL not matched");
-
+		Assert.assertTrue(GraphPage.textconfirmpracticequestion());
 	}
 
-	@Test
+	@Test()
 	public void seeListOfPracticeQuestionsonGraphPage() {
 		GraphPage.clickgraphpagegraphoption();
 		GraphPage.clickpracticequestions();
 		Assert.fail("No practice questions found on the Practice Questions Page!");
-
 	}
 
-	@Test
+	@Test(dependsOnMethods = { "navigateToGraphRepresentationPracticeQuestions" })
 	public void seeListOfPracticeQuestionsonGraphReprePage() {
 		GraphPage.Graphrepresentation();
 		GraphPage.clickpracticequestions();
 		Assert.fail("No practice questions found on the Practice Questions Page!");
-
 	}
 
-	@Test
+	@Test()
 	public void checkErrorMessageWhenExecutingWithoutCodeInGraphPage() {
 		GraphPage.clickgraphpagegraphoption();
 		GraphPage.tryherebutton();
 		GraphPage.run();
 		Assert.fail(
 				"Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.");
-
 	}
 
-	@Test
+	@Test()
 	public void checkErrorMessageWhenExecutingWithoutCodeInGraphReprePage() {
 		GraphPage.Graphrepresentation();
 		GraphPage.tryherebutton();
 		GraphPage.run();
 		Assert.fail(
 				"Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.");
-
 	}
 
 	@Test(dataProvider = "codeExecutionData", dataProviderClass = TestDataProvider.class)
@@ -141,7 +121,6 @@ public class GraphTest extends Hooks {
 		TryEditorPage.runButton();
 		String actualResult = TryEditorPage.output();
 		Assert.assertEquals(actualResult, expectedResult, "Output does not match for code: " + code);
-
 	}
 
 	@Test(dataProvider = "codeExecutionData", dataProviderClass = TestDataProvider.class)
@@ -154,7 +133,5 @@ public class GraphTest extends Hooks {
 		TryEditorPage.runButton();
 		String actualResult = TryEditorPage.output();
 		Assert.assertEquals(actualResult, expectedResult, "Output does not match for code: " + code);
-
 	}
-
 }

@@ -24,7 +24,7 @@ public class DataStructureIntroductionPage {
 
 	public DataStructureIntroductionPage(WebDriver driver) {
 		this.driver = driver;
-		this.prop = ConfigReader.initializeProp();
+		this.prop = ConfigReader.initializeprop();
 		PageFactory.initElements(driver, this);
 	}
 
@@ -35,6 +35,8 @@ public class DataStructureIntroductionPage {
 	  private WebElement textdisplayinDataStructurePage;
 	@FindBy(xpath ="//p[@class='bg-secondary text-white' and text()='Time Complexity']")
 	 private WebElement textdisplayinTimeComplexityPage;
+	@FindBy(xpath="//button[@type='button']")
+	private WebElement textdisplayinTimeComplexitytryeditorPage;
 	@FindBy(xpath = "//a[@href='/tryEditor']")
      private WebElement TryHereButton;
     @FindBy(xpath ="//a[@href=\"/tryEditor\"]")

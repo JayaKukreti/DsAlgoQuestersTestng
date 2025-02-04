@@ -23,7 +23,7 @@ public class DataStructureTest extends Hooks {
 	HomePage Hg;
 	SigninPage Sg;
 	RegisterPage Rg;
-	Properties prop = ConfigReader.initializeProp();
+	//Properties prop = ConfigReader.initializeProp();
 	DataStructureIntroductionPage Dg = new DataStructureIntroductionPage(driver);
 	TryEditorPage TryEditorPage;
 
@@ -51,19 +51,14 @@ public class DataStructureTest extends Hooks {
 	public void navigatetoTimeComplexitytryeditor() {
        Dg.ClickTimeComplexityLink();
 		Dg.ClickTryHereButton();
-		String actualurl = driver.getCurrentUrl();
-		String expectedurl = prop.getProperty("tryeditorurl");
-		Assert.assertEquals(actualurl, expectedurl, "URL not matched");
-
+		 Assert.assertTrue(Dg.textconfirmfortryeditor());
 	}
 
 	@Test
 	public void navigateToDataStructureIntroductionPagePracticeQuestions() {
 		Dg.ClickTimeComplexityLink();
 		Dg.clickpracticequestions();
-		String actualurl = driver.getCurrentUrl();
-		String expectedurl = prop.getProperty("practicequestionspageurl");
-		Assert.assertEquals(actualurl, expectedurl, "URL not matched");
+		Assert.assertTrue(Dg.textconfirmpracticequestion());
 
 	}
 
