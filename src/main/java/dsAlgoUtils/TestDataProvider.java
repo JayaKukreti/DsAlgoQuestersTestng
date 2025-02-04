@@ -6,6 +6,8 @@ import org.testng.annotations.DataProvider;
 
 public class TestDataProvider {
 
+
+
 	
 	 @DataProvider(name = "QueueTryEditorData", parallel = false)
 	    public Object[][] QueueTryEditorData() {
@@ -27,6 +29,7 @@ public class TestDataProvider {
 
 
 
+
 	@DataProvider(name = "codeExecutionData")
 	public Object[][] getData() {
 		return ExcelDataReader.readExcel("tryEditor");
@@ -43,5 +46,24 @@ public class TestDataProvider {
 		return ExcelDataReader.readExcel("Home");
 	}
 
+
+	
+    @DataProvider(name = "RegisterPageData")
+    public Object[][] getRegisterData() {
+        return ExcelDataReader.readExcel("Sheet3");
+    }
 }
+
+
+
+
+
+
+
+
+
+
+	
+
+
 

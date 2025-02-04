@@ -35,6 +35,8 @@ public class DataStructureIntroductionPage {
 	  private WebElement textdisplayinDataStructurePage;
 	@FindBy(xpath ="//p[@class='bg-secondary text-white' and text()='Time Complexity']")
 	 private WebElement textdisplayinTimeComplexityPage;
+	@FindBy(xpath="//button[@type='button']")
+	private WebElement textdisplayinTimeComplexitytryeditorPage;
 	@FindBy(xpath = "//a[@href='/tryEditor']")
      private WebElement TryHereButton;
     @FindBy(xpath ="//a[@href=\"/tryEditor\"]")
@@ -51,82 +53,63 @@ public class DataStructureIntroductionPage {
 	private WebElement Textconfirmforpracticequestion;
 	@FindBy(xpath = "//*[@onclick='runit()']")
 	private WebElement runbutton;
-	
-	
-	// *********************************************************
+// *********************************************************
 	public boolean textconfirmfortryeditor() {
 		boolean textconfirmfortryeditor = runbutton.isDisplayed();
 		return textconfirmfortryeditor;
-	}
-	
-	// *********************************************************
+		}
+// *********************************************************
 	public void clickpracticequestions() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		WebElement pq = wait.until(ExpectedConditions.elementToBeClickable(By.linkText("Practice Questions")));
 		pq.click();
 	}
-
-	// *********************************************************
+// *********************************************************
 	public boolean textconfirmpracticequestion() {
 		boolean textconfirmforpracticequestion = Textconfirmforpracticequestion.isDisplayed();
 		return textconfirmforpracticequestion;
-	}
-
-	// *********************************************************
+}
+// *********************************************************
 	public boolean isTextDisplayedInDataStructurePage() {
-		
-			return textdisplayinDataStructurePage.isDisplayed();
-		
+		return textdisplayinDataStructurePage.isDisplayed();
 	}
-
 //*********************************************************	
 	public boolean isTextDisplayedInTimeComplexityPage() {
-		
-			return textdisplayinTimeComplexityPage.isDisplayed();
-			
-			
-		
-	}
+		return textdisplayinTimeComplexityPage.isDisplayed();
+}
 //*********************************************************
-
-	public void ClickTryHereButton() {
+public void ClickTryHereButton() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		WebElement TryHereButtonElement = wait.until(ExpectedConditions.elementToBeClickable(TryHereButton));
 		TryHereButton.click();
 		System.out.println("Navigated to try Editor with a Run button to test");
-	}
-	// *********************************************************
-
-	public void ClickTimeComplexityLink() {
+}
+// *********************************************************
+public void ClickTimeComplexityLink() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		WebElement timeComplexityLinkElement = wait.until(ExpectedConditions.elementToBeClickable(timeComplexityLink));
 		timeComplexityLink.click();
 		System.out.println("Navigated to the Time Complexity page.");
-	}
-
-	// *********************************************************
-	public String getDataStructureModuleUrl() {
+		}
+// *********************************************************
+public String getDataStructureModuleUrl() {
 		return prop.getProperty("DataStructureURL");
 	}
 	// *********************************************************
-
-	public String actualUrl() {
+public String actualUrl() {
 		return driver.getCurrentUrl();
 	}
+// *****************************************************
+public void enter_input(String code) {
+Actions actions = new Actions(driver);
+WebElement textEditor =textArea;
+actions.moveToElement(textEditor).click().sendKeys(code).build().perform();
+}
 	// *****************************************************
-
-	public void enter_input(String code) {
-
-		Actions actions = new Actions(driver);
-		WebElement textEditor =textArea;
-		actions.moveToElement(textEditor).click().sendKeys(code).build().perform();
+public void click_run() {
+runBtn.click();
 	}
-	// *****************************************************
-
-	public void click_run() {
-		runBtn.click();
-	}
-	// *****************************************************
+// *****************************************************
 
 	public void click_tryEditor() {
 		try {
