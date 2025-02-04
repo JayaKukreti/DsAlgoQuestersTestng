@@ -8,7 +8,11 @@ import java.util.Properties;
 
 public class ConfigReader {
 
+
+    // Singleton pattern to load properties only once
+  
 	private static String browserType = null;
+
 
 	public static Properties initializeprop() {
 		Properties prop = new Properties();
