@@ -1,6 +1,5 @@
 package dsAlgoTests;
 
-import java.util.Properties;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -9,14 +8,12 @@ import dsAlgoHooks.Hooks;
 import dsAlgoPages.HomePage;
 import dsAlgoPages.RegisterPage;
 import dsAlgoPages.SigninPage;
-import dsAlgoUtils.ConfigReader;
 
 public class HomeTest extends Hooks {
 	WebDriver driver;
 	HomePage homePage;
 	SigninPage SigninPage;
 	RegisterPage RegisterPage;
-	Properties prop = ConfigReader.initializeProp();
 
 	@BeforeMethod
 	public void navigateToDsAlgoApplication() {
@@ -32,13 +29,6 @@ public class HomeTest extends Hooks {
 //		Assert.assertTrue(RegisterPage.textConfirmforRegister());
 //	}
 
-//	@Test
-//	public void navigateToLogin() {
-//		SigninPage = new SigninPage(driver);
-//		homePage.clickSignin();
-//		Assert.assertTrue(SigninPage.confirmtextsignin());
-//
-//	}
 	@Test
 	public void navigateToLogin() {
 		SigninPage = new SigninPage(driver);
@@ -53,7 +43,7 @@ public class HomeTest extends Hooks {
 		homePage.getStartedDataStructureIntroduction();
 		String actualMessage = homePage.errorMessageGetStarted();
 		System.out.println("actualMessage is :" + actualMessage);
-		String expectedMessage = prop.getProperty("errormessageforoptions");
+		String expectedMessage = homePage.expectedmessage();
 		System.out.println("expectedMessage is :" + expectedMessage);
 
 		Assert.assertEquals(actualMessage, expectedMessage, "Message not matched");
@@ -65,7 +55,7 @@ public class HomeTest extends Hooks {
 		homePage.getStartedArray();
 		String actualMessage = homePage.errorMessageGetStarted();
 		System.out.println("actualMessage is :" + actualMessage);
-		String expectedMessage = prop.getProperty("errormessageforoptions");
+		String expectedMessage = homePage.expectedmessage();
 		System.out.println("expectedMessage is :" + expectedMessage);
 
 		Assert.assertEquals(actualMessage, expectedMessage, "Message not matched");
@@ -77,7 +67,7 @@ public class HomeTest extends Hooks {
 		homePage.getStartedStack();
 		String actualMessage = homePage.errorMessageGetStarted();
 		System.out.println("actualMessage is :" + actualMessage);
-		String expectedMessage = prop.getProperty("errormessageforoptions");
+		String expectedMessage = homePage.expectedmessage();
 		System.out.println("expectedMessage is :" + expectedMessage);
 
 		Assert.assertEquals(actualMessage, expectedMessage, "Message not matched");
@@ -89,7 +79,7 @@ public class HomeTest extends Hooks {
 		homePage.getStartedQueue();
 		String actualMessage = homePage.errorMessageGetStarted();
 		System.out.println("actualMessage is :" + actualMessage);
-		String expectedMessage = prop.getProperty("errormessageforoptions");
+		String expectedMessage = homePage.expectedmessage();
 		System.out.println("expectedMessage is :" + expectedMessage);
 
 		Assert.assertEquals(actualMessage, expectedMessage, "Message not matched");
@@ -101,7 +91,7 @@ public class HomeTest extends Hooks {
 		homePage.getStartedLinkedlist();
 		String actualMessage = homePage.errorMessageGetStarted();
 		System.out.println("actualMessage is :" + actualMessage);
-		String expectedMessage = prop.getProperty("errormessageforoptions");
+		String expectedMessage = homePage.expectedmessage();
 		System.out.println("expectedMessage is :" + expectedMessage);
 
 		Assert.assertEquals(actualMessage, expectedMessage, "Message not matched");
@@ -113,7 +103,7 @@ public class HomeTest extends Hooks {
 		homePage.getStartedTree();
 		String actualMessage = homePage.errorMessageGetStarted();
 		System.out.println("actualMessage is :" + actualMessage);
-		String expectedMessage = prop.getProperty("errormessageforoptions");
+		String expectedMessage = homePage.expectedmessage();
 		System.out.println("expectedMessage is :" + expectedMessage);
 
 		Assert.assertEquals(actualMessage, expectedMessage, "Message not matched");
@@ -125,83 +115,88 @@ public class HomeTest extends Hooks {
 		homePage.getStartedofGraph();
 		String actualMessage = homePage.errorMessageGetStarted();
 		System.out.println("actualMessage is :" + actualMessage);
-		String expectedMessage = prop.getProperty("errormessageforoptions");
+		String expectedMessage = homePage.expectedmessage();
 		System.out.println("expectedMessage is :" + expectedMessage);
 
 		Assert.assertEquals(actualMessage, expectedMessage, "Message not matched");
 	}
+
 	@Test()
 	public void dropdownoptionGrapherrorBeforeSignin() {
-		
+
 		homePage.clickDataStructuresDropDown();
 		homePage.graph();
 		String actualMessage = homePage.errorMessageGetStarted();
 		System.out.println("actualMessage is :" + actualMessage);
-		String expectedMessage = prop.getProperty("errormessageforoptions");
+		String expectedMessage = homePage.expectedmessage();
 		System.out.println("expectedMessage is :" + expectedMessage);
 
 		Assert.assertEquals(actualMessage, expectedMessage, "Message not matched");
 	}
+
 	@Test()
 	public void dropdownoptionTreeerrorBeforeSignin() {
-		
+
 		homePage.clickDataStructuresDropDown();
 		homePage.tree();
 		String actualMessage = homePage.errorMessageGetStarted();
 		System.out.println("actualMessage is :" + actualMessage);
-		String expectedMessage = prop.getProperty("errormessageforoptions");
+		String expectedMessage = homePage.expectedmessage();
 		System.out.println("expectedMessage is :" + expectedMessage);
 
 		Assert.assertEquals(actualMessage, expectedMessage, "Message not matched");
 	}
+
 	@Test()
 	public void dropdownoptionQueueerrorBeforeSignin() {
-		
+
 		homePage.clickDataStructuresDropDown();
 		homePage.queue();
 		String actualMessage = homePage.errorMessageGetStarted();
 		System.out.println("actualMessage is :" + actualMessage);
-		String expectedMessage = prop.getProperty("errormessageforoptions");
+		String expectedMessage = homePage.expectedmessage();
 		System.out.println("expectedMessage is :" + expectedMessage);
 
 		Assert.assertEquals(actualMessage, expectedMessage, "Message not matched");
 	}
+
 	@Test()
 	public void dropdownoptionStackerrorBeforeSignin() {
-		
+
 		homePage.clickDataStructuresDropDown();
 		homePage.stack();
 		String actualMessage = homePage.errorMessageGetStarted();
 		System.out.println("actualMessage is :" + actualMessage);
-		String expectedMessage = prop.getProperty("errormessageforoptions");
+		String expectedMessage = homePage.expectedmessage();
 		System.out.println("expectedMessage is :" + expectedMessage);
 
 		Assert.assertEquals(actualMessage, expectedMessage, "Message not matched");
 	}
+
 	@Test()
 	public void dropdownoptionLinkedListerrorBeforeSignin() {
-		
+
 		homePage.clickDataStructuresDropDown();
 		homePage.linkedList();
 		String actualMessage = homePage.errorMessageGetStarted();
 		System.out.println("actualMessage is :" + actualMessage);
-		String expectedMessage = prop.getProperty("errormessageforoptions");
+		String expectedMessage = homePage.expectedmessage();
 		System.out.println("expectedMessage is :" + expectedMessage);
 
 		Assert.assertEquals(actualMessage, expectedMessage, "Message not matched");
 	}
+
 	@Test()
 	public void dropdownoptionArrayserrorBeforeSignin() {
-		
+
 		homePage.clickDataStructuresDropDown();
 		homePage.arrays();
 		String actualMessage = homePage.errorMessageGetStarted();
 		System.out.println("actualMessage is :" + actualMessage);
-		String expectedMessage = prop.getProperty("errormessageforoptions");
+		String expectedMessage = homePage.expectedmessage();
 		System.out.println("expectedMessage is :" + expectedMessage);
 
 		Assert.assertEquals(actualMessage, expectedMessage, "Message not matched");
 	}
-	
 
 }
