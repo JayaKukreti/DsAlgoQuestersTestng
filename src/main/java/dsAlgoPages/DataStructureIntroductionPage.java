@@ -24,7 +24,7 @@ public class DataStructureIntroductionPage {
 
 	public DataStructureIntroductionPage(WebDriver driver) {
 		this.driver = driver;
-		this.prop = ConfigReader.initializeProp();
+		this.prop = ConfigReader.initializeprop();
 		PageFactory.initElements(driver, this);
 	}
 

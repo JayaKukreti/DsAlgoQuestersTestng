@@ -1,8 +1,11 @@
 package dsAlgoUtils;
 
+import java.io.IOException;
+
 import org.testng.annotations.DataProvider;
 
 public class TestDataProvider {
+
 	
 	 @DataProvider(name = "QueueTryEditorData", parallel = false)
 	    public Object[][] QueueTryEditorData() {
@@ -21,24 +24,24 @@ public class TestDataProvider {
 	        return testData;
 	    }
 	
+
+
+
+	@DataProvider(name = "codeExecutionData")
+	public Object[][] getData() {
+		return ExcelDataReader.readExcel("tryEditor");
+	}
+
+	@DataProvider(name = "signinPageData")
+	public Object[][] getSigninData() {
+		return ExcelDataReader.readExcel("Sheet1");
+	}
+
+	@DataProvider(name = "dataStructures")
+	public Object[][] getDataStructures() throws IOException {
+
+		return ExcelDataReader.readExcel("Home");
+	}
+
 }
-//	
-//    @DataProvider(name = "codeExecutionData")
-//    public Object[][] getData() {
-//        return ExcelDataReader.readExcel("tryEditor"); 
-//    }
-//    @DataProvider(name = "excelDataProvider")
-//    public Object[][] getDataFromExcel(Method testMethod) {
-//        String sheetName = "";
-//        
-//        // Identify which test method is calling this DataProvider
-//        if (testMethod.getName().equals("verifyCodeExecution")) {
-//            sheetName = "CodeExecutionSheet";
-//        } else if (testMethod.getName().equals("verifyErrorHandling")) {
-//            sheetName = "ErrorHandlingSheet";
-//        } else if (testMethod.getName().equals("verifyEdgeCases")) {
-//            sheetName = "EdgeCasesSheet";
-//        }
-//
-//        return ExcelReader.readExcel(sheetName);
-//    }
+

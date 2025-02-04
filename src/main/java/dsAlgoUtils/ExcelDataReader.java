@@ -1,8 +1,11 @@
 package dsAlgoUtils;
 
 import java.io.FileInputStream;
+
 import java.util.Iterator;
 
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -18,7 +21,7 @@ public class ExcelDataReader {
 			XSSFSheet sheet = workbook.getSheet(sheetName);
 
 			if (sheet == null) {
-				throw new RuntimeException("Sheet" + sheetName + " not found in ");
+				throw new RuntimeException("Sheet " + sheetName + " not found in ");
 			}
 
 			int rowCount = sheet.getPhysicalNumberOfRows();
@@ -32,7 +35,12 @@ public class ExcelDataReader {
 			while (rowIterator.hasNext()) {
 				Row row = rowIterator.next();
 				for (int j = 0; j < colCount; j++) {
-					data[i][j] = row.getCell(j).getStringCellValue();
+					Cell cell = row.getCell(j);
+					if (cell == null || cell.getCellType() == CellType.BLANK) {
+						data[i][j] = ""; // Store empty string if the cell is empty
+					} else {
+						data[i][j] = cell.getStringCellValue();
+					}
 				}
 				i++;
 			}

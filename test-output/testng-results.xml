@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <testng-results ignored="0" total="59" passed="53" failed="6" skipped="0">
   <reporter-output>
   </reporter-output>
@@ -2452,4 +2453,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
       </class> <!-- dsAlgoTests.TreeTest -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
+=======
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-30T13:47:56 EST" name="TestSuite" finished-at="2025-01-30T13:47:56 EST" duration-ms="10">
+    <groups>
+    </groups>
+    <test started-at="2025-01-30T13:47:56 EST" name="Test" finished-at="2025-01-30T13:47:56 EST" duration-ms="10">
+      <class name="dsAlgoTests.LinkedListTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:dsAlgoTests.LinkedListTest@1e4f4a5c]" started-at="2025-01-30T13:47:56 EST" name="setupSuite" finished-at="2025-01-30T13:47:56 EST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:dsAlgoTests.LinkedListTest@1e4f4a5c]" started-at="2025-01-30T13:47:56 EST" name="tearDownSuite" finished-at="2025-01-30T13:47:56 EST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownSuite -->
+      </class> <!-- dsAlgoTests.LinkedListTest -->
+    </test> <!-- Test -->
+  </suite> <!-- TestSuite -->
+>>>>>>> main
 </testng-results>

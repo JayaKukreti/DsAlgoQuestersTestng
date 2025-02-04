@@ -2,6 +2,7 @@ package dsAlgoTests;
 
 import java.util.Properties;
 
+
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -22,7 +23,7 @@ public class QueueTest extends Hooks {
 	SigninPage signinpage;
 	//RegisterPage registerpage;
 	TryEditorPage tryeditorpage;
-	Properties prop = ConfigReader.initializeProp();
+	Properties prop = ConfigReader.initializeprop();
     QueuePage queuepage;
     
     @BeforeMethod

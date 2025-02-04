@@ -1,7 +1,7 @@
 package dsAlgoPages;
 
 import java.time.Duration;
-import java.util.Properties;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,15 +10,11 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import dsAlgoUtils.ConfigReader;
-
 public class GraphPage {
 	WebDriver driver;
-	Properties prop;
 
 	public GraphPage(WebDriver driver) {
 		this.driver = driver;
-		this.prop = ConfigReader.initializeProp();
 		PageFactory.initElements(driver, this);
 
 	}
