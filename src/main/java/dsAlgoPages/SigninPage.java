@@ -23,7 +23,7 @@ public class SigninPage {
 
 	public SigninPage(WebDriver driver) {
 		this.driver = driver;
-		this.prop = ConfigReader.initializeProp();
+		this.prop = ConfigReader.initializeprop();
 		PageFactory.initElements(driver, this);
 	}
 

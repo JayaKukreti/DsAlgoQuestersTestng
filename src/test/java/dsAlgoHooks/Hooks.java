@@ -1,13 +1,11 @@
 package dsAlgoHooks;
 
 import java.util.Properties;
-
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
-import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Optional;
@@ -23,16 +21,15 @@ public class Hooks {
 
 	@BeforeSuite
 	public void setupSuite() {
-		prop1 = ConfigReader.initializeProp();
+		prop1 = ConfigReader.initializeprop();
 		System.out.println("Before Suite: Config properties initialized.");
 	}
 
 	@BeforeMethod
 	@Parameters("browser")
-	public void before(@Optional("") String browser) { // Optional allows empty/missing values
+	public void setup(@Optional("") String browser) { 
 		System.out.println("Browser received from testng.xml: " + browser);
 
-		// If browser is empty or null, use the value from config.properties
 		if (browser == null || browser.trim().isEmpty()) {
 			browser = prop1.getProperty("browser");
 			System.out.println("Using default browser from properties: " + browser);
@@ -44,22 +41,19 @@ public class Hooks {
 
 	@AfterMethod
 	public void tearDownTest(ITestResult result) {
-	    if (result.getStatus() == ITestResult.FAILURE && driver instanceof TakesScreenshot) {
-	        byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-	        
-	    }
-	    if (driver != null) {
-	        driver.quit();
-	        driverFactory.removeDriver();
-	    }
-	}
-	@AfterSuite
-	public void tearDownSuite() {
-		System.out.println("After Suite: Cleanup completed.");
+		if (result.getStatus() == ITestResult.FAILURE && driver instanceof TakesScreenshot) {
+			byte[] screenshot = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
+			System.out.println("Captured screenshot on failure.");
+		}
+
+		if (driver != null) {
+			driver.quit();
+			driverFactory.removeDriver();
+		}
+		System.out.println("Browser closed after test class execution.");
 	}
 
 	public static WebDriver getDriver() {
 		return driver;
 	}
-
 }
