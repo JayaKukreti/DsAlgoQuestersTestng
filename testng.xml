@@ -3,7 +3,7 @@
 	<test name="Test">
 		<!--<parameter name="browser" value="chrome" />-->
 		<classes>
-			<class name="dsAlgoTests.SigninTest" />
+			<class name="dsAlgoTests.DataStructureTest" />
 		</classes>
 	</test>
 

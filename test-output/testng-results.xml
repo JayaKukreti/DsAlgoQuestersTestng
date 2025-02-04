@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
+<testng-results ignored="0" total="7" passed="5" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-31T03:26:10 IST" name="Default suite" finished-at="2025-01-31T03:26:47 IST" duration-ms="37092">
+  <suite started-at="2025-02-04T00:10:12 IST" name="TestSuite" finished-at="2025-02-04T00:10:43 IST" duration-ms="30730">
     <groups>
     </groups>
-    <test started-at="2025-01-31T03:26:10 IST" name="Default test" finished-at="2025-01-31T03:26:47 IST" duration-ms="37092">
-      <class name="dsAlgoTests.SigninTest">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:10 IST" name="setupSuite" finished-at="2025-01-31T03:26:10 IST" duration-ms="12" status="PASS">
+    <test started-at="2025-02-04T00:10:12 IST" name="Test" finished-at="2025-02-04T00:10:43 IST" duration-ms="30730">
+      <class name="dsAlgoTests.DataStructureTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:12 IST" name="setupSuite" finished-at="2025-02-04T00:10:12 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:10 IST" name="before" finished-at="2025-01-31T03:26:12 IST" duration-ms="2313" status="PASS">
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:12 IST" name="before" finished-at="2025-02-04T00:10:14 IST" duration-ms="2142" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,94 +22,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method is-config="true" signature="navigateToDsAlgoApplication()[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:12 IST" name="navigateToDsAlgoApplication" finished-at="2025-01-31T03:26:13 IST" duration-ms="403" status="PASS">
+        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:14 IST" name="DataStructureIntroductionPage" finished-at="2025-02-04T00:10:15 IST" duration-ms="1415" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToDsAlgoApplication -->
-        <test-method signature="navigateToLogin()[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:13 IST" name="navigateToLogin" finished-at="2025-01-31T03:26:13 IST" duration-ms="279" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToLogin -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:13 IST" name="tearDownTest" finished-at="2025-01-31T03:26:13 IST" duration-ms="162" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=navigateToLogin status=SUCCESS method=SigninTest.navigateToLogin()[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:14 IST" name="before" finished-at="2025-01-31T03:26:16 IST" duration-ms="1611" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- before -->
-        <test-method is-config="true" signature="navigateToDsAlgoApplication()[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:16 IST" name="navigateToDsAlgoApplication" finished-at="2025-01-31T03:26:16 IST" duration-ms="460" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigateToDsAlgoApplication -->
-        <test-method signature="verifyLoginWithInValidUsernameValidPassword(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:16 IST" name="verifyLoginWithInValidUsernameValidPassword" data-provider="Credtionals" finished-at="2025-01-31T03:26:27 IST" duration-ms="10970" status="FAIL">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Questers]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Awesome@2025]]>
-              </value>
-            </param>
-          </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+        </test-method> <!-- DataStructureIntroductionPage -->
+        <test-method signature="checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:16 IST" name="checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage" finished-at="2025-02-04T00:10:17 IST" duration-ms="1011" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Invalid Username and Password')]"}
-  (Session info: chrome=132.0.6834.111)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3757e46711700640f8c196f760375dd8, findElement {using=xpath, value=//div[contains(text(),'Invalid Username and Password')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\shaal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54823}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54823/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3757e46711700640f8c196f760375dd8]]>
+              <![CDATA[Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'Invalid Username and Password')]"}
-  (Session info: chrome=132.0.6834.111)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [3757e46711700640f8c196f760375dd8, findElement {using=xpath, value=//div[contains(text(),'Invalid Username and Password')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\shaal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54823}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54823/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 3757e46711700640f8c196f760375dd8
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy18.getText(Unknown Source)
-at dsAlgoPages.SigninPage.errormessage(SigninPage.java:101)
-at dsAlgoTests.SigninTest.verifyLoginWithInValidUsernameValidPassword(SigninTest.java:76)
+              <![CDATA[java.lang.AssertionError: Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.
+at org.testng.Assert.fail(Assert.java:99)
+at dsAlgoTests.DataStructureTest.checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage(DataStructureTest.java:83)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -138,22 +63,22 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginWithInValidUsernameValidPassword -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:27 IST" name="tearDownTest" finished-at="2025-01-31T03:26:27 IST" duration-ms="339" status="PASS">
+        </test-method> <!-- checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:17 IST" name="tearDownTest" finished-at="2025-02-04T00:10:17 IST" duration-ms="273" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginWithInValidUsernameValidPassword status=FAILURE method=SigninTest.verifyLoginWithInValidUsernameValidPassword(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f] output={null}]]]>
+                <![CDATA[[TestResult name=checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage status=FAILURE method=DataStructureTest.checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:27 IST" name="before" finished-at="2025-01-31T03:26:29 IST" duration-ms="1706" status="PASS">
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:17 IST" name="before" finished-at="2025-02-04T00:10:18 IST" duration-ms="1676" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -164,38 +89,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method is-config="true" signature="navigateToDsAlgoApplication()[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:29 IST" name="navigateToDsAlgoApplication" finished-at="2025-01-31T03:26:30 IST" duration-ms="446" status="PASS">
+        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:18 IST" name="DataStructureIntroductionPage" finished-at="2025-02-04T00:10:20 IST" duration-ms="1575" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToDsAlgoApplication -->
-        <test-method signature="verifyLoginWithInValidUsernameValidPassword(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:30 IST" name="verifyLoginWithInValidUsernameValidPassword" data-provider="Credtionals" finished-at="2025-01-31T03:26:30 IST" duration-ms="714" status="PASS">
+        </test-method> <!-- DataStructureIntroductionPage -->
+        <test-method signature="navigateToDataStructureIntroductionPagePracticeQuestions()[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:20 IST" name="navigateToDataStructureIntroductionPagePracticeQuestions" finished-at="2025-02-04T00:10:21 IST" duration-ms="524" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToDataStructureIntroductionPagePracticeQuestions -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:21 IST" name="tearDownTest" finished-at="2025-02-04T00:10:21 IST" duration-ms="156" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[qquesters]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Awesome@2025]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithInValidUsernameValidPassword -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:30 IST" name="tearDownTest" finished-at="2025-01-31T03:26:31 IST" duration-ms="183" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginWithInValidUsernameValidPassword status=SUCCESS method=SigninTest.verifyLoginWithInValidUsernameValidPassword(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f] output={null}]]]>
+                <![CDATA[[TestResult name=navigateToDataStructureIntroductionPagePracticeQuestions status=SUCCESS method=DataStructureTest.navigateToDataStructureIntroductionPagePracticeQuestions()[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:31 IST" name="before" finished-at="2025-01-31T03:26:32 IST" duration-ms="1721" status="PASS">
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:21 IST" name="before" finished-at="2025-02-04T00:10:22 IST" duration-ms="1538" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -206,38 +119,26 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method is-config="true" signature="navigateToDsAlgoApplication()[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:32 IST" name="navigateToDsAlgoApplication" finished-at="2025-01-31T03:26:33 IST" duration-ms="397" status="PASS">
+        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:22 IST" name="DataStructureIntroductionPage" finished-at="2025-02-04T00:10:24 IST" duration-ms="1670" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToDsAlgoApplication -->
-        <test-method signature="verifyLoginWithValidcreditionals(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:33 IST" name="verifyLoginWithValidcreditionals" data-provider="Credtionals" finished-at="2025-01-31T03:26:34 IST" duration-ms="911" status="PASS">
+        </test-method> <!-- DataStructureIntroductionPage -->
+        <test-method signature="navigatetoTimeComplexityModule()[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:24 IST" name="navigatetoTimeComplexityModule" finished-at="2025-02-04T00:10:24 IST" duration-ms="295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatetoTimeComplexityModule -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:24 IST" name="tearDownTest" finished-at="2025-02-04T00:10:24 IST" duration-ms="152" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[Questers]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Awesome@2025]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithValidcreditionals -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:34 IST" name="tearDownTest" finished-at="2025-01-31T03:26:34 IST" duration-ms="196" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyLoginWithValidcreditionals status=SUCCESS method=SigninTest.verifyLoginWithValidcreditionals(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f] output={null}]]]>
+                <![CDATA[[TestResult name=navigatetoTimeComplexityModule status=SUCCESS method=DataStructureTest.navigatetoTimeComplexityModule()[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:34 IST" name="before" finished-at="2025-01-31T03:26:35 IST" duration-ms="1587" status="PASS">
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:24 IST" name="before" finished-at="2025-02-04T00:10:26 IST" duration-ms="1656" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -248,64 +149,49 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- before -->
-        <test-method is-config="true" signature="navigateToDsAlgoApplication()[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:35 IST" name="navigateToDsAlgoApplication" finished-at="2025-01-31T03:26:36 IST" duration-ms="424" status="PASS">
+        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:26 IST" name="DataStructureIntroductionPage" finished-at="2025-02-04T00:10:28 IST" duration-ms="1647" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- navigateToDsAlgoApplication -->
-        <test-method signature="verifyLoginWithValidcreditionals(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:36 IST" name="verifyLoginWithValidcreditionals" data-provider="Credtionals" finished-at="2025-01-31T03:26:47 IST" duration-ms="10680" status="FAIL">
+        </test-method> <!-- DataStructureIntroductionPage -->
+        <test-method signature="navigatetoTimeComplexitytryeditor()[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:28 IST" name="navigatetoTimeComplexitytryeditor" finished-at="2025-02-04T00:10:28 IST" duration-ms="702" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigatetoTimeComplexitytryeditor -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:28 IST" name="tearDownTest" finished-at="2025-02-04T00:10:29 IST" duration-ms="157" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[qquesters]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Awesome@2025]]>
+                <![CDATA[[TestResult name=navigatetoTimeComplexitytryeditor status=SUCCESS method=DataStructureTest.navigatetoTimeComplexitytryeditor()[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707] output={null}]]]>
               </value>
             </param>
           </params>
-          <exception class="org.openqa.selenium.NoSuchElementException">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:29 IST" name="before" finished-at="2025-02-04T00:10:30 IST" duration-ms="1627" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:30 IST" name="DataStructureIntroductionPage" finished-at="2025-02-04T00:10:32 IST" duration-ms="1612" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DataStructureIntroductionPage -->
+        <test-method signature="seeListOfPracticeQuestionsonDataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:32 IST" name="seeListOfPracticeQuestionsonDataStructureIntroductionPage" finished-at="2025-02-04T00:10:32 IST" duration-ms="508" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'You are logged in')]"}
-  (Session info: chrome=132.0.6834.111)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a72be42c13568c2849f4a180b43bf94, findElement {using=xpath, value=//div[contains(text(),'You are logged in')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\shaal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54905}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54905/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0a72be42c13568c2849f4a180b43bf94]]>
+              <![CDATA[No practice questions found on the Practice Questions Page!]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[contains(text(),'You are logged in')]"}
-  (Session info: chrome=132.0.6834.111)
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
-Build info: version: '4.17.0', revision: 'e52b1be057*'
-System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '23.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [0a72be42c13568c2849f4a180b43bf94, findElement {using=xpath, value=//div[contains(text(),'You are logged in')]}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 132.0.6834.111, chrome: {chromedriverVersion: 132.0.6834.159 (2d77d3fc445..., userDataDir: C:\Users\shaal\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:54905}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:54905/devtoo..., se:cdpVersion: 132.0.6834.111, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 0a72be42c13568c2849f4a180b43bf94
-at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
-at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:501)
-at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:485)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:185)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:134)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:51)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:519)
-at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:356)
-at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:350)
-at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
-at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
-at jdk.proxy2/jdk.proxy2.$Proxy18.getText(Unknown Source)
-at dsAlgoPages.SigninPage.loggedinmessage(SigninPage.java:105)
-at dsAlgoTests.SigninTest.verifyLoginWithValidcreditionals(SigninTest.java:51)
+              <![CDATA[java.lang.AssertionError: No practice questions found on the Practice Questions Page!
+at org.testng.Assert.fail(Assert.java:99)
+at dsAlgoTests.DataStructureTest.seeListOfPracticeQuestionsonDataStructureIntroductionPage(DataStructureTest.java:74)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -334,26 +220,110 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginWithValidcreditionals -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:47 IST" name="tearDownTest" finished-at="2025-01-31T03:26:47 IST" duration-ms="361" status="PASS">
+        </test-method> <!-- seeListOfPracticeQuestionsonDataStructureIntroductionPage -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:32 IST" name="tearDownTest" finished-at="2025-02-04T00:10:33 IST" duration-ms="317" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyLoginWithValidcreditionals status=FAILURE method=SigninTest.verifyLoginWithValidcreditionals(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f] output={null}]]]>
+                <![CDATA[[TestResult name=seeListOfPracticeQuestionsonDataStructureIntroductionPage status=FAILURE method=DataStructureTest.seeListOfPracticeQuestionsonDataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:dsAlgoTests.SigninTest@7d9f158f]" started-at="2025-01-31T03:26:47 IST" name="tearDownSuite" finished-at="2025-01-31T03:26:47 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:34 IST" name="before" finished-at="2025-02-04T00:10:35 IST" duration-ms="1582" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:35 IST" name="DataStructureIntroductionPage" finished-at="2025-02-04T00:10:37 IST" duration-ms="1542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DataStructureIntroductionPage -->
+        <test-method signature="verifyCodeExecutionforDataStructureIntroductionPage(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:37 IST" name="verifyCodeExecutionforDataStructureIntroductionPage" data-provider="codeExecutionData" finished-at="2025-02-04T00:10:38 IST" duration-ms="1166" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[print "hello"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hello]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCodeExecutionforDataStructureIntroductionPage -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:38 IST" name="tearDownTest" finished-at="2025-02-04T00:10:38 IST" duration-ms="158" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCodeExecutionforDataStructureIntroductionPage status=SUCCESS method=DataStructureTest.verifyCodeExecutionforDataStructureIntroductionPage(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:38 IST" name="before" finished-at="2025-02-04T00:10:40 IST" duration-ms="1652" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:40 IST" name="DataStructureIntroductionPage" finished-at="2025-02-04T00:10:41 IST" duration-ms="1430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DataStructureIntroductionPage -->
+        <test-method signature="verifyCodeExecutionforDataStructureIntroductionPage(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:41 IST" name="verifyCodeExecutionforDataStructureIntroductionPage" data-provider="codeExecutionData" finished-at="2025-02-04T00:10:42 IST" duration-ms="1193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[NameError: name 'invalid' is not defined on line 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCodeExecutionforDataStructureIntroductionPage -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:42 IST" name="tearDownTest" finished-at="2025-02-04T00:10:43 IST" duration-ms="191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCodeExecutionforDataStructureIntroductionPage status=SUCCESS method=DataStructureTest.verifyCodeExecutionforDataStructureIntroductionPage(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:dsAlgoTests.DataStructureTest@14a50707]" started-at="2025-02-04T00:10:43 IST" name="tearDownSuite" finished-at="2025-02-04T00:10:43 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->
-      </class> <!-- dsAlgoTests.SigninTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- dsAlgoTests.DataStructureTest -->
+    </test> <!-- Test -->
+  </suite> <!-- TestSuite -->
 </testng-results>
