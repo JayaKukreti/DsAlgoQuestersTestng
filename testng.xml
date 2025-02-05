@@ -4,11 +4,11 @@
 	<test name="Test">
 		<!--<parameter name="browser" value="chrome" />-->
 		<classes>
-<<<<<<< HEAD
-			<class name="dsAlgoTests.DataStructureTest" />
-=======
-			<class name="dsAlgoTests.GraphTest" />
->>>>>>> main
+
+			<class name="dsAlgoTests.SigninTest" />
+
+			
+
 		</classes>
 	</test>
 

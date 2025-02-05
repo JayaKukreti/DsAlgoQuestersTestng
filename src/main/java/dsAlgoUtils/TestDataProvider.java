@@ -37,7 +37,7 @@ public class TestDataProvider {
 
 	@DataProvider(name = "signinPageData")
 	public Object[][] getSigninData() {
-		return ExcelDataReader.readExcel("Sheet1");
+		return ExcelDataReader.readExcel("Signin");
 	}
 
 	@DataProvider(name = "dataStructures")
@@ -50,7 +50,7 @@ public class TestDataProvider {
 	
     @DataProvider(name = "RegisterPageData")
     public Object[][] getRegisterData() {
-        return ExcelDataReader.readExcel("Sheet3");
+        return ExcelDataReader.readExcel("Register");
     }
 }
 
