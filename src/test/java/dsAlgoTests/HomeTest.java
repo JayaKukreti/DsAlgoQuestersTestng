@@ -22,12 +22,12 @@ public class HomeTest extends Hooks {
 		homePage.clickLaunchPageGetstartedbutton();
 	}
 
-//	@Test
-//	public void navigateToRegister() {
-//		RegisterPage = new RegisterPage(driver);
-//		homePage.clickRegister();
-//		Assert.assertTrue(RegisterPage.textConfirmforRegister());
-//	}
+	@Test
+	public void navigateToRegister() {
+		RegisterPage = new RegisterPage(driver);
+		homePage.clickRegister();
+		Assert.assertTrue(RegisterPage.textConfirmforRegister());
+	}
 
 	@Test
 	public void navigateToLogin() {

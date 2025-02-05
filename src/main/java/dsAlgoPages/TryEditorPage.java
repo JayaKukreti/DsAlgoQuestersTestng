@@ -28,9 +28,7 @@ public class TryEditorPage {
 
 	public void runButton() {
 		Runbutton.click();
-
 	}
-
 	public void enteringCode(String code) {
 
 		WebElement codeMirror = driver
@@ -41,7 +39,6 @@ public class TryEditorPage {
 
 		WebElement textArea = codeMirror.findElement(By.xpath(".//textarea"));
 		textArea.sendKeys(code);
-
 	}
 
 	public String output() {

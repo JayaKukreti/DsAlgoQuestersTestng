@@ -1,9 +1,7 @@
 package dsAlgoPages;
 
 import java.time.Duration;
-import java.util.NoSuchElementException;
 import java.util.Properties;
-import java.util.concurrent.TimeoutException;
 
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
