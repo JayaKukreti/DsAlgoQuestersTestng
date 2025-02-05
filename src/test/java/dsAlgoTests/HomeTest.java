@@ -36,7 +36,7 @@ public class HomeTest extends Hooks {
 		Assert.assertTrue(SigninPage.confirmtextsignin());
 
 	}
-
+	
 	@Test()
 	public void errorMessageWhenClickedOnDataStructureBeforeSignin() {
 
