@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="TestSuite" parallel="tests" thread-count="5">
-    <test name="Test">
-        <parameter name="browser" value="chrome" />
-        <classes>
-          <!-- <class name="dsAlgoTests.HomeTest"/>
-            <class name="dsAlgoTests.RegisterTest"/>
-            <class name="dsAlgoTests.SigninTest" />-->
-           <class name="dsAlgoTests.DataStructureTest"/>
-	           <!--<class name="dsAlgoTests.ArrayTest" />
-            <class name="dsAlgoTests.LinkedListTest" />
-            <class name="dsAlgoTests.StackTest" />
-            <class name="dsAlgoTests.QueueTest" />
-            <class name="dsAlgoTests.TreeTest" />
-            <class name="dsAlgoTests.GraphTest" />-->
-        </classes>
-    </test>
+	<test name="Test">
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="dsAlgoTests.HomeTest" />
+			<class name="dsAlgoTests.RegisterTest" />
+			<class name="dsAlgoTests.SigninTest" />
+			<class name="dsAlgoTests.DataStructureTest" />
+			<class name="dsAlgoTests.ArrayTest" />
+			<class name="dsAlgoTests.LinkedListTest" />
+			<class name="dsAlgoTests.StackTest" />
+			<class name="dsAlgoTests.QueueTest" />
+			<class name="dsAlgoTests.TreeTest" />
+			<class name="dsAlgoTests.GraphTest" />
+		</classes>
+	</test>
 </suite>

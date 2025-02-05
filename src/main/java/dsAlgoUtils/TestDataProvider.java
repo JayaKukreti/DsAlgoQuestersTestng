@@ -50,7 +50,7 @@ public class TestDataProvider {
 
 	@DataProvider(name = "codeExecutionData")
 	public Object[][] getData() {
-		return ExcelDataReader.readExcel("tryedit");
+		return ExcelDataReader.readExcel("editor");
 	}
 
 	@DataProvider(name = "signinPageData")

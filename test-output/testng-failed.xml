@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Default test(failed)">
+<suite parallel="tests" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="dsAlgoTests.GraphTest">
+      <class name="dsAlgoTests.LinkedListTest">
         <methods>
-          <include name="verifyCodeExecutionforGraphRepresentationPage" invocation-numbers="4"/>
+          <include name="verifyCodeExecutionForLinkedList" invocation-numbers="14 15"/>
           <include name="tearDownTest"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeToInsertionTryEditor"/>
+          <include name="checkforPracticeQuestion"/>
           <include name="setup"/>
-          <include name="navigateGraphPage"/>
+          <include name="navigateToLinkedListPage"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeToIntroductionTryEditor"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeToTraversalTryEditor"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeToDeletionTryEditor"/>
           <include name="setupSuite"/>
         </methods>
-      </class> <!-- dsAlgoTests.GraphTest -->
+      </class> <!-- dsAlgoTests.LinkedListTest -->
     </classes>
-  </test> <!-- Default test(failed) -->
-</suite> <!-- Failed suite [Default suite] -->
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->

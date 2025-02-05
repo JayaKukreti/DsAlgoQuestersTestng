@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dsAlgoTests.GraphTest">
+      <class name="dsAlgoTests.ArrayTest">
         <methods>
-          <include name="verifyCodeExecutionforGraphRepresentationPage" invocation-numbers="4"/>
+          <include name="PracticeQuestionVaildAndInvalidDataWithSubmitButton" invocation-numbers="0 3"/>
           <include name="tearDownTest"/>
           <include name="setup"/>
-          <include name="navigateGraphPage"/>
           <include name="setupSuite"/>
+          <include name="navigateToArrayPage"/>
         </methods>
-      </class> <!-- dsAlgoTests.GraphTest -->
+      </class> <!-- dsAlgoTests.ArrayTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

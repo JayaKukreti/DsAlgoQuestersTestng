@@ -4,15 +4,20 @@
   <test thread-count="5" parallel="tests" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="dsAlgoTests.RegisterTest">
+      <class name="dsAlgoTests.LinkedListTest">
         <methods>
+          <include name="verifyCodeExecutionForLinkedList" invocation-numbers="14 15"/>
           <include name="tearDownTest"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeToInsertionTryEditor"/>
+          <include name="checkforPracticeQuestion"/>
           <include name="setup"/>
-          <include name="navigateToDsAlgoApplication"/>
-          <include name="enterCredentials"/>
+          <include name="navigateToLinkedListPage"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeToIntroductionTryEditor"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeToTraversalTryEditor"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeToDeletionTryEditor"/>
           <include name="setupSuite"/>
         </methods>
-      </class> <!-- dsAlgoTests.RegisterTest -->
+      </class> <!-- dsAlgoTests.LinkedListTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

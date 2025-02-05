@@ -48,7 +48,7 @@ public class ExcelDataReader {
         return data;
     }
 
-    private static Object getCellValue(Cell cell) {
+    private static Object getCellValue2(Cell cell) {
         switch (cell.getCellType()) {
             case STRING:
                 return cell.getStringCellValue().trim();
@@ -67,6 +67,26 @@ public class ExcelDataReader {
                 return "";
         }
     }
+    private static Object getCellValue(Cell cell) {
+        switch (cell.getCellType()) {
+            case STRING:
+                return cell.getStringCellValue().trim();
+            case NUMERIC:
+                if (DateUtil.isCellDateFormatted(cell)) {
+                    return cell.getDateCellValue().toString(); // Convert Date to String
+                }
+                return String.valueOf((int) cell.getNumericCellValue()); // Convert Double to String
+            case BOOLEAN:
+                return String.valueOf(cell.getBooleanCellValue()); // Convert Boolean to String
+            case FORMULA:
+                return cell.getCellFormula();
+            case BLANK:
+            case ERROR:
+            default:
+                return "";
+        }
+    }
+
 }
 
 
