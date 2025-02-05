@@ -11,7 +11,7 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import dsAlgoUtils.ConfigReader;
-import dsAlgoUtils.ExcelDataReader;
+import dsAlgoUtils.ExcelDataReaderArrayLinkedlist;
 
 public class SigninPage {
 	WebDriver driver;
@@ -19,7 +19,7 @@ public class SigninPage {
 	List<String> actualresults = new ArrayList<>();
 
 	List<Map<String, String>> excelData;
-	ExcelDataReader exceldatareader;
+	ExcelDataReaderArrayLinkedlist exceldatareader;
 
 	public SigninPage(WebDriver driver) {
 		this.driver = driver;

@@ -60,12 +60,12 @@ public class TryEditorPage {
 			actualResult = alert.getText();
 
 			System.out.println("Alert message of invalid code: " + actualResult);
-			actualresults.add(actualResult);
+		
 			alert.accept(); // Accept the alert
 		} catch (NoAlertPresentException e) {
 			// No alert present, handle as normal
 			actualResult = tryeditoroutput.getText();
-			actualresults.add(actualResult);
+			
 			System.out.println("actual result of valid code: " + actualResult);
 		}
 		return actualResult;

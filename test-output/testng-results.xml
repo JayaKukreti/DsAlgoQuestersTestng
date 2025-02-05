@@ -1,21 +1,1452 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
+<testng-results ignored="0" total="29" passed="24" failed="5" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-30T13:47:56 EST" name="TestSuite" finished-at="2025-01-30T13:47:56 EST" duration-ms="10">
+  <suite started-at="2025-02-04T19:47:10 EST" name="TestSuite" finished-at="2025-02-04T19:51:10 EST" duration-ms="239828">
     <groups>
     </groups>
-    <test started-at="2025-01-30T13:47:56 EST" name="Test" finished-at="2025-01-30T13:47:56 EST" duration-ms="10">
-      <class name="dsAlgoTests.LinkedListTest">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:dsAlgoTests.LinkedListTest@1e4f4a5c]" started-at="2025-01-30T13:47:56 EST" name="setupSuite" finished-at="2025-01-30T13:47:56 EST" duration-ms="11" status="PASS">
+    <test started-at="2025-02-04T19:47:10 EST" name="Test" finished-at="2025-02-04T19:51:10 EST" duration-ms="239828">
+      <class name="dsAlgoTests.ArrayTest">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:10 EST" name="setupSuite" finished-at="2025-02-04T19:47:10 EST" duration-ms="17" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:dsAlgoTests.LinkedListTest@1e4f4a5c]" started-at="2025-01-30T13:47:56 EST" name="tearDownSuite" finished-at="2025-01-30T13:47:56 EST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:11 EST" name="before" finished-at="2025-02-04T19:47:13 EST" duration-ms="2116" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:13 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:47:20 EST" duration-ms="6545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="PracticeQuestionVaildAndInvalidDataWithRunButton(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:20 EST" name="PracticeQuestionVaildAndInvalidDataWithRunButton" data-provider="PracticeQuestionForArrayRun" finished-at="2025-02-04T19:47:22 EST" duration-ms="2226" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Arrays in Python]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Search the array]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[def search(input_list, num): 
+    if num in input_list:
+        print("Element Found")
+    else:
+        print("Element Not Found")
+
+search([12, 23, 45, 67, 6, 90], 12)]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[Element Found]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PracticeQuestionVaildAndInvalidDataWithRunButton -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:22 EST" name="tearDownTest" finished-at="2025-02-04T19:47:22 EST" duration-ms="212" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PracticeQuestionVaildAndInvalidDataWithRunButton status=SUCCESS method=ArrayTest.PracticeQuestionVaildAndInvalidDataWithRunButton(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:22 EST" name="before" finished-at="2025-02-04T19:47:24 EST" duration-ms="1720" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:24 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:47:26 EST" duration-ms="1810" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="PracticeQuestionVaildAndInvalidDataWithRunButton(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:26 EST" name="PracticeQuestionVaildAndInvalidDataWithRunButton" data-provider="PracticeQuestionForArrayRun" finished-at="2025-02-04T19:47:28 EST" duration-ms="1663" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Arrays in Python]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Search the array]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[def search(input_list, num): 
+    if num in input_list:
+        print("Element Found")
+    else
+        print("Element Not Found")
+
+search([12, 23, 45, 67, 6, 90], 12)]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[SyntaxError: bad input on line 4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PracticeQuestionVaildAndInvalidDataWithRunButton -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:28 EST" name="tearDownTest" finished-at="2025-02-04T19:47:28 EST" duration-ms="272" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PracticeQuestionVaildAndInvalidDataWithRunButton status=SUCCESS method=ArrayTest.PracticeQuestionVaildAndInvalidDataWithRunButton(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:28 EST" name="before" finished-at="2025-02-04T19:47:31 EST" duration-ms="2813" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:31 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:47:36 EST" duration-ms="4835" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="PracticeQuestionVaildAndInvalidDataWithRunButton(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:36 EST" name="PracticeQuestionVaildAndInvalidDataWithRunButton" data-provider="PracticeQuestionForArrayRun" finished-at="2025-02-04T19:47:38 EST" duration-ms="2075" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Arrays in Python]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Max Consecutive Ones]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[def findMaxConsecutiveOnes(nums):
+    count = 0
+    result = 0
+    for num in nums:
+        if num == 0:
+            count = 0
+        else:
+            count += 1
+            result = max(result, count)
+    print(float(result))
+    return float(result)
+
+findMaxConsecutiveOnes([1, 0, 1, 1, 0, 1])]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PracticeQuestionVaildAndInvalidDataWithRunButton -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:38 EST" name="tearDownTest" finished-at="2025-02-04T19:47:38 EST" duration-ms="198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PracticeQuestionVaildAndInvalidDataWithRunButton status=SUCCESS method=ArrayTest.PracticeQuestionVaildAndInvalidDataWithRunButton(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:38 EST" name="before" finished-at="2025-02-04T19:47:39 EST" duration-ms="1692" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:39 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:47:41 EST" duration-ms="1872" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="PracticeQuestionVaildAndInvalidDataWithRunButton(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:41 EST" name="PracticeQuestionVaildAndInvalidDataWithRunButton" data-provider="PracticeQuestionForArrayRun" finished-at="2025-02-04T19:47:45 EST" duration-ms="3400" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Arrays in Python]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Max Consecutive Ones]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[def findMaxConsecutiveOnes(nums)
+    count = 0
+    result = 0
+    for num in nums:
+        if num == 0:
+            count = 0
+        else:
+            count += 1
+            result = max(result, count)
+    print(float(result))
+    return float(result)
+
+findMaxConsecutiveOnes([1, 0, 1, 1, 0, 1])]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[SyntaxError: bad input on line 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PracticeQuestionVaildAndInvalidDataWithRunButton -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:45 EST" name="tearDownTest" finished-at="2025-02-04T19:47:45 EST" duration-ms="277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PracticeQuestionVaildAndInvalidDataWithRunButton status=SUCCESS method=ArrayTest.PracticeQuestionVaildAndInvalidDataWithRunButton(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:45 EST" name="before" finished-at="2025-02-04T19:47:48 EST" duration-ms="3297" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:48 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:47:50 EST" duration-ms="1903" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="PracticeQuestionVaildAndInvalidDataWithRunButton(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:50 EST" name="PracticeQuestionVaildAndInvalidDataWithRunButton" data-provider="PracticeQuestionForArrayRun" finished-at="2025-02-04T19:47:52 EST" duration-ms="2082" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Arrays in Python]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Find Numbers with Even Number]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[def findNumbers(nums):
+    c = 0
+    for i in nums:
+        j = str(i)
+        x = len(j)
+        if x % 2 == 0:
+            c = c + 1
+    print(float(c))
+    return float(c)
+
+findNumbers([12, 345, 2, 6, 7896])]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PracticeQuestionVaildAndInvalidDataWithRunButton -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:52 EST" name="tearDownTest" finished-at="2025-02-04T19:47:53 EST" duration-ms="237" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PracticeQuestionVaildAndInvalidDataWithRunButton status=SUCCESS method=ArrayTest.PracticeQuestionVaildAndInvalidDataWithRunButton(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:53 EST" name="before" finished-at="2025-02-04T19:47:54 EST" duration-ms="1822" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:54 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:47:56 EST" duration-ms="1705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="PracticeQuestionVaildAndInvalidDataWithRunButton(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:47:56 EST" name="PracticeQuestionVaildAndInvalidDataWithRunButton" data-provider="PracticeQuestionForArrayRun" finished-at="2025-02-04T19:48:04 EST" duration-ms="7772" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Arrays in Python]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Find Numbers with Even Number]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[def findNumbers(nums)
+    c = 0
+    for i in nums:
+        j = str(i)
+        x = len(j)
+        if x % 2 == 0:
+            c = c + 1
+    print(float(c))
+    return float(c)
+
+findNumbers([12, 345, 2, 6, 7896])
+]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[SyntaxError: bad input on line 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PracticeQuestionVaildAndInvalidDataWithRunButton -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:04 EST" name="tearDownTest" finished-at="2025-02-04T19:48:04 EST" duration-ms="239" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PracticeQuestionVaildAndInvalidDataWithRunButton status=SUCCESS method=ArrayTest.PracticeQuestionVaildAndInvalidDataWithRunButton(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:04 EST" name="before" finished-at="2025-02-04T19:48:06 EST" duration-ms="2064" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:06 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:48:08 EST" duration-ms="1960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="PracticeQuestionVaildAndInvalidDataWithRunButton(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:08 EST" name="PracticeQuestionVaildAndInvalidDataWithRunButton" data-provider="PracticeQuestionForArrayRun" finished-at="2025-02-04T19:48:10 EST" duration-ms="1625" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Arrays in Python]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Squares of Sorted Array]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[def sortedSquares(nums):
+    squares_list = []
+    for i in range(len(nums)):
+        square = nums[i] * nums[i]
+        squares_list.append(square)
+    sorted_squares_list = sorted(squares_list)
+    print(sorted_squares_list)
+    return sorted_squares_list
+
+sortedSquares([-7, -3, 2, 3, 11])]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[[4, 9, 9, 49, 121]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PracticeQuestionVaildAndInvalidDataWithRunButton -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:10 EST" name="tearDownTest" finished-at="2025-02-04T19:48:10 EST" duration-ms="217" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PracticeQuestionVaildAndInvalidDataWithRunButton status=SUCCESS method=ArrayTest.PracticeQuestionVaildAndInvalidDataWithRunButton(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:10 EST" name="before" finished-at="2025-02-04T19:48:13 EST" duration-ms="2932" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:13 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:48:18 EST" duration-ms="5353" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="PracticeQuestionVaildAndInvalidDataWithRunButton(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:18 EST" name="PracticeQuestionVaildAndInvalidDataWithRunButton" data-provider="PracticeQuestionForArrayRun" finished-at="2025-02-04T19:48:20 EST" duration-ms="1650" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Arrays in Python]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Squares of Sorted Array]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[def sortedSquares(nums)
+    squares_list = []
+    for i in range(len(nums)):
+        square = nums[i] * nums[i]
+        squares_list.append(square)
+    sorted_squares_list = sorted(squares_list)
+    print(sorted_squares_list)
+    return sorted_squares_list
+
+sortedSquares([-7, -3, 2, 3, 11])]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[SyntaxError: bad input on line 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PracticeQuestionVaildAndInvalidDataWithRunButton -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:20 EST" name="tearDownTest" finished-at="2025-02-04T19:48:20 EST" duration-ms="265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=PracticeQuestionVaildAndInvalidDataWithRunButton status=SUCCESS method=ArrayTest.PracticeQuestionVaildAndInvalidDataWithRunButton(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method signature="PracticeQuestionVaildAndInvalidDataWithSubmitButton(java.lang.String,java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:20 EST" name="PracticeQuestionVaildAndInvalidDataWithSubmitButton" data-provider="PracticeQuestionForArraySubmit" finished-at="2025-02-04T19:48:20 EST" duration-ms="55" status="FAIL">
+          <exception class="org.testng.internal.reflect.MethodMatcherException">
+            <message>
+              <![CDATA[
+[public void dsAlgoTests.ArrayTest.PracticeQuestionVaildAndInvalidDataWithSubmitButton(java.lang.String,java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: PracticeQuestionVaildAndInvalidDataWithSubmitButton([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) Arrays in Python,(java.lang.String) Search the array,(java.lang.String) def search(input_list, num): 
+    if num in input_list:
+        print("Element Found")
+    else:
+        print("Element Not Found")
+
+search([12, 23, 45, 67, 6, 90], 12),(java.lang.String) Submission Successful,(java.lang.String) Some Tests failed. Please review code]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.testng.internal.reflect.MethodMatcherException: 
+[public void dsAlgoTests.ArrayTest.PracticeQuestionVaildAndInvalidDataWithSubmitButton(java.lang.String,java.lang.String,java.lang.String,java.lang.String)] has no parameters defined but was found to be using a data provider (either explicitly specified or inherited from class level annotation).
+Data provider mismatch
+Method: PracticeQuestionVaildAndInvalidDataWithSubmitButton([Parameter{index=0, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=1, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=2, type=java.lang.String, declaredAnnotations=[]}, Parameter{index=3, type=java.lang.String, declaredAnnotations=[]}])
+Arguments: [(java.lang.String) Arrays in Python,(java.lang.String) Search the array,(java.lang.String) def search(input_list, num): 
+    if num in input_list:
+        print("Element Found")
+    else:
+        print("Element Not Found")
+
+search([12, 23, 45, 67, 6, 90], 12),(java.lang.String) Submission Successful,(java.lang.String) Some Tests failed. Please review code]
+at org.testng.internal.reflect.DataProviderMethodMatcher.getConformingArguments(DataProviderMethodMatcher.java:43)
+at org.testng.internal.Parameters.injectParameters(Parameters.java:914)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:34)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.testng.internal.reflect.MethodMatcherException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- PracticeQuestionVaildAndInvalidDataWithSubmitButton -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:20 EST" name="before" finished-at="2025-02-04T19:48:22 EST" duration-ms="1658" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:22 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:48:24 EST" duration-ms="1678" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="checkErrorMessageWhenExecutingWithoutCodeApplicationofArrayForTryEditor()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:24 EST" name="checkErrorMessageWhenExecutingWithoutCodeApplicationofArrayForTryEditor" finished-at="2025-02-04T19:48:28 EST" duration-ms="4115" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.
+at org.testng.Assert.fail(Assert.java:99)
+at dsAlgoTests.ArrayTest.checkErrorMessageWhenExecutingWithoutCodeApplicationofArrayForTryEditor(ArrayTest.java:140)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkErrorMessageWhenExecutingWithoutCodeApplicationofArrayForTryEditor -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:28 EST" name="tearDownTest" finished-at="2025-02-04T19:48:28 EST" duration-ms="377" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkErrorMessageWhenExecutingWithoutCodeApplicationofArrayForTryEditor status=FAILURE method=ArrayTest.checkErrorMessageWhenExecutingWithoutCodeApplicationofArrayForTryEditor()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:28 EST" name="before" finished-at="2025-02-04T19:48:31 EST" duration-ms="3279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:31 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:48:33 EST" duration-ms="1892" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="checkErrorMessageWhenExecutingWithoutCodeArrayUsingListForTryEditor()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:33 EST" name="checkErrorMessageWhenExecutingWithoutCodeArrayUsingListForTryEditor" finished-at="2025-02-04T19:48:35 EST" duration-ms="1598" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.
+at org.testng.Assert.fail(Assert.java:99)
+at dsAlgoTests.ArrayTest.checkErrorMessageWhenExecutingWithoutCodeArrayUsingListForTryEditor(ArrayTest.java:122)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkErrorMessageWhenExecutingWithoutCodeArrayUsingListForTryEditor -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:35 EST" name="tearDownTest" finished-at="2025-02-04T19:48:35 EST" duration-ms="348" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkErrorMessageWhenExecutingWithoutCodeArrayUsingListForTryEditor status=FAILURE method=ArrayTest.checkErrorMessageWhenExecutingWithoutCodeArrayUsingListForTryEditor()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:35 EST" name="before" finished-at="2025-02-04T19:48:37 EST" duration-ms="1707" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:37 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:48:39 EST" duration-ms="1985" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="checkErrorMessageWhenExecutingWithoutCodeBasicOperationInListsForTryEditor()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:39 EST" name="checkErrorMessageWhenExecutingWithoutCodeBasicOperationInListsForTryEditor" finished-at="2025-02-04T19:48:46 EST" duration-ms="6744" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.
+at org.testng.Assert.fail(Assert.java:99)
+at dsAlgoTests.ArrayTest.checkErrorMessageWhenExecutingWithoutCodeBasicOperationInListsForTryEditor(ArrayTest.java:131)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkErrorMessageWhenExecutingWithoutCodeBasicOperationInListsForTryEditor -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:46 EST" name="tearDownTest" finished-at="2025-02-04T19:48:46 EST" duration-ms="391" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkErrorMessageWhenExecutingWithoutCodeBasicOperationInListsForTryEditor status=FAILURE method=ArrayTest.checkErrorMessageWhenExecutingWithoutCodeBasicOperationInListsForTryEditor()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:46 EST" name="before" finished-at="2025-02-04T19:48:48 EST" duration-ms="1675" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:48 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:48:49 EST" duration-ms="1680" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="checkErrorMessageWhenExecutingWithoutCodeInArrayInPythonForTryEditor()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:49 EST" name="checkErrorMessageWhenExecutingWithoutCodeInArrayInPythonForTryEditor" finished-at="2025-02-04T19:48:51 EST" duration-ms="1204" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.
+at org.testng.Assert.fail(Assert.java:99)
+at dsAlgoTests.ArrayTest.checkErrorMessageWhenExecutingWithoutCodeInArrayInPythonForTryEditor(ArrayTest.java:113)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkErrorMessageWhenExecutingWithoutCodeInArrayInPythonForTryEditor -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:51 EST" name="tearDownTest" finished-at="2025-02-04T19:48:51 EST" duration-ms="338" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkErrorMessageWhenExecutingWithoutCodeInArrayInPythonForTryEditor status=FAILURE method=ArrayTest.checkErrorMessageWhenExecutingWithoutCodeInArrayInPythonForTryEditor()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:51 EST" name="before" finished-at="2025-02-04T19:48:52 EST" duration-ms="1589" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:52 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:48:55 EST" duration-ms="2970" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="navigateToApplicationOfArray()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:55 EST" name="navigateToApplicationOfArray" finished-at="2025-02-04T19:48:56 EST" duration-ms="848" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToApplicationOfArray -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:56 EST" name="tearDownTest" finished-at="2025-02-04T19:48:57 EST" duration-ms="257" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigateToApplicationOfArray status=SUCCESS method=ArrayTest.navigateToApplicationOfArray()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:57 EST" name="before" finished-at="2025-02-04T19:48:59 EST" duration-ms="2660" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:48:59 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:49:01 EST" duration-ms="1931" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="navigateToApplicationOfArrayTryEditor()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:01 EST" name="navigateToApplicationOfArrayTryEditor" finished-at="2025-02-04T19:49:04 EST" duration-ms="2366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToApplicationOfArrayTryEditor -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:04 EST" name="tearDownTest" finished-at="2025-02-04T19:49:04 EST" duration-ms="267" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigateToApplicationOfArrayTryEditor status=SUCCESS method=ArrayTest.navigateToApplicationOfArrayTryEditor()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:04 EST" name="before" finished-at="2025-02-04T19:49:07 EST" duration-ms="2844" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:07 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:49:12 EST" duration-ms="5364" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="navigateToArrayInPython()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:12 EST" name="navigateToArrayInPython" finished-at="2025-02-04T19:49:14 EST" duration-ms="1553" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayInPython -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:14 EST" name="tearDownTest" finished-at="2025-02-04T19:49:14 EST" duration-ms="289" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigateToArrayInPython status=SUCCESS method=ArrayTest.navigateToArrayInPython()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:14 EST" name="before" finished-at="2025-02-04T19:49:16 EST" duration-ms="1816" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:16 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:49:18 EST" duration-ms="2334" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="navigateToArrayInPythonTryEditor()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:18 EST" name="navigateToArrayInPythonTryEditor" finished-at="2025-02-04T19:49:19 EST" duration-ms="1496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayInPythonTryEditor -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:19 EST" name="tearDownTest" finished-at="2025-02-04T19:49:20 EST" duration-ms="239" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigateToArrayInPythonTryEditor status=SUCCESS method=ArrayTest.navigateToArrayInPythonTryEditor()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:20 EST" name="before" finished-at="2025-02-04T19:49:21 EST" duration-ms="1534" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:21 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:49:29 EST" duration-ms="7540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="navigateToArrayUsingList()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:29 EST" name="navigateToArrayUsingList" finished-at="2025-02-04T19:49:29 EST" duration-ms="360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayUsingList -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:29 EST" name="tearDownTest" finished-at="2025-02-04T19:49:29 EST" duration-ms="282" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigateToArrayUsingList status=SUCCESS method=ArrayTest.navigateToArrayUsingList()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:29 EST" name="before" finished-at="2025-02-04T19:49:31 EST" duration-ms="1544" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:31 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:49:33 EST" duration-ms="2066" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="navigateToArrayUsingListTryEditor()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:33 EST" name="navigateToArrayUsingListTryEditor" finished-at="2025-02-04T19:49:34 EST" duration-ms="1083" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayUsingListTryEditor -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:34 EST" name="tearDownTest" finished-at="2025-02-04T19:49:34 EST" duration-ms="241" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigateToArrayUsingListTryEditor status=SUCCESS method=ArrayTest.navigateToArrayUsingListTryEditor()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:34 EST" name="before" finished-at="2025-02-04T19:49:37 EST" duration-ms="2743" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:37 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:49:43 EST" duration-ms="5541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="navigateToBasicOperationInList()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:43 EST" name="navigateToBasicOperationInList" finished-at="2025-02-04T19:49:43 EST" duration-ms="318" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToBasicOperationInList -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:43 EST" name="tearDownTest" finished-at="2025-02-04T19:49:43 EST" duration-ms="225" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigateToBasicOperationInList status=SUCCESS method=ArrayTest.navigateToBasicOperationInList()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:43 EST" name="before" finished-at="2025-02-04T19:49:45 EST" duration-ms="1625" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:45 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:49:47 EST" duration-ms="2095" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="navigateToBasicOperationInListTryEditor()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:47 EST" name="navigateToBasicOperationInListTryEditor" finished-at="2025-02-04T19:49:58 EST" duration-ms="11258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToBasicOperationInListTryEditor -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:58 EST" name="tearDownTest" finished-at="2025-02-04T19:49:58 EST" duration-ms="261" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=navigateToBasicOperationInListTryEditor status=SUCCESS method=ArrayTest.navigateToBasicOperationInListTryEditor()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:49:59 EST" name="before" finished-at="2025-02-04T19:50:00 EST" duration-ms="1742" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:00 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:50:02 EST" duration-ms="2006" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="verifyCodeExecutionForArraySections(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:02 EST" name="verifyCodeExecutionForArraySections" data-provider="TryEditorDataArray" finished-at="2025-02-04T19:50:04 EST" duration-ms="2195" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Arrays in Python]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[print "hello"]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hello]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCodeExecutionForArraySections -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:04 EST" name="tearDownTest" finished-at="2025-02-04T19:50:05 EST" duration-ms="275" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCodeExecutionForArraySections status=SUCCESS method=ArrayTest.verifyCodeExecutionForArraySections(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:05 EST" name="before" finished-at="2025-02-04T19:50:11 EST" duration-ms="5803" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:11 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:50:12 EST" duration-ms="1720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="verifyCodeExecutionForArraySections(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:12 EST" name="verifyCodeExecutionForArraySections" data-provider="TryEditorDataArray" finished-at="2025-02-04T19:50:15 EST" duration-ms="2255" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Arrays in Python]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NameError: name 'invalid' is not defined on line 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCodeExecutionForArraySections -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:15 EST" name="tearDownTest" finished-at="2025-02-04T19:50:15 EST" duration-ms="230" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCodeExecutionForArraySections status=SUCCESS method=ArrayTest.verifyCodeExecutionForArraySections(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:15 EST" name="before" finished-at="2025-02-04T19:50:16 EST" duration-ms="1736" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:16 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:50:18 EST" duration-ms="1980" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="verifyCodeExecutionForArraySections(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:18 EST" name="verifyCodeExecutionForArraySections" data-provider="TryEditorDataArray" finished-at="2025-02-04T19:50:25 EST" duration-ms="6846" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Arrays Using List]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[print "hello"]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hello]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCodeExecutionForArraySections -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:25 EST" name="tearDownTest" finished-at="2025-02-04T19:50:26 EST" duration-ms="247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCodeExecutionForArraySections status=SUCCESS method=ArrayTest.verifyCodeExecutionForArraySections(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:26 EST" name="before" finished-at="2025-02-04T19:50:27 EST" duration-ms="1807" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:27 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:50:29 EST" duration-ms="1988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="verifyCodeExecutionForArraySections(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:29 EST" name="verifyCodeExecutionForArraySections" data-provider="TryEditorDataArray" finished-at="2025-02-04T19:50:31 EST" duration-ms="1633" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Arrays Using List]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NameError: name 'invalid' is not defined on line 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCodeExecutionForArraySections -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:31 EST" name="tearDownTest" finished-at="2025-02-04T19:50:31 EST" duration-ms="238" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCodeExecutionForArraySections status=SUCCESS method=ArrayTest.verifyCodeExecutionForArraySections(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:31 EST" name="before" finished-at="2025-02-04T19:50:35 EST" duration-ms="3639" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:35 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:50:39 EST" duration-ms="4495" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="verifyCodeExecutionForArraySections(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:39 EST" name="verifyCodeExecutionForArraySections" data-provider="TryEditorDataArray" finished-at="2025-02-04T19:50:46 EST" duration-ms="6440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Basic Operations in Lists]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[print "hello"]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hello]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCodeExecutionForArraySections -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:46 EST" name="tearDownTest" finished-at="2025-02-04T19:50:46 EST" duration-ms="315" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCodeExecutionForArraySections status=SUCCESS method=ArrayTest.verifyCodeExecutionForArraySections(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:46 EST" name="before" finished-at="2025-02-04T19:50:52 EST" duration-ms="5504" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:52 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:50:54 EST" duration-ms="2490" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="verifyCodeExecutionForArraySections(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:54 EST" name="verifyCodeExecutionForArraySections" data-provider="TryEditorDataArray" finished-at="2025-02-04T19:50:55 EST" duration-ms="1362" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Basic Operations in Lists]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NameError: name 'invalid' is not defined on line 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCodeExecutionForArraySections -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:55 EST" name="tearDownTest" finished-at="2025-02-04T19:50:56 EST" duration-ms="303" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCodeExecutionForArraySections status=SUCCESS method=ArrayTest.verifyCodeExecutionForArraySections(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:56 EST" name="before" finished-at="2025-02-04T19:50:57 EST" duration-ms="1583" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:57 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:50:59 EST" duration-ms="1974" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="verifyCodeExecutionForArraySections(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:50:59 EST" name="verifyCodeExecutionForArraySections" data-provider="TryEditorDataArray" finished-at="2025-02-04T19:51:01 EST" duration-ms="1982" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Applications of Array]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[print "hello"]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[hello]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCodeExecutionForArraySections -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:51:01 EST" name="tearDownTest" finished-at="2025-02-04T19:51:02 EST" duration-ms="232" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCodeExecutionForArraySections status=SUCCESS method=ArrayTest.verifyCodeExecutionForArraySections(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="before(java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:51:02 EST" name="before" finished-at="2025-02-04T19:51:06 EST" duration-ms="4936" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- before -->
+        <test-method is-config="true" signature="navigateToArrayPage()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:51:06 EST" name="navigateToArrayPage" finished-at="2025-02-04T19:51:08 EST" duration-ms="1733" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToArrayPage -->
+        <test-method signature="verifyCodeExecutionForArraySections(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:51:08 EST" name="verifyCodeExecutionForArraySections" data-provider="TryEditorDataArray" finished-at="2025-02-04T19:51:10 EST" duration-ms="1727" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Applications of Array]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[invalid]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[NameError: name 'invalid' is not defined on line 1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCodeExecutionForArraySections -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:51:10 EST" name="tearDownTest" finished-at="2025-02-04T19:51:10 EST" duration-ms="221" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyCodeExecutionForArraySections status=SUCCESS method=ArrayTest.verifyCodeExecutionForArraySections(java.lang.String,java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="tearDownSuite()[pri:0, instance:dsAlgoTests.ArrayTest@3eb25e1a]" started-at="2025-02-04T19:51:10 EST" name="tearDownSuite" finished-at="2025-02-04T19:51:10 EST" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownSuite -->
-      </class> <!-- dsAlgoTests.LinkedListTest -->
+      </class> <!-- dsAlgoTests.ArrayTest -->
     </test> <!-- Test -->
   </suite> <!-- TestSuite -->
 </testng-results>

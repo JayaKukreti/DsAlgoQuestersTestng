@@ -20,7 +20,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import dsAlgoUtils.ConfigReader;
-import dsAlgoUtils.ExcelDataReader;
+import dsAlgoUtils.ExcelDataReaderArrayLinkedlist;
 
 public class ArrayPage {
 	WebDriver driver;
@@ -54,10 +54,9 @@ public class ArrayPage {
 	@FindBy(xpath = "//a[contains(@class, 'list-group-item')]")List<WebElement> practiceQuestions;
 	@FindBy(xpath="//button[@type='button']")private WebElement runbutton;
 	@FindBy(xpath="//input[@type='submit' and @value='Submit' and contains(@class, 'button')]")private WebElement submitbutton ;
-	@FindBy(xpath = "//pre[@id='output' and contains(text(), 'Submission Successful')]")
-	private WebElement submissionMessage;
-	@FindBy(xpath="//pre[@id='output']")
-	private WebElement Consoleoutput;
+	@FindBy(xpath = "//pre[@id='output' and contains(text(), 'Submission Successful')]")private WebElement submissionMessage;
+	@FindBy(xpath="//pre[@id='output']")private WebElement consoleOutput;
+	@FindBy(xpath="//div[@class='CodeMirror cm-s-default']")private WebElement tryEditor;
 	
 	//Action methods
 	public boolean arrayPageIsDisplayed() {
@@ -82,18 +81,17 @@ public class ArrayPage {
 		arraysUsingList.click();
 	}
 	public void clickBasicOperationsInLists() {
-		arraysInPython.click();
+		basicOperationsinLists.click();
 	}		
 	public void clickApplicationsOfArray() {
-		arraysInPython.click();
+		applicationsofArray.click();
 	}
 	public void tryHere() {
 		Tryhere.click();	
 	}
 	public String consoleoutput() {
-		return Consoleoutput.getText();
+		return consoleOutput.getText();
 	}
-	
 	public void clickOnPracticeQuestionLink() {
 		practiceQuestionLink.click();
 	}
@@ -107,25 +105,15 @@ public class ArrayPage {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		return wait.until(ExpectedConditions.visibilityOf(Question4)).isDisplayed();
 	}
-	public void clickOnsearchTheArray() {
-		Question1.click();
-	}
-	public void clickOnMaxConsecutiveOnes() {
-		Question2.click();
-	}
-	public void clickOnFindNumbersWithEvenNumber() {
-		Question3.click();
-	}
-	public void clickOnSquaresofaSortedArray() {
-		Question4.click();
-	}
-	public List<WebElement> getPracticeQuestions() {
-		return practiceQuestions;
+	public boolean runButtonIsDisplayed() {
+		return runbutton.isDisplayed();
 	}
 	public void run() {
 		runbutton.click();
 	}
-
+	public boolean tryEditorIsDisplayed() {
+		return tryEditor.isDisplayed();
+	}
 	public String actualResult() {
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 		try {
@@ -145,5 +133,74 @@ public class ArrayPage {
 	}
 	public String actualOutputResult() {
 		return  submissionMessage.getText();
+	}
+	public void clickOnsearchTheArray() {
+		Question1.click();
+	}
+	public void clickOnMaxConsecutiveOnes() {
+		Question2.click();
+	}
+	public void clickOnFindNumbersWithEvenNumber() {
+		Question3.click();
+	}
+	public void clickOnSquaresofaSortedArray() {
+		Question4.click();
+	}
+	public List<WebElement> getPracticeQuestions() {
+		return practiceQuestions;
+	}
+	public String Option(String Options) {
+//		  Switch to the appropriate section
+			switch (Options) {
+			case "Arrays in Python":
+			clickArrayInPython();
+				break;
+			case "Arrays Using List":
+			clickArraysUsingList();
+				break;
+			case "Basic Operations in Lists":
+				clickBasicOperationsInLists();
+				break;
+			case "Applications of Array":
+				clickApplicationsOfArray();
+				break;
+			default:
+				throw new IllegalArgumentException("Invalid section: " + Options);
+		
+	}
+			return Options;
+}
+
+	
+	public String PracticeQuestion(String Options, String Questions) {
+	    // Switch to the appropriate section
+	    switch (Options) {
+	        case "Arrays in Python":
+	            clickArrayInPython();
+	            clickOnPracticeQuestionLink(); // Move this here to avoid repetition
+
+	            switch (Questions) {
+	                case "Search the array":
+	                    clickOnsearchTheArray();
+	                    break;
+	                case "Max Consecutive Ones":
+	                    clickOnMaxConsecutiveOnes();
+	                    break;
+	                case "Find Numbers with Even Number":
+	                    clickOnFindNumbersWithEvenNumber();
+	                    break;
+	                case "Squares of Sorted Array":
+	                    clickOnSquaresofaSortedArray();
+	                    break;
+	                default:
+	                    throw new IllegalArgumentException("Invalid Practice Question: " + Questions);
+	            }
+	            break;
+
+	        default:
+	            throw new IllegalArgumentException("Invalid Option: " + Options);
+	    }
+
+	    return "Practice Question: " + Questions + " selected.";
 	}
 }
