@@ -43,54 +43,61 @@ public class DataStructureTest extends Hooks {
 
 	@Test()
 	public void navigatetoTimeComplexityModule() {
-        Dg.ClickTimeComplexityLink();
-        Assert.assertTrue(Dg.isTextDisplayedInTimeComplexityPage());
+	    System.out.println("Navigating to Time Complexity Module");
+	    Dg.ClickTimeComplexityLink();
+	    Assert.assertTrue(Dg.isTextDisplayedInTimeComplexityPage());
+	    System.out.println("Successfully navigated to Time Complexity Module");
 	}
 
 	@Test()
 	public void navigatetoTimeComplexitytryeditor() {
-       Dg.ClickTimeComplexityLink();
-		Dg.ClickTryHereButton();
-		 Assert.assertTrue(Dg.textconfirmfortryeditor());
+	    System.out.println("Navigating to Time Complexity Try Editor");
+	    Dg.ClickTimeComplexityLink();
+	    Dg.ClickTryHereButton();
+	    Assert.assertTrue(Dg.textconfirmfortryeditor());
+	    System.out.println("Successfully opened Time Complexity Try Editor");
 	}
 
 	@Test
 	public void navigateToDataStructureIntroductionPagePracticeQuestions() {
-		Dg.ClickTimeComplexityLink();
-		Dg.clickpracticequestions();
-		Assert.assertTrue(Dg.textconfirmpracticequestion());
-
+	    System.out.println("Navigating to Data Structure Introduction Page Practice Questions");
+	    Dg.ClickTimeComplexityLink();
+	    Dg.clickpracticequestions();
+	    Assert.assertTrue(Dg.textconfirmpracticequestion());
+	    System.out.println("Successfully navigated to Practice Questions");
 	}
 
 	@Test
 	public void seeListOfPracticeQuestionsonDataStructureIntroductionPage() {
-		Dg.ClickTimeComplexityLink();
-		Dg.clickpracticequestions();
-		Assert.fail("No practice questions found on the Practice Questions Page!");
-
+	    System.out.println("Checking list of practice questions on Data Structure Introduction Page");
+	    Dg.ClickTimeComplexityLink();
+	    Dg.clickpracticequestions();
+	    Assert.fail("No practice questions found on the Practice Questions Page!");
+	    System.out.println("Practice questions check failed");
 	}
 
 	@Test
 	public void checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage() {
-		Dg.ClickTimeComplexityLink();
-		Dg.click_tryEditor();
-		Dg.click_run();
-		Assert.fail(
-				"Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.");
-
+	    System.out.println("Checking error message when executing without code");
+	    Dg.ClickTimeComplexityLink();
+	    Dg.click_tryEditor();
+	    Dg.click_run();
+	    Assert.fail("Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.");
+	    System.out.println("Error message validation failed");
 	}
 
 	@Test(dataProvider = "codeExecutionData", dataProviderClass = TestDataProvider.class)
 	public void verifyCodeExecutionforDataStructureIntroductionPage(String code, String expectedResult) {
-		Dg.ClickTimeComplexityLink();
-		Dg.click_tryEditor();
-		System.out.println("Executing code: " + code);
-		TryEditorPage = new TryEditorPage(driver);
-		TryEditorPage.enteringCode(code);
-		TryEditorPage.runButton();
-		String actualResult = TryEditorPage.output();
-		Assert.assertEquals(actualResult, expectedResult, "Output does not match for code: " + code);
-
+	    System.out.println("Verifying code execution for Data Structure Introduction Page");
+	    Dg.ClickTimeComplexityLink();
+	    Dg.click_tryEditor();
+	    System.out.println("Executing code: " + code);
+	    TryEditorPage = new TryEditorPage(driver);
+	    TryEditorPage.enteringCode(code);
+	    TryEditorPage.runButton();
+	    String actualResult = TryEditorPage.output();
+	    System.out.println("Execution result: " + actualResult);
+	    Assert.assertEquals(actualResult, expectedResult, "Output does not match for code: " + code);
+	    System.out.println("Code execution verified successfully");
 	}
-
 }
