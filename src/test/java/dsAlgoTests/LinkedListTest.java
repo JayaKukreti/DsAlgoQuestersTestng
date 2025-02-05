@@ -117,7 +117,7 @@ public class LinkedListTest extends Hooks{
 		linkedListPage.tryHere();
 		Assert.assertTrue(linkedListPage.runButtonIsDisplayed());
 	}
-	@Test
+   @Test
 	public void checkErrorMessageWhenExecutingWithoutCodeToIntroductionTryEditor() { 
 		linkedListPage.clickOnIntroduction();
 		linkedListPage.tryHere();
@@ -125,6 +125,7 @@ public class LinkedListTest extends Hooks{
 		Assert.fail(
 				"Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.");	
 	}
+   @Test
 	public void checkErrorMessageWhenExecutingWithoutCodeToCreateALinkedListTryEditor() {
 		linkedListPage.clickOnCreatingALinkedList();
 		linkedListPage.tryHere();
@@ -132,6 +133,7 @@ public class LinkedListTest extends Hooks{
 		Assert.fail(
 				"Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.");
 		}
+   @Test
 	public void checkErrorMessageWhenExecutingWithoutCodeToTypesOfLinkedListTryEditor() {
 		linkedListPage.clickOnTypesOfLinkedList();
 		linkedListPage.tryHere();
@@ -139,6 +141,7 @@ public class LinkedListTest extends Hooks{
 		Assert.fail(
 				"Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.");
 		}
+   @Test
 	public void checkErrorMessageWhenExecutingWithoutCodeToImplementLinkedListInPythonTryEditor() {
 		linkedListPage.clickOnImplementLinkedList();
 		linkedListPage.tryHere();

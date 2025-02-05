@@ -189,4 +189,4 @@ public class ArrayTest extends Hooks{
 	        String actualResult = tap.getOutput();
 	        Assert.assertEquals(actualResult, expectedResult, "Output mismatch for section: " + Options);
 	    }
-	}
+}
