@@ -3,43 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-<<<<<<< HEAD
       <class name="dsAlgoTests.ArrayTest">
         <methods>
-          <include name="PracticeQuestionVaildAndInvalidDataWithSubmitButton" invocation-numbers="0"/>
-          <include name="tearDownTest"/>
-          <include name="before"/>
-          <include name="tearDownSuite"/>
-=======
-<<<<<<< HEAD
-      <class name="dsAlgoTests.DataStructureTest">
-        <methods>
-          <include name="DataStructureIntroductionPage"/>
-          <include name="seeListOfPracticeQuestionsonDataStructureIntroductionPage"/>
-          <include name="checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage"/>
+          <include name="PracticeQuestionVaildAndInvalidDataWithSubmitButton" invocation-numbers="0 3"/>
           <include name="tearDownTest"/>
           <include name="setup"/>
->>>>>>> main
           <include name="setupSuite"/>
           <include name="navigateToArrayPage"/>
         </methods>
-<<<<<<< HEAD
       </class> <!-- dsAlgoTests.ArrayTest -->
-=======
-      </class> <!-- dsAlgoTests.DataStructureTest -->
-=======
-      <class name="dsAlgoTests.TreeTest">
-        <methods>
-          <include name="tearDownTest"/>
-          <include name="verifyTreeTryEditorWithoutCodeOfOverviewOfTrees"/>
-          <include name="before"/>
-          <include name="tearDownSuite"/>
-          <include name="navigateToTreePage"/>
-          <include name="setupSuite"/>
-        </methods>
-      </class> <!-- dsAlgoTests.TreeTest -->
->>>>>>> main
->>>>>>> main
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -9,7 +9,7 @@ public class ExcelDataReaderArrayLinkedlist {
         Object[][] data = null;
         try {
             FileInputStream file = new FileInputStream(System.getProperty("user.dir")
-                    + "\\src\\main\\resources\\DSAlgoExcelsheets\\ArrayTestDataforScenarios.xlsx");
+                    + "\\src\\main\\resources\\DSAlgoExcelsheets\\TestDataforScenarios.xlsx");
             XSSFWorkbook workbook = new XSSFWorkbook(file);
             XSSFSheet sheet = workbook.getSheet(sheetName);
 
