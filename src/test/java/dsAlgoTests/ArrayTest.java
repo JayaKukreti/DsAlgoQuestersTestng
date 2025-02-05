@@ -25,7 +25,7 @@ public class ArrayTest extends Hooks{
 	HomePage homePage;
 	SigninPage signinPage;
 	RegisterPage registerPage;
-	Properties prop = ConfigReader.initializeProp();
+	Properties prop = ConfigReader.initializeprop();
 	ArrayPage arrayPage;
 	TryEditorPage tryEditorPage;
 	TryEditorForArraysPracticeQuestions tap;

@@ -29,7 +29,7 @@ public class TryEditorForArraysPracticeQuestions {
 
 	public TryEditorForArraysPracticeQuestions(WebDriver driver) {
 		this.driver = driver;
-		this.prop = ConfigReader.initializeProp();
+		this.prop = ConfigReader.initializeprop();
 		PageFactory.initElements(driver, this);
 	}
 
@@ -55,20 +55,6 @@ public class TryEditorForArraysPracticeQuestions {
 	        }
 	    }
 
-//	public void enteringCodeForArray(String code) {
-//		try {
-//			WebElement codeMirror = driver.findElement(By.xpath("//div[contains(@class, 'CodeMirror') and contains(@class, 'cm-s-default')]"));
-//			Actions actions = new Actions(driver);
-//			actions.moveToElement(codeMirror).click().perform();
-//
-//			JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
-//			jsExecutor.executeScript("arguments[0].CodeMirror.setValue(arguments[1]);", codeMirror, code);
-//
-//			enterCodePractice(code, codeMirror);
-//		} catch (Exception e) {
-//			System.out.println("Exception while entering code: " + e.getMessage());
-//		}
-//	}
 
 	public String getOutput() {
 		try {

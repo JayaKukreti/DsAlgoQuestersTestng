@@ -17,7 +17,6 @@ public class HomePage {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 	}
-//------------------------------------------------------------------------	
 
 	@FindBy(xpath = "//button[@class='btn']")
 	private WebElement launchPageGetstartedbutton;
@@ -58,37 +57,29 @@ public class HomePage {
 	@FindBy(linkText = "Graph")
 	private WebElement Graph;
 
-//-----------------------------------------------------------------------------
-
 	public void clickLaunchPageGetstartedbutton() {
 		launchPageGetstartedbutton.click();
 	}
-
-//---------------------------------------------------	
 
 	public boolean textdisplayinhomepage() {
 		boolean getarraytextinhomepage = textdisplayofhompage.isDisplayed();
 		return getarraytextinhomepage;
 	}
 
-//----------------------------------------------	
 	public void clickSignin() {
 		signin.click();
 	}
-//----------------------------------------------	
 
 	public void clickRegister() {
 		Register.click();
 
 	}
 
-//------------------------------------------------	
 	public void clickDataStructuresDropDown() {
 		DataStructuresDropDown.click();
 
 	}
 
-//----------------------------------------------------------------	
 	public String errorMessageGetStarted() {
 
 		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
@@ -99,72 +90,63 @@ public class HomePage {
 		return actualMessage;
 	}
 
-//--------------------------------------------------------------------
+	public String expectedmessage() {
+		return errormessage.getText();
+	}
+
 	public WebElement getStartedofGraph() {
 		GetStartedofGraph.click();
 		return GetStartedofGraph;
 	}
 
-//--------------------------------------------------------------------
 	public void getStartedDataStructureIntroduction() {
 		getstartedofdatastructureintroduction.click();
 	}
 
-//-------------------------------------------------------------------
 	public void getStartedArray() {
 		getstartedArray.click();
 
 	}
 
-//-------------------------------------------------------------------
 	public void getStartedLinkedlist() {
 		getstartedLinkedlist.click();
 
 	}
 
-//-------------------------------------------------------------------
 	public void getStartedStack() {
 		getstartedStack.click();
 
 	}
 
-//------------------------------------------------------------------	
 	public void getStartedQueue() {
 		getstartedQueue.click();
 	}
 
-//-----------------------------------------------------------------
 	public void getStartedTree() {
 		getstartedTree.click();
 	}
 
-//-----------------------------------------------------------------	
 	public void arrays() {
 		Arrays.click();
 
 	}
 
-//---------------------------------------------------------------
 	public void linkedList() {
 		LinkedList.click();
 	}
 
-//------------------------------------------------------------------
 	public void stack() {
 		Stack.click();
 	}
 
-//-----------------------------------------------------------------
 	public void queue() {
 		Queue.click();
 	}
 
-//----------------------------------------------------------------
 	public void tree() {
 		Tree.click();
 	}
 
-//--------------------------------------------------------------
 	public void graph() {
 		Graph.click();
 	}

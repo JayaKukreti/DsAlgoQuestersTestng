@@ -3,6 +3,7 @@
 <suite name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
+<<<<<<< HEAD
       <class name="dsAlgoTests.ArrayTest">
         <methods>
           <include name="PracticeQuestionVaildAndInvalidDataWithSubmitButton"/>
@@ -13,10 +14,24 @@
           <include name="tearDownSuite"/>
           <include name="checkErrorMessageWhenExecutingWithoutCodeInArrayInPythonForTryEditor"/>
           <include name="checkErrorMessageWhenExecutingWithoutCodeApplicationofArrayForTryEditor"/>
+=======
+      <class name="dsAlgoTests.DataStructureTest">
+        <methods>
+          <include name="DataStructureIntroductionPage"/>
+          <include name="seeListOfPracticeQuestionsonDataStructureIntroductionPage"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage"/>
+          <include name="tearDownTest"/>
+          <include name="before"/>
+          <include name="tearDownSuite"/>
+>>>>>>> main
           <include name="setupSuite"/>
           <include name="navigateToArrayPage"/>
         </methods>
+<<<<<<< HEAD
       </class> <!-- dsAlgoTests.ArrayTest -->
+=======
+      </class> <!-- dsAlgoTests.DataStructureTest -->
+>>>>>>> main
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->
