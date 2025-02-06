@@ -1,37 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite parallel="tests" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
-<<<<<<< HEAD
       <class name="dsAlgoTests.ArrayTest">
         <methods>
+          <include name="navigateToArrayUsingListTryEditor"/>
+          <include name="tearDownTest"/>
+          <include name="verifyCodeExecutionForArraySections"/>
+          <include name="PracticeQuestionVaildAndInvalidDataWithRunButton"/>
+          <include name="navigateToBasicOperationInListTryEditor"/>
           <include name="PracticeQuestionVaildAndInvalidDataWithSubmitButton"/>
           <include name="checkErrorMessageWhenExecutingWithoutCodeBasicOperationInListsForTryEditor"/>
+          <include name="navigateToArrayInPythonTryEditor"/>
           <include name="checkErrorMessageWhenExecutingWithoutCodeArrayUsingListForTryEditor"/>
-          <include name="tearDownTest"/>
-          <include name="before"/>
-          <include name="tearDownSuite"/>
+          <include name="navigateToArrayUsingList"/>
+          <include name="navigateToApplicationOfArrayTryEditor"/>
           <include name="checkErrorMessageWhenExecutingWithoutCodeInArrayInPythonForTryEditor"/>
+          <include name="setup"/>
+          <include name="navigateToApplicationOfArray"/>
+          <include name="navigateToBasicOperationInList"/>
           <include name="checkErrorMessageWhenExecutingWithoutCodeApplicationofArrayForTryEditor"/>
-=======
+          <include name="setupSuite"/>
+          <include name="navigateToArrayPage"/>
+          <include name="navigateToArrayInPython"/>
+        </methods>
+      </class> <!-- dsAlgoTests.ArrayTest -->
       <class name="dsAlgoTests.DataStructureTest">
         <methods>
           <include name="DataStructureIntroductionPage"/>
           <include name="seeListOfPracticeQuestionsonDataStructureIntroductionPage"/>
           <include name="checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage"/>
           <include name="tearDownTest"/>
-          <include name="before"/>
-          <include name="tearDownSuite"/>
->>>>>>> main
+          <include name="verifyCodeExecutionforDataStructureIntroductionPage" invocation-numbers="52"/>
+          <include name="setup"/>
           <include name="setupSuite"/>
-          <include name="navigateToArrayPage"/>
         </methods>
-<<<<<<< HEAD
-      </class> <!-- dsAlgoTests.ArrayTest -->
-=======
       </class> <!-- dsAlgoTests.DataStructureTest -->
->>>>>>> main
+      <class name="dsAlgoTests.RegisterTest">
+        <methods>
+          <include name="tearDownTest"/>
+          <include name="setup"/>
+          <include name="navigateToDsAlgoApplication"/>
+          <include name="enterCredentials" invocation-numbers="5 6"/>
+          <include name="setupSuite"/>
+        </methods>
+      </class> <!-- dsAlgoTests.RegisterTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->

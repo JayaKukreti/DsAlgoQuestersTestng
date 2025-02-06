@@ -1,60 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<<<<<<< HEAD
-<suite name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+<suite parallel="tests" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Test(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="dsAlgoTests.ArrayTest">
         <methods>
+          <include name="navigateToArrayUsingListTryEditor"/>
+          <include name="tearDownTest"/>
+          <include name="verifyCodeExecutionForArraySections"/>
+          <include name="PracticeQuestionVaildAndInvalidDataWithRunButton"/>
+          <include name="navigateToBasicOperationInListTryEditor"/>
           <include name="PracticeQuestionVaildAndInvalidDataWithSubmitButton"/>
           <include name="checkErrorMessageWhenExecutingWithoutCodeBasicOperationInListsForTryEditor"/>
+          <include name="navigateToArrayInPythonTryEditor"/>
           <include name="checkErrorMessageWhenExecutingWithoutCodeArrayUsingListForTryEditor"/>
-=======
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
-    <classes>
-<<<<<<< HEAD
+          <include name="navigateToArrayUsingList"/>
+          <include name="navigateToApplicationOfArrayTryEditor"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeInArrayInPythonForTryEditor"/>
+          <include name="setup"/>
+          <include name="navigateToApplicationOfArray"/>
+          <include name="navigateToBasicOperationInList"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeApplicationofArrayForTryEditor"/>
+          <include name="setupSuite"/>
+          <include name="navigateToArrayPage"/>
+          <include name="navigateToArrayInPython"/>
+        </methods>
+      </class> <!-- dsAlgoTests.ArrayTest -->
       <class name="dsAlgoTests.DataStructureTest">
         <methods>
           <include name="DataStructureIntroductionPage"/>
           <include name="seeListOfPracticeQuestionsonDataStructureIntroductionPage"/>
           <include name="checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage"/>
->>>>>>> main
+          <include name="tearDownTest"/>
+          <include name="verifyCodeExecutionforDataStructureIntroductionPage" invocation-numbers="52"/>
+          <include name="setup"/>
+          <include name="setupSuite"/>
+        </methods>
+      </class> <!-- dsAlgoTests.DataStructureTest -->
+      <class name="dsAlgoTests.RegisterTest">
+        <methods>
           <include name="tearDownTest"/>
           <include name="setup"/>
-=======
-      <class name="dsAlgoTests.TreeTest">
-        <methods>
-          <include name="verifyTreeTryEditorWithoutCodeOfTraversalsIllustration"/>
-          <include name="verifyTreeTryEditorWithoutCodeOfTypesOfTrees"/>
-          <include name="listOfPracticeQuestionOfOverviewOfTrees"/>
-          <include name="tearDownTest"/>
-          <include name="verifyTreeTryEditorWithoutCodeOfOverviewOfTrees"/>
-          <include name="verifyTreeTryEditorWithoutCodeOfTerminologies"/>
-          <include name="before"/>
-          <include name="tearDownSuite"/>
-<<<<<<< HEAD
-          <include name="checkErrorMessageWhenExecutingWithoutCodeInArrayInPythonForTryEditor"/>
-          <include name="checkErrorMessageWhenExecutingWithoutCodeApplicationofArrayForTryEditor"/>
+          <include name="navigateToDsAlgoApplication"/>
+          <include name="enterCredentials" invocation-numbers="5 6"/>
           <include name="setupSuite"/>
-          <include name="navigateToArrayPage"/>
         </methods>
-      </class> <!-- dsAlgoTests.ArrayTest -->
+      </class> <!-- dsAlgoTests.RegisterTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->
-=======
-          <include name="navigateToTreePage"/>
->>>>>>> main
-          <include name="setupSuite"/>
-          <include name="verifyTreeTryEditorWithoutCodeOfTreeTraversals"/>
-        </methods>
-<<<<<<< HEAD
-      </class> <!-- dsAlgoTests.DataStructureTest -->
-=======
-      </class> <!-- dsAlgoTests.TreeTest -->
->>>>>>> main
-    </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
->>>>>>> main

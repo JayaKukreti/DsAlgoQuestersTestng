@@ -1,0 +1,12 @@
+[INFO ] 2025-02-05 23:53:55.588 [TestNG-test=Test-5] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 23:53:55.602 [TestNG-test=Test-5] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-06 01:00:56.799 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-06 01:00:56.808 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-06 01:00:57.333 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-06 01:00:57.586 [TestNG-tests-1] ArrayTest -
+					Entering username and password
