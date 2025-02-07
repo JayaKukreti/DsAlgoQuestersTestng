@@ -28,7 +28,7 @@ public class QueueTest extends Hooks {
     
     @BeforeMethod
     public void  navigatetoQueuepage() {
-    	driver = Hooks.getDriver();//to call driver
+ //   	driver = Hooks.getDriver();//to call driver
        homepage = new HomePage(driver);//calling the page with driver
        homepage.clickLaunchPageGetstartedbutton();
        homepage.clickSignin();

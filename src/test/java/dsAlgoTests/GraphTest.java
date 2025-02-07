@@ -28,7 +28,7 @@ public class GraphTest extends Hooks {
 	@BeforeMethod
 	public void navigateGraphPage() {
 		System.out.println("Navigating to Graph Page...");
-		driver = Hooks.getDriver();
+//		driver = Hooks.getDriver();
 		homePage = new HomePage(driver);
 		homePage.clickLaunchPageGetstartedbutton();
 		homePage.clickSignin();

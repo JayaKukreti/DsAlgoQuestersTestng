@@ -29,7 +29,7 @@ public class LinkedListTest extends Hooks{
 
 	@BeforeMethod
 	public void navigateToLinkedListPage() {	
-		driver=Hooks.getDriver();
+	//	driver=Hooks.getDriver();
 		homePage=new HomePage(driver);
 		homePage.clickLaunchPageGetstartedbutton();
 		homePage.clickSignin();

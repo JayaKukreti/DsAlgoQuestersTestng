@@ -4,6 +4,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import dsAlgoBase.Base;
 import dsAlgoHooks.Hooks;
 import dsAlgoPages.HomePage;
 import dsAlgoPages.RegisterPage;
@@ -17,6 +19,7 @@ public class HomeTest extends Hooks {
 
 	@BeforeMethod
 	public void navigateToDsAlgoApplication() {
+		
 		driver = Hooks.getDriver();
 		homePage = new HomePage(driver);
 		homePage.clickLaunchPageGetstartedbutton();
@@ -24,7 +27,7 @@ public class HomeTest extends Hooks {
 
 	@Test
 	public void navigateToRegister() {
-		RegisterPage = new RegisterPage(driver);
+		RegisterPage = new RegisterPage(driver); 
 		homePage.clickRegister();
 		Assert.assertTrue(RegisterPage.textConfirmforRegister());
 	}

@@ -29,7 +29,7 @@ public class DataStructureTest extends Hooks {
 
 	@BeforeMethod
 	public void DataStructureIntroductionPage() {
-		driver = Hooks.getDriver();
+//		driver = Hooks.getDriver();
 		Hg = new HomePage(driver);
 		Hg.clickLaunchPageGetstartedbutton();
 		Hg.clickSignin();

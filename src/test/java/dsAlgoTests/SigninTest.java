@@ -21,7 +21,7 @@ public class SigninTest extends Hooks {
 
 	@BeforeMethod
 	public void navigateToDsAlgoApplication() {
-		driver = Hooks.getDriver();
+	    driver = Hooks.getDriver();
 		homePage = new HomePage(driver);
 		homePage.clickLaunchPageGetstartedbutton();
 	}

@@ -26,7 +26,7 @@ public class StackTest extends Hooks {
 
 	@BeforeMethod
 	public void navigateGraphPage() {
-		driver = Hooks.getDriver();
+	//	driver = Hooks.getDriver();
 		homePage = new HomePage(driver);
 		homePage.clickLaunchPageGetstartedbutton();
 		homePage.clickSignin();

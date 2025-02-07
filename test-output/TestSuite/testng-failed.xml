@@ -1,23 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="Test(failed)">
+<suite thread-count="3" parallel="methods" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="3" parallel="methods" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="dsAlgoTests.LinkedListTest">
+      <class name="dsAlgoTests.HomeTest">
         <methods>
-          <include name="verifyCodeExecutionForLinkedList" invocation-numbers="14 15"/>
           <include name="tearDownTest"/>
-          <include name="checkErrorMessageWhenExecutingWithoutCodeToInsertionTryEditor"/>
-          <include name="checkforPracticeQuestion"/>
+          <include name="navigateToDsAlgoApplication"/>
+          <include name="dropdownoptionLinkedListerrorBeforeSignin"/>
+          <include name="dropdownoptionStackerrorBeforeSignin"/>
+          <include name="dropdownoptionGrapherrorBeforeSignin"/>
+          <include name="dropdownoptionTreeerrorBeforeSignin"/>
+          <include name="errorMessageWhenClickedOnDataStructureBeforeSignin"/>
+          <include name="navigateToRegister"/>
+          <include name="GetstartedTreeerrorBeforeSignin"/>
+          <include name="dropdownoptionArrayserrorBeforeSignin"/>
+          <include name="GetstartedLinkedListerrorBeforeSignin"/>
+          <include name="GetstartedArrayerrorBeforeSignin"/>
+          <include name="GetstartedQueueerrorBeforeSignin"/>
+          <include name="navigateToLogin"/>
           <include name="setup"/>
-          <include name="navigateToLinkedListPage"/>
-          <include name="checkErrorMessageWhenExecutingWithoutCodeToIntroductionTryEditor"/>
-          <include name="checkErrorMessageWhenExecutingWithoutCodeToTraversalTryEditor"/>
-          <include name="checkErrorMessageWhenExecutingWithoutCodeToDeletionTryEditor"/>
+          <include name="GetstartedStackerrorBeforeSignin"/>
           <include name="setupSuite"/>
+          <include name="dropdownoptionQueueerrorBeforeSignin"/>
         </methods>
-      </class> <!-- dsAlgoTests.LinkedListTest -->
+      </class> <!-- dsAlgoTests.HomeTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->
