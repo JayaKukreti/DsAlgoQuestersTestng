@@ -34,7 +34,7 @@ public class TestDataProvider {
 		return testData4;
 	}
 
-	@DataProvider(name = "QueueTryEditorData")
+	@DataProvider(name = "QueueTryEditorData",parallel=true)
 	public Object[][] QueueTryEditorData() {
 		Object[][] testData = ExcelDataReader.readExcel("QueueTryEditor");
 		System.out.println("Test data length: " + testData.length);

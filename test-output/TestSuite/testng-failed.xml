@@ -1,23 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite parallel="tests" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="Test(failed)">
+<suite name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="methods" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="dsAlgoTests.LinkedListTest">
+      <class name="dsAlgoTests.TreeTest">
         <methods>
-          <include name="verifyCodeExecutionForLinkedList" invocation-numbers="14 15"/>
+          <include name="navigateToTypesOfBinaryTreesTryEditor"/>
+          <include name="navigateToBinaryTreeTraversalsTryEditor"/>
+          <include name="navigateToTerminologies"/>
           <include name="tearDownTest"/>
-          <include name="checkErrorMessageWhenExecutingWithoutCodeToInsertionTryEditor"/>
-          <include name="checkforPracticeQuestion"/>
+          <include name="navigateToImplementationOfBSTTryEditor"/>
+          <include name="navigateToTreePage"/>
+          <include name="navigateToImplementationInPython"/>
+          <include name="navigateToBinaryTreeTraversals"/>
+          <include name="navigateToTypesOfTrees"/>
+          <include name="verifyTreeTryEditorWithoutCodeOfTypesOfTrees"/>
+          <include name="verifyTreeTryEditorWithoutCodeOfTerminologies"/>
+          <include name="navigateToTypesOfTreesTryEditor"/>
           <include name="setup"/>
-          <include name="navigateToLinkedListPage"/>
-          <include name="checkErrorMessageWhenExecutingWithoutCodeToIntroductionTryEditor"/>
-          <include name="checkErrorMessageWhenExecutingWithoutCodeToTraversalTryEditor"/>
-          <include name="checkErrorMessageWhenExecutingWithoutCodeToDeletionTryEditor"/>
+          <include name="navigateToBinaryTrees"/>
+          <include name="navigateToImplementationInPythonTryEditor"/>
+          <include name="navigateToImplementationOfBinaryTrees"/>
+          <include name="navigateToImplementationOfBST"/>
+          <include name="navigateToTerminologiesTryEditor"/>
+          <include name="navigateToTreeTraversalsTryEditor"/>
+          <include name="verifyCodeExecutionForTreeTryEditor"/>
+          <include name="listOfPracticeQuestionOfOverviewOfTrees"/>
+          <include name="navigateToBinarySearchTreesTryEditor"/>
+          <include name="navigateToTreeTraversals"/>
+          <include name="navigateToBinaryTreesTryEditor"/>
+          <include name="navigateToImplementationOfBinaryTreesTryEditor"/>
+          <include name="verifyTreeTryEditorWithoutCodeOfTreeTraversals"/>
+          <include name="navigateToApplicationsOfBinaryTreesTryEditor"/>
+          <include name="verifyTreeTryEditorWithoutCodeOfTraversalsIllustration"/>
+          <include name="navigateToPracticeQuestionOfOverviewOfTrees"/>
+          <include name="verifyTreeTryEditorWithoutCodeOfOverviewOfTrees"/>
+          <include name="navigateToApplicationsOfBinaryTrees"/>
+          <include name="navigateToOverviewOfTrees"/>
+          <include name="navigateToBinarySearchTrees"/>
+          <include name="navigateToOverviewOfTreesTryEditor"/>
+          <include name="navigateToTraversalsIllustration"/>
+          <include name="navigateToTraversalsIllustrationTryEditor"/>
+          <include name="setupSuite"/>
+          <include name="navigateToTypesOfBinaryTrees"/>
+        </methods>
+      </class> <!-- dsAlgoTests.TreeTest -->
+      <class name="dsAlgoTests.GraphTest">
+        <methods>
+          <include name="navigateToGraphRepresentationPracticeQuestions"/>
+          <include name="tearDownTest"/>
+          <include name="navigatetoGraphModule"/>
+          <include name="navigatetoGraphRepresentationtryeditor"/>
+          <include name="navigatetoGraphModuletryeditor"/>
+          <include name="seeListOfPracticeQuestionsonGraphPage"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeInGraphPage"/>
+          <include name="navigateToGraphPracticeQuestions"/>
+          <include name="verifyCodeExecutionforGraphRepresentationPage"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeInGraphReprePage"/>
+          <include name="navigatetoGraphRepresentation"/>
+          <include name="verifyCodeExecutionforGraphPage"/>
+          <include name="seeListOfPracticeQuestionsonGraphReprePage"/>
+          <include name="setup"/>
+          <include name="navigateGraphPage"/>
           <include name="setupSuite"/>
         </methods>
-      </class> <!-- dsAlgoTests.LinkedListTest -->
+      </class> <!-- dsAlgoTests.GraphTest -->
+      <class name="dsAlgoTests.QueueTest">
+        <methods>
+          <include name="listOfPracticeQuestionOfImplementationOfQueueInPython"/>
+          <include name="navigatetoImplementationUsingCollectionsDequeTryEditor"/>
+          <include name="navigateToQueueOperations"/>
+          <include name="navigateToQueueOperationsTryEditor"/>
+          <include name="tearDownTest"/>
+          <include name="navigatetoImplementationOfQueueInPythonTryEditor"/>
+          <include name="listOfPracticeQuestionImplementationUsingCollectionsDeque"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeInImplementationUsingCollectionsDeque"/>
+          <include name="navigateToImplementationUsingArrayTryEditor"/>
+          <include name="checkErrorMeaasgeWhenExecutingWithoutCodeInImplementationUsingArray"/>
+          <include name="navigateToPracticeQuestionOfImplementationOfQueueInPython"/>
+          <include name="checkErrorMeaasgeWhenExecutingWithoutCodeInQueueOperations"/>
+          <include name="navigatetoImplementationOfQueueInPython"/>
+          <include name="navigateToImplementationUsingArray"/>
+          <include name="verifyCodeExecutionForQueueTryEditor"/>
+          <include name="navigatetoQueuepage"/>
+          <include name="setup"/>
+          <include name="navigatetoImplementationUsingCollectionsDeque"/>
+          <include name="navigateToPracticeQuestionImplementationUsingCollectionsDeque"/>
+          <include name="setupSuite"/>
+          <include name="checkErrorMeaasgeWhenExecutingWithoutCodeInImplementationOfQueueInPython"/>
+        </methods>
+      </class> <!-- dsAlgoTests.QueueTest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [TestSuite] -->
