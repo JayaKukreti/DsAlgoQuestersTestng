@@ -1,0 +1,1 @@
+{"uuid":"02a61ba3-7dd9-4d80-8b02-08e491152db6","name":"dsAlgoHooks.Hooks.before","children":["e08c4d11-05f5-4a19-b6e9-63b014119a0b"],"description":"","befores":[{"name":"before","status":"broken","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1738262957035,"stop":1738262957035}],"afters":[],"start":1738262957035,"stop":1738262957036}

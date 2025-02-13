@@ -4,17 +4,112 @@
   <test thread-count="5" parallel="tests" name="Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
+      <class name="dsAlgoTests.QueueTest">
+        <methods>
+          <include name="listOfPracticeQuestionOfImplementationOfQueueInPython"/>
+          <include name="tearDownTest"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeInImplementationUsingCollectionsDeque"/>
+          <include name="navigatetoQueuepage"/>
+          <include name="setup"/>
+          <include name="checkErrorMeaasgeWhenExecutingWithoutCodeInImplementationUsingArray"/>
+          <include name="setupSuite"/>
+          <include name="checkErrorMeaasgeWhenExecutingWithoutCodeInImplementationOfQueueInPython"/>
+          <include name="checkErrorMeaasgeWhenExecutingWithoutCodeInQueueOperations"/>
+        </methods>
+      </class> <!-- dsAlgoTests.QueueTest -->
+      <class name="dsAlgoTests.StackTest">
+        <methods>
+          <include name="seeListOfPracticeQuestionsonApplicationsPage"/>
+          <include name="seeListOfPracticeQuestionsonImplementationPage"/>
+          <include name="tearDownTest"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeInApplicationsInStackPage"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeInOperationsInStackPage"/>
+          <include name="seeListOfPracticeQuestionsonOperationsInStackPage"/>
+          <include name="setup"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeInImplementationPage"/>
+          <include name="navigateGraphPage"/>
+          <include name="setupSuite"/>
+        </methods>
+      </class> <!-- dsAlgoTests.StackTest -->
+      <class name="dsAlgoTests.TreeTest">
+        <methods>
+          <include name="verifyTreeTryEditorWithoutCodeOfTraversalsIllustration"/>
+          <include name="verifyTreeTryEditorWithoutCodeOfTypesOfTrees"/>
+          <include name="listOfPracticeQuestionOfOverviewOfTrees"/>
+          <include name="tearDownTest"/>
+          <include name="verifyTreeTryEditorWithoutCodeOfOverviewOfTrees"/>
+          <include name="verifyTreeTryEditorWithoutCodeOfTerminologies"/>
+          <include name="navigateToTreePage"/>
+          <include name="setup"/>
+          <include name="setupSuite"/>
+          <include name="verifyTreeTryEditorWithoutCodeOfTreeTraversals"/>
+        </methods>
+      </class> <!-- dsAlgoTests.TreeTest -->
+      <class name="dsAlgoTests.ArrayTest">
+        <methods>
+          <include name="PracticeQuestionVaildAndInvalidDataWithSubmitButton" invocation-numbers="0 3"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeBasicOperationInListsForTryEditor"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeArrayUsingListForTryEditor"/>
+          <include name="tearDownTest"/>
+          <include name="verifyCodeExecutionForArraySections"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeInArrayInPythonForTryEditor"/>
+          <include name="setup"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeApplicationofArrayForTryEditor"/>
+          <include name="navigateToArrayPage"/>
+          <include name="setupSuite"/>
+        </methods>
+      </class> <!-- dsAlgoTests.ArrayTest -->
+      <class name="dsAlgoTests.DataStructureTest">
+        <methods>
+          <include name="DataStructureIntroductionPage"/>
+          <include name="seeListOfPracticeQuestionsonDataStructureIntroductionPage"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage"/>
+          <include name="tearDownTest"/>
+          <include name="setup"/>
+          <include name="setupSuite"/>
+        </methods>
+      </class> <!-- dsAlgoTests.DataStructureTest -->
+      <class name="dsAlgoTests.GraphTest">
+        <methods>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeInGraphPage"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeInGraphReprePage"/>
+          <include name="navigateToGraphRepresentationPracticeQuestions"/>
+          <include name="tearDownTest"/>
+          <include name="seeListOfPracticeQuestionsonGraphReprePage"/>
+          <include name="setup"/>
+          <include name="navigateGraphPage"/>
+          <include name="seeListOfPracticeQuestionsonGraphPage"/>
+          <include name="setupSuite"/>
+        </methods>
+      </class> <!-- dsAlgoTests.GraphTest -->
       <class name="dsAlgoTests.LinkedListTest">
         <methods>
-          <include name="verifyCodeExecutionForLinkedList" invocation-numbers="14 15"/>
+          <include name="navigateToInsertion"/>
+          <include name="navigateToTraversal"/>
           <include name="tearDownTest"/>
-          <include name="checkErrorMessageWhenExecutingWithoutCodeToInsertionTryEditor"/>
+          <include name="navigateToTypesOfLinkedListTryEditor"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeToCreateALinkedListTryEditor"/>
           <include name="checkforPracticeQuestion"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeToIntroductionTryEditor"/>
+          <include name="navigateToIntroduction"/>
+          <include name="navigateToImplementLinkedListInPython"/>
+          <include name="navigateToTraversalTryEditor"/>
+          <include name="navigateToDeletionTryEditor"/>
           <include name="setup"/>
           <include name="navigateToLinkedListPage"/>
-          <include name="checkErrorMessageWhenExecutingWithoutCodeToIntroductionTryEditor"/>
-          <include name="checkErrorMessageWhenExecutingWithoutCodeToTraversalTryEditor"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeToTypesOfLinkedListTryEditor"/>
           <include name="checkErrorMessageWhenExecutingWithoutCodeToDeletionTryEditor"/>
+          <include name="navigateToCreateALinkedListTryEditor"/>
+          <include name="verifyCodeExecutionForLinkedList"/>
+          <include name="navigatenavigateToIntroductionTryEditor"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeToInsertionTryEditor"/>
+          <include name="navigateToImplementLinkedListInPythonTryEditor"/>
+          <include name="navigateToTypesOfLinkedList"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeToImplementLinkedListInPythonTryEditor"/>
+          <include name="navigateToInsertionTryEditor"/>
+          <include name="navigateDeletion"/>
+          <include name="navigateToCreateALinkedList"/>
+          <include name="checkErrorMessageWhenExecutingWithoutCodeToTraversalTryEditor"/>
           <include name="setupSuite"/>
         </methods>
       </class> <!-- dsAlgoTests.LinkedListTest -->
