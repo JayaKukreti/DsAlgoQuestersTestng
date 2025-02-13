@@ -830,3 +830,451 @@
 					Navigating to Array page
 [INFO ] 2025-02-05 16:34:42.860 [main] ArrayTest -
 					Verifying code execution for Array sections: Applications of Array
+[INFO ] 2025-02-05 17:33:20.603 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:33:20.612 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:33:21.262 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:33:21.742 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:33:22.082 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:33:22.983 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:33:23.358 [TestNG-tests-1] ArrayTest -
+					Executing practice question for Array with Run button: Arrays in Python
+[INFO ] 2025-02-05 17:33:27.556 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:33:27.557 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:33:28.281 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:33:28.957 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:33:29.257 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:33:29.775 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:33:30.223 [TestNG-tests-1] ArrayTest -
+					Executing practice question for Array with Run button: Arrays in Python
+[INFO ] 2025-02-05 17:33:34.562 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:33:34.565 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:33:35.635 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:33:35.989 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:33:36.354 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:33:36.979 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:33:37.465 [TestNG-tests-1] ArrayTest -
+					Executing practice question for Array with Run button: Arrays in Python
+[INFO ] 2025-02-05 17:33:41.757 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:33:41.759 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:33:42.478 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:33:42.765 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:33:43.175 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:33:43.729 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:33:44.227 [TestNG-tests-1] ArrayTest -
+					Executing practice question for Array with Run button: Arrays in Python
+[INFO ] 2025-02-05 17:33:48.808 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:33:48.810 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:33:49.558 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:33:49.924 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:33:50.277 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:33:50.740 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:33:51.130 [TestNG-tests-1] ArrayTest -
+					Executing practice question for Array with Run button: Arrays in Python
+[INFO ] 2025-02-05 17:33:55.481 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:33:55.486 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:33:56.209 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:33:56.606 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:33:57.089 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:33:57.807 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:33:58.283 [TestNG-tests-1] ArrayTest -
+					Executing practice question for Array with Run button: Arrays in Python
+[INFO ] 2025-02-05 17:34:03.433 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:34:03.436 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:34:04.175 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:34:04.523 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:34:04.912 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:34:05.534 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:34:05.928 [TestNG-tests-1] ArrayTest -
+					Executing practice question for Array with Run button: Arrays in Python
+[INFO ] 2025-02-05 17:34:09.936 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:34:09.937 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:34:10.770 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:34:11.010 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:34:11.208 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:34:11.967 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:34:12.380 [TestNG-tests-1] ArrayTest -
+					Executing practice question for Array with Run button: Arrays in Python
+[INFO ] 2025-02-05 17:34:16.561 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:34:16.563 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:34:17.400 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:34:17.875 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:34:18.278 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:34:18.863 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:34:19.301 [TestNG-tests-1] ArrayTest -
+					Executing practice question for Array with Submit button: Arrays in Python
+[INFO ] 2025-02-05 17:34:24.151 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:34:24.152 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:34:24.930 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:34:25.299 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:34:25.733 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:34:26.367 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:34:26.776 [TestNG-tests-1] ArrayTest -
+					Executing practice question for Array with Submit button: Arrays in Python
+[INFO ] 2025-02-05 17:34:31.891 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:34:31.892 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:34:32.929 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:34:33.392 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:34:33.715 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:34:34.300 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:34:34.739 [TestNG-tests-1] ArrayTest -
+					Executing practice question for Array with Submit button: Arrays in Python
+[INFO ] 2025-02-05 17:34:39.641 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:34:39.642 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:34:40.345 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:34:40.748 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:34:41.041 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:34:41.659 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:34:42.082 [TestNG-tests-1] ArrayTest -
+					Executing practice question for Array with Submit button: Arrays in Python
+[INFO ] 2025-02-05 17:34:45.785 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:34:45.786 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:34:46.568 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:34:47.072 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:34:47.410 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:34:47.955 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:34:48.533 [TestNG-tests-1] ArrayTest -
+					Checking error message when executing without code in Applications of Array Try Editor
+[INFO ] 2025-02-05 17:34:52.196 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:34:52.197 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:34:53.145 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:34:53.577 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:34:53.855 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:34:54.372 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:34:54.825 [TestNG-tests-1] ArrayTest -
+					Checking error message when executing without code in Arrays Using List Try Editor
+[INFO ] 2025-02-05 17:34:59.155 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:34:59.156 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:34:59.912 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:35:00.363 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:35:00.768 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:35:01.431 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:35:01.845 [TestNG-tests-1] ArrayTest -
+					Checking error message when executing without code in Basic Operations in Lists Try Editor
+[INFO ] 2025-02-05 17:35:05.569 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:35:05.570 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:35:06.335 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:35:06.792 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:35:07.273 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:35:07.874 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:35:08.365 [TestNG-tests-1] ArrayTest -
+					Checking error message when executing without code in Array in Python Try Editor
+[INFO ] 2025-02-05 17:35:12.786 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:35:12.787 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:35:13.492 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:35:13.965 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:35:14.285 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:35:14.891 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:35:15.641 [TestNG-tests-1] ArrayTest -
+					Navigating to Applications of Array
+[INFO ] 2025-02-05 17:35:18.237 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:35:18.238 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:35:18.936 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:35:19.320 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:35:19.919 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:35:20.657 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:35:21.243 [TestNG-tests-1] ArrayTest -
+					Navigating to Applications of Array Try Editor
+[INFO ] 2025-02-05 17:35:24.561 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:35:24.563 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:35:25.408 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:35:25.951 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:35:26.402 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:35:26.953 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:35:27.396 [TestNG-tests-1] ArrayTest -
+					Navigating to Array in Python
+[INFO ] 2025-02-05 17:35:30.537 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:35:30.538 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:35:31.437 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:35:31.910 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:35:32.120 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:35:32.926 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:35:33.581 [TestNG-tests-1] ArrayTest -
+					Navigating to Array in Python Try Editor
+[INFO ] 2025-02-05 17:35:37.990 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:35:37.991 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:35:38.796 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:35:39.169 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:35:39.514 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:35:40.130 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:35:40.618 [TestNG-tests-1] ArrayTest -
+					Navigating to Arrays Using List
+[INFO ] 2025-02-05 17:35:43.807 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:35:43.808 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:35:44.897 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:35:45.214 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:35:45.573 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:35:46.221 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:35:46.609 [TestNG-tests-1] ArrayTest -
+					Navigating to Arrays Using List Try Editor
+[INFO ] 2025-02-05 17:35:50.387 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:35:50.391 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:35:51.367 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:35:51.746 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:35:52.149 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:35:52.665 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:35:53.075 [TestNG-tests-1] ArrayTest -
+					Navigating to Basic Operations in List
+[INFO ] 2025-02-05 17:35:55.815 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:35:55.816 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:35:56.663 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:35:57.119 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:35:57.523 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:35:58.097 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:35:58.590 [TestNG-tests-1] ArrayTest -
+					Navigating to Basic Operations in List Try Editor
+[INFO ] 2025-02-05 17:36:03.959 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:36:03.961 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:36:04.757 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:36:05.278 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:36:05.648 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:36:06.181 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:36:06.545 [TestNG-tests-1] ArrayTest -
+					Verifying code execution for Array sections: Arrays in Python
+[INFO ] 2025-02-05 17:36:10.849 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:36:10.850 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:36:11.542 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:36:12.022 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:36:12.371 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:36:12.875 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:36:13.404 [TestNG-tests-1] ArrayTest -
+					Verifying code execution for Array sections: Arrays in Python
+[INFO ] 2025-02-05 17:36:17.308 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:36:17.309 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:36:18.081 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:36:18.633 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:36:18.957 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:36:19.701 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:36:20.150 [TestNG-tests-1] ArrayTest -
+					Verifying code execution for Array sections: Arrays Using List
+[INFO ] 2025-02-05 17:36:24.653 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:36:24.654 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:36:25.316 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:36:25.645 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:36:25.963 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:36:26.612 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:36:26.991 [TestNG-tests-1] ArrayTest -
+					Verifying code execution for Array sections: Arrays Using List
+[INFO ] 2025-02-05 17:36:31.173 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:36:31.175 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:36:32.060 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:36:32.422 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:36:32.703 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:36:33.337 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:36:33.741 [TestNG-tests-1] ArrayTest -
+					Verifying code execution for Array sections: Basic Operations in Lists
+[INFO ] 2025-02-05 17:36:37.483 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:36:37.484 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:36:38.150 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:36:38.393 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:36:38.634 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:36:39.200 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:36:39.616 [TestNG-tests-1] ArrayTest -
+					Verifying code execution for Array sections: Basic Operations in Lists
+[INFO ] 2025-02-05 17:36:43.887 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:36:43.888 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:36:44.616 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:36:44.881 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:36:45.072 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:36:45.640 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:36:46.205 [TestNG-tests-1] ArrayTest -
+					Verifying code execution for Array sections: Applications of Array
+[INFO ] 2025-02-05 17:36:50.502 [TestNG-tests-1] ArrayTest -
+					Initializing WebDriver and navigating to Array Page
+[INFO ] 2025-02-05 17:36:50.504 [TestNG-tests-1] ArrayTest -
+					Clicking launch page Get Started button
+[INFO ] 2025-02-05 17:36:51.171 [TestNG-tests-1] ArrayTest -
+					Clicking Sign In
+[INFO ] 2025-02-05 17:36:51.505 [TestNG-tests-1] ArrayTest -
+					Entering username and password
+[INFO ] 2025-02-05 17:36:52.040 [TestNG-tests-1] ArrayTest -
+					Clicking Login button
+[INFO ] 2025-02-05 17:36:52.633 [TestNG-tests-1] ArrayTest -
+					Navigating to Array page
+[INFO ] 2025-02-05 17:36:53.085 [TestNG-tests-1] ArrayTest -
+					Verifying code execution for Array sections: Applications of Array

@@ -1,7 +1,5 @@
 package dsAlgoTests;
 
-import java.util.Properties;
-
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -9,12 +7,10 @@ import org.testng.annotations.Test;
 
 import dsAlgoHooks.Hooks;
 import dsAlgoPages.DataStructureIntroductionPage;
-import dsAlgoPages.GraphPage;
 import dsAlgoPages.HomePage;
 import dsAlgoPages.RegisterPage;
 import dsAlgoPages.SigninPage;
 import dsAlgoPages.TryEditorPage;
-import dsAlgoUtils.ConfigReader;
 import dsAlgoUtils.TestDataProvider;
 
 public class DataStructureTest extends Hooks {

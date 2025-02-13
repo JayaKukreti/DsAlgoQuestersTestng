@@ -47,7 +47,7 @@ public class QueueTest extends Hooks {
     	Assert.assertTrue(queuepage.textconfirmImplementationofQueue());
     }
     
-    @Test()
+    @Test(groups= {"regresiion"})
     public void navigatetoImplementationOfQueueInPythonTryEditor() {
     	
     	queuepage.implementationOfQueueInPythonBtn();

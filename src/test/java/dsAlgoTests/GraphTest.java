@@ -41,7 +41,7 @@ public class GraphTest extends Hooks {
 		System.out.println("Successfully navigated to Graph Page.");
 	}
 
-	@Test()
+	@Test
 	public void navigatetoGraphModule() {
 		System.out.println("Navigating to Graph Module...");
 		GraphPage.clickgraphpagegraphoption();
@@ -49,7 +49,7 @@ public class GraphTest extends Hooks {
 		System.out.println("Graph Module navigation successful.");
 	}
 
-	@Test()
+	@Test(groups= {"regresion"})
 	public void navigatetoGraphRepresentation() {
 		System.out.println("Navigating to Graph Representation...");
 		GraphPage.Graphrepresentation();
@@ -75,7 +75,7 @@ public class GraphTest extends Hooks {
 		System.out.println("Graph Representation Try Editor navigation successful.");
 	}
 
-	@Test()
+	@Test
 	public void navigateToGraphPracticeQuestions() {
 		System.out.println("Navigating to Graph Practice Questions...");
 		GraphPage.clickgraphpagegraphoption();
@@ -84,7 +84,7 @@ public class GraphTest extends Hooks {
 		System.out.println("Graph Practice Questions navigation successful.");
 	}
 
-	@Test()
+	@Test
 	public void navigateToGraphRepresentationPracticeQuestions() {
 		System.out.println("Navigating to Graph Representation Practice Questions...");
 		GraphPage.Graphrepresentation();
@@ -93,7 +93,7 @@ public class GraphTest extends Hooks {
 		System.out.println("Graph Representation Practice Questions navigation successful.");
 	}
 
-	@Test()
+	@Test
 	public void seeListOfPracticeQuestionsonGraphPage() {
 		System.out.println("Checking practice questions on Graph Page...");
 		GraphPage.clickgraphpagegraphoption();
@@ -109,7 +109,7 @@ public class GraphTest extends Hooks {
 		Assert.fail("No practice questions found on the Practice Questions Page!");
 	}
 
-	@Test()
+	@Test
 	public void checkErrorMessageWhenExecutingWithoutCodeInGraphPage() {
 		System.out.println("Verifying error message for empty execution in Graph Page...");
 		GraphPage.clickgraphpagegraphoption();
@@ -118,7 +118,7 @@ public class GraphTest extends Hooks {
 		Assert.fail("Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.");
 	}
 
-	@Test()
+	@Test
 	public void checkErrorMessageWhenExecutingWithoutCodeInGraphReprePage() {
 		System.out.println("Verifying error message for empty execution in Graph Representation Page...");
 		GraphPage.Graphrepresentation();

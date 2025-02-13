@@ -12,7 +12,7 @@ import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class Base {
 
-	private static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
+	private static  ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
 
 	public WebDriver initializeBrowser(String browser) {
 		if (browser == null || browser.isEmpty()) {
@@ -52,7 +52,7 @@ public class Base {
 		return driver;
 	}
 
-	public static synchronized WebDriver getDriver() {
+	public static  WebDriver getDriver() {
 		WebDriver driver = tlDriver.get();
 		if (driver == null) {
 			throw new IllegalStateException("WebDriver is not initialized. Did you call initializeBrowser?");
@@ -60,7 +60,7 @@ public class Base {
 		return driver;
 	}
 
-	public static void removeDriver() {
+	public static  void removeDriver() {
 		WebDriver driver = tlDriver.get();
 		if (driver != null) {
 			driver.quit();

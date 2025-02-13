@@ -44,16 +44,5 @@ System.out.println("Expected Message: " + expectedResult);
 	
 	
 	
-//	@Test(dataProvider = "RegisterPageData", dataProviderClass = TestDataProvider.class)
-//	public void enterCredentials(String username, String password, String passwordconfirmation, String expectedResult)
-//			throws TimeoutException {
-//		homePage.clickRegister();
-//		RegisterPage = new RegisterPage(driver);
-//		RegisterPage.enteringcode(username, password, passwordconfirmation);
-//		RegisterPage.Clickregisteronregisterpage();
-//		String actualMessage = RegisterPage.credentialsResult(username, password, passwordconfirmation, expectedResult);
-//		System.out.println("Actual Message: " + actualMessage);
-//		System.out.println("Expected Message: " + expectedResult);
-//		Assert.assertEquals(actualMessage, expectedResult, "Register message does not match expected result!");
-//	}
+
 }
