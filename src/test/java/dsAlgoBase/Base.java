@@ -1,14 +1,10 @@
 package dsAlgoBase;
 
 import java.time.Duration;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.edge.EdgeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.firefox.FirefoxOptions;
 
 public class Base {
 
@@ -52,7 +48,7 @@ public class Base {
 		return driver;
 	}
 
-	public static synchronized WebDriver getDriver() {
+	public static WebDriver getDriver() {
 		WebDriver driver = tlDriver.get();
 		if (driver == null) {
 			throw new IllegalStateException("WebDriver is not initialized. Did you call initializeBrowser?");

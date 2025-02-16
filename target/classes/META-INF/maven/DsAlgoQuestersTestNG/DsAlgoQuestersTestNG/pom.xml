@@ -26,6 +26,13 @@
 			<version>7.10.2</version>
 			<scope>test</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.aventstack/chaintest-testng -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>chaintest-testng</artifactId>
+			<version>1.0.11</version>
+		</dependency>
+
 
 		<dependency>
 			<groupId>org.slf4j</groupId>
@@ -39,12 +46,6 @@
 			<version>1.4.11</version>
 		</dependency>
 
-		<dependency>
-			<groupId>org.seleniumhq.selenium</groupId>
-			<artifactId>selenium-java</artifactId>
-			<version>4.17.0</version>  <!-- Use the latest available -->
-		</dependency>
-
 
 		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 		<dependency>
@@ -53,12 +54,12 @@
 			<version>5.3.0</version>
 		</dependency>
 		<!--
-		https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter -->
+		https://mvnrepository.com/artifact/tech.grasshopper/extentreports-cucumber7-adapter 
 		<dependency>
 			<groupId>tech.grasshopper</groupId>
 			<artifactId>extentreports-cucumber7-adapter</artifactId>
 			<version>1.14.0</version>
-		</dependency>
+		</dependency>-->
 
 		<!--https://mvnrepository.com/artifact/org.apache.logging.log4j/log4j-api -->
 		<dependency>
@@ -102,15 +103,15 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>3.3.0</version>
 
-					<configuration>
+				<configuration>
 						<suiteXmlFiles>
 
-							<suiteXmlFile>crossbrowsertestng.xml</suiteXmlFile>
+							<suiteXmlFile>testng.xml</suiteXmlFile>
 						</suiteXmlFiles>
 
 
 						<parallel>
-							methods
+							tests
 						</parallel>
 						<useUnlimitedThreads>true</useUnlimitedThreads>
 
@@ -137,6 +138,7 @@
 					<artifactId>maven-project-info-reports-plugin</artifactId>
 					<version>3.6.1</version>
 				</plugin>
+				
 			</plugins>
 		</pluginManagement>
 	</build>

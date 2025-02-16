@@ -6,6 +6,9 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import com.aventstack.chaintest.plugins.ChainTestListener;
+
 import dsAlgoHooks.Hooks;
 import dsAlgoPages.GraphPage;
 import dsAlgoPages.HomePage;
@@ -27,109 +30,114 @@ public class GraphTest extends Hooks {
 
 	@BeforeMethod
 	public void navigateGraphPage() {
-		System.out.println("Navigating to Graph Page...");
+		
 		driver = Hooks.getDriver();
 		homePage = new HomePage(driver);
+		ChainTestListener.log("Clicking Get Started button on Launch Page");
 		homePage.clickLaunchPageGetstartedbutton();
+		ChainTestListener.log("Navigating to Sign-in Page");
 		homePage.clickSignin();
 		SigninPage = new SigninPage(driver);
+		ChainTestListener.log("Entering username and password");
 		SigninPage.sendtextusername();
 		SigninPage.sendtextpassword();
+		ChainTestListener.log("Clicking Login button");
 		SigninPage.clickLoginbutton();
+		ChainTestListener.log("Navigating to Graph Page");
 		homePage.getStartedofGraph();
 		GraphPage = new GraphPage(driver);
-		System.out.println("Successfully navigated to Graph Page.");
+		
 	}
 
-	@Test()
+	@Test(priority=1)
 	public void navigatetoGraphModule() {
-		System.out.println("Navigating to Graph Module...");
+		ChainTestListener.log("Navigating to Graph Module...");
 		GraphPage.clickgraphpagegraphoption();
 		Assert.assertTrue(GraphPage.textconfirmforgraphmodule());
-		System.out.println("Graph Module navigation successful.");
+		ChainTestListener.log("Graph Module navigation successful.");
 	}
 
-	@Test()
+	@Test(priority=2)
 	public void navigatetoGraphRepresentation() {
-		System.out.println("Navigating to Graph Representation...");
+		ChainTestListener.log("Navigating to Graph Representation...");
 		GraphPage.Graphrepresentation();
 		Assert.assertTrue(GraphPage.isGraphRepresentationTextDisplayed());
-		System.out.println("Graph Representation navigation successful.");
+		ChainTestListener.log("Graph Representation navigation successful.");
 	}
 
-	@Test(dependsOnMethods = { "navigatetoGraphModule" })
+	@Test(dependsOnMethods = { "navigatetoGraphModule" },priority=3)
 	public void navigatetoGraphModuletryeditor() {
-		System.out.println("Navigating to Graph Module Try Editor...");
+		ChainTestListener.log("Navigating to Graph Module Try Editor...");
 		GraphPage.clickgraphpagegraphoption();
 		GraphPage.tryherebutton();
 		Assert.assertTrue(GraphPage.textconfirmfortryeditor());
-		System.out.println("Graph Module Try Editor navigation successful.");
+		ChainTestListener.log("Graph Module Try Editor navigation successful.");
 	}
 
-	@Test(dependsOnMethods = { "navigatetoGraphRepresentation" })
+	@Test(dependsOnMethods = { "navigatetoGraphRepresentation" },priority=4)
 	public void navigatetoGraphRepresentationtryeditor() {
-		System.out.println("Navigating to Graph Representation Try Editor...");
+		ChainTestListener.log("Navigating to Graph Representation Try Editor...");
 		GraphPage.Graphrepresentation();
 		GraphPage.tryherebutton();
 		Assert.assertTrue(GraphPage.textconfirmfortryeditor());
-		System.out.println("Graph Representation Try Editor navigation successful.");
+		ChainTestListener.log("Graph Representation Try Editor navigation successful.");
 	}
 
-	@Test()
+	@Test(priority=5)
 	public void navigateToGraphPracticeQuestions() {
-		System.out.println("Navigating to Graph Practice Questions...");
+		ChainTestListener.log("Navigating to Graph Practice Questions...");
 		GraphPage.clickgraphpagegraphoption();
 		GraphPage.clickpracticequestions();
 		Assert.assertTrue(GraphPage.textconfirmpracticequestion());
-		System.out.println("Graph Practice Questions navigation successful.");
+		ChainTestListener.log("Graph Practice Questions navigation successful.");
 	}
 
-	@Test()
+	@Test(priority=6)
 	public void navigateToGraphRepresentationPracticeQuestions() {
-		System.out.println("Navigating to Graph Representation Practice Questions...");
+		ChainTestListener.log("Navigating to Graph Representation Practice Questions...");
 		GraphPage.Graphrepresentation();
 		GraphPage.clickpracticequestions();
 		Assert.assertTrue(GraphPage.textconfirmpracticequestion());
-		System.out.println("Graph Representation Practice Questions navigation successful.");
+		ChainTestListener.log("Graph Representation Practice Questions navigation successful.");
 	}
 
-	@Test()
+	@Test(priority=7)
 	public void seeListOfPracticeQuestionsonGraphPage() {
-		System.out.println("Checking practice questions on Graph Page...");
+		ChainTestListener.log("Checking practice questions on Graph Page...");
 		GraphPage.clickgraphpagegraphoption();
 		GraphPage.clickpracticequestions();
 		Assert.fail("No practice questions found on the Practice Questions Page!");
 	}
 
-	@Test(dependsOnMethods = { "navigateToGraphRepresentationPracticeQuestions" })
+	@Test(dependsOnMethods = { "navigateToGraphRepresentationPracticeQuestions" },priority=8)
 	public void seeListOfPracticeQuestionsonGraphReprePage() {
-		System.out.println("Checking practice questions on Graph Representation Page...");
+		ChainTestListener.log("Checking practice questions on Graph Representation Page...");
 		GraphPage.Graphrepresentation();
 		GraphPage.clickpracticequestions();
 		Assert.fail("No practice questions found on the Practice Questions Page!");
 	}
 
-	@Test()
+	@Test(priority=9)
 	public void checkErrorMessageWhenExecutingWithoutCodeInGraphPage() {
-		System.out.println("Verifying error message for empty execution in Graph Page...");
+		ChainTestListener.log("Verifying error message for empty execution in Graph Page...");
 		GraphPage.clickgraphpagegraphoption();
 		GraphPage.tryherebutton();
 		GraphPage.run();
 		Assert.fail("Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.");
 	}
 
-	@Test()
+	@Test(priority=10)
 	public void checkErrorMessageWhenExecutingWithoutCodeInGraphReprePage() {
-		System.out.println("Verifying error message for empty execution in Graph Representation Page...");
+		ChainTestListener.log("Verifying error message for empty execution in Graph Representation Page...");
 		GraphPage.Graphrepresentation();
 		GraphPage.tryherebutton();
 		GraphPage.run();
 		Assert.fail("Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.");
 	}
 
-	@Test(dataProvider = "codeExecutionData", dataProviderClass = TestDataProvider.class)
+	@Test(dataProvider = "codeExecutionData", dataProviderClass = TestDataProvider.class,priority=11)
 	public void verifyCodeExecutionforGraphPage(String code, String expectedResult) {
-		System.out.println("Executing code for Graph Page: " + code);
+		ChainTestListener.log("Executing code for Graph Page: " + code);
 		GraphPage.clickgraphpagegraphoption();
 		GraphPage.tryherebutton();
 		TryEditorPage = new TryEditorPage(driver);
@@ -139,9 +147,9 @@ public class GraphTest extends Hooks {
 		Assert.assertEquals(actualResult, expectedResult, "Output does not match for code: " + code);
 	}
 
-	@Test(dataProvider = "codeExecutionData", dataProviderClass = TestDataProvider.class)
+	@Test(dataProvider = "codeExecutionData", dataProviderClass = TestDataProvider.class,priority=12)
 	public void verifyCodeExecutionforGraphRepresentationPage(String code, String expectedResult) {
-		System.out.println("Executing code for Graph Representation Page: " + code);
+		ChainTestListener.log("Executing code for Graph Representation Page: " + code);
 		GraphPage.Graphrepresentation();
 		GraphPage.tryherebutton();
 		TryEditorPage = new TryEditorPage(driver);

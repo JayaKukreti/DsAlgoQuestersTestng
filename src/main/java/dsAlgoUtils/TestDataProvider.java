@@ -3,6 +3,7 @@ package dsAlgoUtils;
 import java.io.IOException;
 
 import org.testng.annotations.DataProvider;
+import dsAlgoUtils.*;
 
 public class TestDataProvider {
 
@@ -58,11 +59,6 @@ public class TestDataProvider {
 		return ExcelDataReader.readExcel("Signin");
 	}
 
-	@DataProvider(name = "dataStructures")
-	public Object[][] getDataStructures() throws IOException {
-
-		return ExcelDataReader.readExcel("Home");
-	}
 
 	@DataProvider(name = "RegisterPageData")
 	public Object[][] getRegisterData() {
