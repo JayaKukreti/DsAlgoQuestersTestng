@@ -1,8 +1,6 @@
 package dsAlgoHooks;
 
 import java.util.Properties;
-import org.openqa.selenium.OutputType;
-import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;

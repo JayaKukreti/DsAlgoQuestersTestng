@@ -3,6 +3,7 @@ package dsAlgoUtils;
 import java.io.IOException;
 
 import org.testng.annotations.DataProvider;
+import dsAlgoUtils.*;
 
 public class TestDataProvider {
 

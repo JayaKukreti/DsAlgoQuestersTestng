@@ -8,16 +8,20 @@
   <test thread-count="2" parallel="tests" name="ChromeTest(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="dsAlgoTests.DataStructureTest">
+      <class name="dsAlgoTests.TreeTest">
         <methods>
-          <include name="DataStructureIntroductionPage"/>
-          <include name="seeListOfPracticeQuestionsonDataStructureIntroductionPage"/>
-          <include name="checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage"/>
+          <include name="verifyTreeTryEditorWithoutCodeOfTraversalsIllustration"/>
+          <include name="verifyTreeTryEditorWithoutCodeOfTypesOfTrees"/>
+          <include name="listOfPracticeQuestionOfOverviewOfTrees"/>
           <include name="tearDownTest"/>
+          <include name="verifyTreeTryEditorWithoutCodeOfOverviewOfTrees"/>
+          <include name="verifyTreeTryEditorWithoutCodeOfTerminologies"/>
+          <include name="navigateToTreePage"/>
           <include name="setup"/>
           <include name="setupSuite"/>
+          <include name="verifyTreeTryEditorWithoutCodeOfTreeTraversals"/>
         </methods>
-      </class> <!-- dsAlgoTests.DataStructureTest -->
+      </class> <!-- dsAlgoTests.TreeTest -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [CrossBrowserSuite] -->
