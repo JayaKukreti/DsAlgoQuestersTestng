@@ -7,13 +7,14 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.aventstack.chaintest.plugins.ChainTestListener;
-import dsAlgoHooks.Hooks;
+
+import dsAlgoBase.Base;
 import dsAlgoPages.HomePage;
 import dsAlgoPages.RegisterPage;
 import dsAlgoPages.SigninPage;
 import dsAlgoUtils.TestDataProvider;
 
-public class SigninTest extends Hooks {
+public class SigninTest extends Base {
 	WebDriver driver;
 	HomePage homePage;
 	SigninPage SigninPage;
@@ -21,7 +22,7 @@ public class SigninTest extends Hooks {
 
 	@BeforeMethod
 	public void navigateToDsAlgoApplication() {
-		driver = Hooks.getDriver();
+		driver = Base.getDriver();
 		homePage = new HomePage(driver);
 		homePage.clickLaunchPageGetstartedbutton();
 	}

@@ -1,66 +1,66 @@
 package dsAlgoBase;
 
-import java.time.Duration;
+import java.util.Properties;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
+
+import dsAlgoDriverFactory.DriverFactory;
+import dsAlgoUtils.ConfigReader;
 
 public class Base {
+	public WebDriver driver;
 
-	private static ThreadLocal<WebDriver> tlDriver = new ThreadLocal<>();
+	private DriverFactory driverFactory = new DriverFactory();
+	private static Properties prop1;
 
-	public WebDriver initializeBrowser(String browser) {
-		if (browser == null || browser.isEmpty()) {
-			throw new IllegalArgumentException("Browser name must not be null or empty.");
-		}
+	@BeforeSuite(alwaysRun = true)
+	public void setupSuite() {
+		prop1 = ConfigReader.initializeprop();
+		System.out.println("Before Suite: Config properties initialized.");
+	}
 
+	@BeforeMethod(alwaysRun = true)
+	@Parameters("browser")
+	public void setup(@Optional("") String browser) {
 		try {
-			switch (browser.toLowerCase()) {
-			case "chrome":
-				// ChromeOptions chromeOptions = new ChromeOptions();
-				// chromeOptions.addArguments("headless");
-				tlDriver.set(new ChromeDriver());
-				break;
-			case "firefox":
-				// FirefoxOptions firefoxOptions = new FirefoxOptions();
-				// firefoxOptions.addArguments("headless");
-				tlDriver.set(new FirefoxDriver());
-				break;
-			case "edge":
-				// EdgeOptions edgeOptions = new EdgeOptions();
-				// edgeOptions.addArguments("headless");
-				tlDriver.set(new EdgeDriver());
-				break;
-			default:
-				throw new IllegalArgumentException("Unsupported browser: " + browser);
+			System.out.println("Browser received from testng.xml: " + browser);
+
+			if (browser == null || browser.trim().isEmpty()) {
+				browser = prop1.getProperty("browser");
+				System.out.println("Using default browser from properties: " + browser);
 			}
+
+			driverFactory.initializeBrowser(browser);
+			driver = DriverFactory.getDriver();
+
+			driver.manage().deleteAllCookies();
+			driver.get(prop1.getProperty("URL"));
 		} catch (Exception e) {
-			System.err.println("Error initializing browser: " + e.getMessage());
+			System.out.println("Error in setup(): " + e.getMessage());
 			throw e;
 		}
 
-		WebDriver driver = getDriver();
-		driver.manage().deleteAllCookies();
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+	}
 
-		return driver;
+	@AfterMethod(alwaysRun = true)
+	public void tearDownTest(ITestResult result) {
+		
+		driver.quit();
+		DriverFactory.removeDriver();
+
 	}
 
 	public static WebDriver getDriver() {
-		WebDriver driver = tlDriver.get();
+		WebDriver driver = DriverFactory.getDriver();
 		if (driver == null) {
-			throw new IllegalStateException("WebDriver is not initialized. Did you call initializeBrowser?");
+			throw new IllegalStateException("WebDriver instance is null. Ensure setup() is called before tests.");
 		}
 		return driver;
 	}
 
-	public static void removeDriver() {
-		WebDriver driver = tlDriver.get();
-		if (driver != null) {
-			driver.quit();
-			tlDriver.remove();
-		}
-	}
 }

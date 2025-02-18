@@ -1,1 +1,0 @@
-{"uuid":"e8a8a752-82be-44f3-97bd-8b81e780bee9","name":"CrossBrowserSuite","children":["7d4bd5c5-38c2-4368-9739-db2969fa15cf"],"befores":[{"name":"setupSuite","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1739663266920,"stop":1739663266926}],"afters":[],"start":1739663266898,"stop":1739663336362}

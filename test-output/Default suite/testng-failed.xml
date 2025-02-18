@@ -3,15 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="dsAlgoTests.ArrayTest">
+      <class name="dsAlgoTests.DataStructureTest">
         <methods>
-          <include name="PracticeQuestionVaildAndInvalidDataWithSubmitButton" invocation-numbers="0 3"/>
+          <include name="DataStructureIntroductionPage"/>
           <include name="tearDownTest"/>
           <include name="setup"/>
           <include name="setupSuite"/>
-          <include name="navigateToArrayPage"/>
+          <include name="navigatetoTimeComplexityModule"/>
         </methods>
-      </class> <!-- dsAlgoTests.ArrayTest -->
+      </class> <!-- dsAlgoTests.DataStructureTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
