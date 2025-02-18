@@ -1,4 +1,7 @@
+
 package dsAlgoTests;
+
+import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
@@ -7,27 +10,29 @@ import org.testng.annotations.Test;
 
 import com.aventstack.chaintest.plugins.ChainTestListener;
 
-import dsAlgoHooks.Hooks;
+import dsAlgoBase.Base;
 import dsAlgoPages.DataStructureIntroductionPage;
 import dsAlgoPages.HomePage;
 import dsAlgoPages.RegisterPage;
 import dsAlgoPages.SigninPage;
 import dsAlgoPages.TryEditorPage;
+import dsAlgoUtils.ConfigReader;
 import dsAlgoUtils.TestDataProvider;
 
-public class DataStructureTest extends Hooks {
+public class DataStructureTest extends Base {
 
 	WebDriver driver;
 	HomePage Hg;
 	SigninPage Sg;
 	RegisterPage Rg;
-	//Properties prop = ConfigReader.initializeProp();
-	DataStructureIntroductionPage Dg = new DataStructureIntroductionPage(driver);
+	Properties prop = ConfigReader.initializeprop();
+	DataStructureIntroductionPage Dg;
 	TryEditorPage TryEditorPage;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void DataStructureIntroductionPage() {
-		driver = Hooks.getDriver();
+		driver = Base.getDriver();
+		Dg = new DataStructureIntroductionPage(driver);
 		Hg = new HomePage(driver);
 		ChainTestListener.log("Clicking Get Started button on Launch Page");
 		Hg.clickLaunchPageGetstartedbutton();
@@ -44,63 +49,64 @@ public class DataStructureTest extends Hooks {
 		Dg = new DataStructureIntroductionPage(driver);
 	}
 
-	@Test(priority=1)
+	@Test(priority = 1)
 	public void navigatetoTimeComplexityModule() {
 		ChainTestListener.log("Navigating to Time Complexity Module");
-	    Dg.ClickTimeComplexityLink();
-	    Assert.assertTrue(Dg.isTextDisplayedInTimeComplexityPage());
-	    ChainTestListener.log("Successfully navigated to Time Complexity Module");
+		Dg.ClickTimeComplexityLink();
+		Assert.assertTrue(Dg.isTextDisplayedInTimeComplexityPage());
+		ChainTestListener.log("Successfully navigated to Time Complexity Module");
 	}
 
-	@Test(priority=2)
+	@Test(groups = { "regression" },priority=2)
 	public void navigatetoTimeComplexitytryeditor() {
 		ChainTestListener.log("Navigating to Time Complexity Try Editor");
-	    Dg.ClickTimeComplexityLink();
-	    Dg.ClickTryHereButton();
-	    Assert.assertTrue(Dg.textconfirmfortryeditor());
-	    ChainTestListener.log("Successfully opened Time Complexity Try Editor");
+		Dg.ClickTimeComplexityLink();
+		Dg.ClickTryHereButton();
+		Assert.assertTrue(Dg.textconfirmfortryeditor());
+		ChainTestListener.log("Successfully opened Time Complexity Try Editor");
 	}
 
-	@Test(priority=3)
+	@Test(groups = { "regression" },priority=3)
 	public void navigateToDataStructureIntroductionPagePracticeQuestions() {
 		ChainTestListener.log("Navigating to Practice Questions on Data Structure Introduction Page");
-	    Dg.ClickTimeComplexityLink();
-	    Dg.clickpracticequestions();
-	    Assert.assertTrue(Dg.textconfirmpracticequestion());
-	    ChainTestListener.log("Successfully navigated to Practice Questions");
+		Dg.ClickTimeComplexityLink();
+		Dg.clickpracticequestions();
+		Assert.assertTrue(Dg.textconfirmpracticequestion());
+		ChainTestListener.log("Successfully navigated to Practice Questions");
 	}
 
-	@Test(priority=4)
+	@Test(priority = 4)
 	public void seeListOfPracticeQuestionsonDataStructureIntroductionPage() {
 		ChainTestListener.log("Checking list of practice questions on Data Structure Introduction Page");
-	    Dg.ClickTimeComplexityLink();
-	    Dg.clickpracticequestions();
-	    Assert.fail("No practice questions found on the Practice Questions Page!");
-	    ChainTestListener.log("Practice questions check failed");
+		Dg.ClickTimeComplexityLink();
+		Dg.clickpracticequestions();
+		Assert.fail("No practice questions found on the Practice Questions Page!");
+		ChainTestListener.log("Practice questions check failed");
 	}
 
-	@Test(priority=5)
+	@Test(priority = 5)
 	public void checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage() {
 		ChainTestListener.log("Checking error message when executing without code");
-	    Dg.ClickTimeComplexityLink();
-	    Dg.click_tryEditor();
-	    Dg.click_run();
-	    Assert.fail("Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.");
-	    ChainTestListener.log("Error message validation failed");
+		Dg.ClickTimeComplexityLink();
+		Dg.click_tryEditor();
+		Dg.click_run();
+		Assert.fail(
+				"Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.");
+		ChainTestListener.log("Error message validation failed");
 	}
 
-	@Test(dataProvider = "codeExecutionData", dataProviderClass = TestDataProvider.class,priority=6)
+	@Test(dataProvider = "codeExecutionData", dataProviderClass = TestDataProvider.class, priority = 6)
 	public void verifyCodeExecutionforDataStructureIntroductionPage(String code, String expectedResult) {
 		ChainTestListener.log("Verifying code execution for Data Structure Introduction Page");
-	    Dg.ClickTimeComplexityLink();
-	    Dg.click_tryEditor();
-	    ChainTestListener.log("Executing code: " + code);
-	    TryEditorPage = new TryEditorPage(driver);
-	    TryEditorPage.enteringCode(code);
-	    TryEditorPage.runButton();
-	    String actualResult = TryEditorPage.output();
-	    ChainTestListener.log("Execution result: " + actualResult);
-	    Assert.assertEquals(actualResult, expectedResult, "Output does not match for code: " + code);
-	    ChainTestListener.log("Code execution verified successfully");
+		Dg.ClickTimeComplexityLink();
+		Dg.click_tryEditor();
+		ChainTestListener.log("Executing code: " + code);
+		TryEditorPage = new TryEditorPage(driver);
+		TryEditorPage.enteringCode(code);
+		TryEditorPage.runButton();
+		String actualResult = TryEditorPage.output();
+		ChainTestListener.log("Execution result: " + actualResult);
+		Assert.assertEquals(actualResult, expectedResult, "Output does not match for code: " + code);
+		ChainTestListener.log("Code execution verified successfully");
 	}
 }

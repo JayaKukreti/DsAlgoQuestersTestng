@@ -80,7 +80,14 @@
 			<artifactId>poi</artifactId>
 			<version>5.3.0</version>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+		<dependency>
+			<groupId>io.qameta.allure</groupId>
+			<artifactId>allure-testng</artifactId>
+			<version>2.29.1</version>
+		</dependency>
 	</dependencies>
+
 
 	<build>
 		<pluginManagement>
@@ -103,7 +110,7 @@
 					<artifactId>maven-surefire-plugin</artifactId>
 					<version>3.3.0</version>
 
-				<configuration>
+					<configuration>
 						<suiteXmlFiles>
 
 							<suiteXmlFile>testng.xml</suiteXmlFile>
@@ -138,7 +145,7 @@
 					<artifactId>maven-project-info-reports-plugin</artifactId>
 					<version>3.6.1</version>
 				</plugin>
-				
+
 			</plugins>
 		</pluginManagement>
 	</build>

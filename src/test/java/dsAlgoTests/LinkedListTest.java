@@ -6,7 +6,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.aventstack.chaintest.plugins.ChainTestListener;
-import dsAlgoHooks.Hooks;
+
+import dsAlgoBase.Base;
 import dsAlgoPages.HomePage;
 import dsAlgoPages.LinkedListPage;
 import dsAlgoPages.RegisterPage;
@@ -15,7 +16,7 @@ import dsAlgoPages.TryEditorPage;
 import dsAlgoUtils.ConfigReader;
 import dsAlgoUtils.TestDataProvider;
 
-public class LinkedListTest extends Hooks {
+public class LinkedListTest extends Base {
 	WebDriver driver;
 	HomePage homePage;
 	SigninPage signinPage;
@@ -26,7 +27,7 @@ public class LinkedListTest extends Hooks {
 
 	@BeforeMethod
 	public void navigateToLinkedListPage() {
-		driver = Hooks.getDriver();
+		driver = Base.getDriver();
 		homePage = new HomePage(driver);
 		ChainTestListener.log("Clicking Get Started button on Launch Page");
 		homePage.clickLaunchPageGetstartedbutton();

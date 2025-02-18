@@ -5,14 +5,15 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.aventstack.chaintest.plugins.ChainTestListener;
-import dsAlgoHooks.Hooks;
+
+import dsAlgoBase.Base;
 import dsAlgoPages.HomePage;
 import dsAlgoPages.SigninPage;
 import dsAlgoPages.TreePage;
 import dsAlgoPages.TryEditorPage;
 import dsAlgoUtils.TestDataProvider;
 
-public class TreeTest extends Hooks {
+public class TreeTest extends Base {
 	WebDriver driver;
 	HomePage homepage;
 	SigninPage signinpage;
@@ -20,9 +21,9 @@ public class TreeTest extends Hooks {
 //Properties prop = ConfigReader.initializeprop();
 	TreePage treepage;
 
-	@BeforeMethod
+	@BeforeMethod(alwaysRun = true)
 	public void navigateToTreePage() {
-		driver = Hooks.getDriver();// to call driver
+		driver = Base.getDriver();// to call driver
 		ChainTestListener.log("Driver initialized.");
 		homepage = new HomePage(driver);// calling the page with driver
 		ChainTestListener.log("Driver initialized.");
@@ -55,7 +56,7 @@ public class TreeTest extends Hooks {
 		ChainTestListener.log("Overview of Trees verification successful.");
 	}
 
-	@Test(priority = 2)
+	@Test(groups= {"regression"},priority=2)
 	public void navigateToOverviewOfTreesTryEditor() {
 		ChainTestListener.log("Navigating to Overview of Trees section.");
 		treepage.OverviewOfTrees();
@@ -67,7 +68,7 @@ public class TreeTest extends Hooks {
 
 	}
 
-	@Test(priority = 3)
+	@Test(groups= {"regression"},priority=3)
 	public void navigateToTerminologies() {
 		ChainTestListener.log("Navigating to Terminologies section.");
 		treepage.Terminologies();

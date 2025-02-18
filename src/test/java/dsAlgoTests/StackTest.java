@@ -7,7 +7,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 import com.aventstack.chaintest.plugins.ChainTestListener;
-import dsAlgoHooks.Hooks;
+
+import dsAlgoBase.Base;
 import dsAlgoPages.HomePage;
 import dsAlgoPages.RegisterPage;
 import dsAlgoPages.SigninPage;
@@ -16,7 +17,7 @@ import dsAlgoPages.TryEditorPage;
 import dsAlgoUtils.ConfigReader;
 import dsAlgoUtils.TestDataProvider;
 
-public class StackTest extends Hooks {
+public class StackTest extends Base {
 
 	WebDriver driver;
 	HomePage homePage;
@@ -29,7 +30,7 @@ public class StackTest extends Hooks {
 	@BeforeMethod
 	public void navigateStackPage() {
 
-		driver = Hooks.getDriver();
+		driver = Base.getDriver();
 		homePage = new HomePage(driver);
 		ChainTestListener.log("Clicking Get Started button on Launch Page");
 		homePage.clickLaunchPageGetstartedbutton();

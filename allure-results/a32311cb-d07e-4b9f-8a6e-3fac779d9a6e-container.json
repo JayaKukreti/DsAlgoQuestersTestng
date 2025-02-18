@@ -1,0 +1,1 @@
+{"uuid":"a32311cb-d07e-4b9f-8a6e-3fac779d9a6e","name":"dsAlgoBase.Base.setup","children":["60640631-4589-42b0-b84c-f9bc54ff421b"],"description":"","befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1739890056086,"stop":1739890057436}],"afters":[],"start":1739890056086,"stop":1739890057436}

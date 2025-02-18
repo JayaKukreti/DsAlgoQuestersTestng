@@ -12,7 +12,7 @@ import org.testng.ITestResult;
 
 import com.aventstack.chaintest.plugins.ChainTestListener;
 
-import dsAlgoHooks.Hooks;
+import dsAlgoBase.Base;
 
 public class Listeners implements ITestListener {
 
@@ -30,7 +30,7 @@ public class Listeners implements ITestListener {
 	public void onTestFailure(ITestResult result) {
 		System.out.println(result.getName() + " failed");
 
-		WebDriver driver = Hooks.getDriver(); // Fetch WebDriver from Hooks
+		WebDriver driver = Base.getDriver(); // Fetch WebDriver from Hooks
 
 		if (driver != null) {
 			try {
