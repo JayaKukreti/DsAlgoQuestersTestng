@@ -49,7 +49,7 @@ public class Base {
 
 	@AfterMethod(alwaysRun = true)
 	public void tearDownTest(ITestResult result) {
-		
+		driver = DriverFactory.getDriver();
 		driver.quit();
 		DriverFactory.removeDriver();
 
