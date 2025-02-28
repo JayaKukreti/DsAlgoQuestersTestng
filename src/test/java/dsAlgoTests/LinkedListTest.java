@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import dsAlgoHooks.Hooks;
+import dsAlgoBase.Base;
 import dsAlgoPages.ArrayPage;
 import dsAlgoPages.HomePage;
 import dsAlgoPages.LinkedListPage;
@@ -17,7 +17,7 @@ import dsAlgoPages.TryEditorPage;
 import dsAlgoUtils.ConfigReader;
 import dsAlgoUtils.TestDataProvider;
 
-public class LinkedListTest extends Hooks{
+public class LinkedListTest extends Base{
 	WebDriver driver;
 	HomePage homePage;
 	SigninPage signinPage;
@@ -29,7 +29,7 @@ public class LinkedListTest extends Hooks{
 
 	@BeforeMethod
 	public void navigateToLinkedListPage() {	
-		driver=Hooks.getDriver();
+		driver=Base.getDriver();
 		homePage=new HomePage(driver);
 		homePage.clickLaunchPageGetstartedbutton();
 		homePage.clickSignin();

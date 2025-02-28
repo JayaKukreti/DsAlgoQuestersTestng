@@ -8,7 +8,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import dsAlgoHooks.Hooks;
+import dsAlgoBase.Base;
 import dsAlgoPages.HomePage;
 import dsAlgoPages.QueuePage;
 import dsAlgoPages.RegisterPage;
@@ -17,7 +17,7 @@ import dsAlgoPages.TryEditorPage;
 import dsAlgoUtils.ConfigReader;
 import dsAlgoUtils.TestDataProvider;
 
-public class QueueTest extends Hooks {
+public class QueueTest extends Base {
 	WebDriver driver;
 	HomePage homepage;
 	SigninPage signinpage;
@@ -28,7 +28,7 @@ public class QueueTest extends Hooks {
     
     @BeforeMethod
     public void  navigatetoQueuepage() {
-    	driver = Hooks.getDriver();//to call driver
+    	driver = Base.getDriver();//to call driver
        homepage = new HomePage(driver);//calling the page with driver
        homepage.clickLaunchPageGetstartedbutton();
        homepage.clickSignin();

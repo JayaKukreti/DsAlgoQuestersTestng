@@ -10,7 +10,8 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import dsAlgoHooks.Hooks;
+
+import dsAlgoBase.Base;
 import dsAlgoPages.ArrayPage;
 import dsAlgoPages.HomePage;
 import dsAlgoPages.RegisterPage;
@@ -20,7 +21,7 @@ import dsAlgoPages.TryEditorPage;
 import dsAlgoUtils.ConfigReader;
 import dsAlgoUtils.TestDataProvider;
 
-public class ArrayTest extends Hooks{
+public class ArrayTest extends Base{
 	private  Logger logger = LogManager.getLogger(ArrayTest.class);
 	WebDriver driver;
 	HomePage homePage;
@@ -34,7 +35,7 @@ public class ArrayTest extends Hooks{
 	@BeforeMethod
     public void navigateToArrayPage() {
         logger.info("Initializing WebDriver and navigating to Array Page");
-        driver = Hooks.getDriver();
+        driver = Base.getDriver();
         homePage = new HomePage(driver);
         logger.info("Clicking launch page Get Started button");
         homePage.clickLaunchPageGetstartedbutton();

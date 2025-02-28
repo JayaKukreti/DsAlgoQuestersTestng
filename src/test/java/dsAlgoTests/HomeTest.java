@@ -4,12 +4,13 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-import dsAlgoHooks.Hooks;
+
+import dsAlgoBase.Base;
 import dsAlgoPages.HomePage;
 import dsAlgoPages.RegisterPage;
 import dsAlgoPages.SigninPage;
 
-public class HomeTest extends Hooks {
+public class HomeTest extends Base {
 	WebDriver driver;
 	HomePage homePage;
 	SigninPage SigninPage;
@@ -17,7 +18,7 @@ public class HomeTest extends Hooks {
 
 	@BeforeMethod
 	public void navigateToDsAlgoApplication() {
-		driver = Hooks.getDriver();
+		driver = Base.getDriver();
 		homePage = new HomePage(driver);
 		homePage.clickLaunchPageGetstartedbutton();
 	}

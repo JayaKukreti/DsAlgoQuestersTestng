@@ -7,13 +7,13 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import dsAlgoHooks.Hooks;
+import dsAlgoBase.Base;
 import dsAlgoPages.HomePage;
 import dsAlgoPages.RegisterPage;
 import dsAlgoPages.SigninPage;
 import dsAlgoUtils.TestDataProvider;
 
-public class RegisterTest extends Hooks {
+public class RegisterTest extends Base {
 	WebDriver driver;
 	HomePage homePage;
 	SigninPage SigninPage;
@@ -21,7 +21,7 @@ public class RegisterTest extends Hooks {
 
 	@BeforeMethod
 	public void navigateToDsAlgoApplication() {
-		driver = Hooks.getDriver();
+		driver = Base.getDriver();
 		homePage = new HomePage(driver);
 		homePage.clickLaunchPageGetstartedbutton();
 	}

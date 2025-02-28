@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import dsAlgoHooks.Hooks;
+import dsAlgoBase.Base;
 import dsAlgoPages.GraphPage;
 import dsAlgoPages.HomePage;
 import dsAlgoPages.SigninPage;
@@ -16,7 +16,7 @@ import dsAlgoPages.TryEditorPage;
 import dsAlgoUtils.ConfigReader;
 import dsAlgoUtils.TestDataProvider;
 
-public class TreeTest extends Hooks {
+public class TreeTest extends Base {
 	WebDriver driver;
 	HomePage homepage;
 	SigninPage signinpage;
@@ -26,7 +26,7 @@ public class TreeTest extends Hooks {
 	
 	@BeforeMethod	
 	public void navigateToTreePage() {
-		driver = Hooks.getDriver();//to call driver
+		driver = Base.getDriver();//to call driver
 	       homepage = new HomePage(driver);//calling the page with driver
 	       homepage.clickLaunchPageGetstartedbutton();
 	       homepage.clickSignin();

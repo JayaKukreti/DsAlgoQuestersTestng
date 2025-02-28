@@ -7,7 +7,7 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-import dsAlgoHooks.Hooks;
+import dsAlgoBase.Base;
 import dsAlgoPages.DataStructureIntroductionPage;
 import dsAlgoPages.GraphPage;
 import dsAlgoPages.HomePage;
@@ -17,7 +17,7 @@ import dsAlgoPages.TryEditorPage;
 import dsAlgoUtils.ConfigReader;
 import dsAlgoUtils.TestDataProvider;
 
-public class DataStructureTest extends Hooks {
+public class DataStructureTest extends Base {
 
 	WebDriver driver;
 	HomePage Hg;
@@ -29,7 +29,7 @@ public class DataStructureTest extends Hooks {
 
 	@BeforeMethod
 	public void DataStructureIntroductionPage() {
-		driver = Hooks.getDriver();
+		driver = Base.getDriver();
 		Hg = new HomePage(driver);
 		Hg.clickLaunchPageGetstartedbutton();
 		Hg.clickSignin();

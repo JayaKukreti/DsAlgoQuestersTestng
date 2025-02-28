@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results retried="2" ignored="0" total="9" passed="5" failed="2" skipped="0">
+<testng-results ignored="0" total="7" passed="0" failed="7" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-14T04:21:15 IST" name="CrossBrowserSuite" finished-at="2025-02-14T04:22:40 IST" duration-ms="85331">
+  <suite started-at="2025-02-17T21:39:30 IST" name="CrossBrowserSuite" finished-at="2025-02-17T21:40:22 IST" duration-ms="51981">
     <groups>
     </groups>
-    <test started-at="2025-02-14T04:21:15 IST" name="ChromeTest" finished-at="2025-02-14T04:22:40 IST" duration-ms="85331">
+    <test started-at="2025-02-17T21:39:30 IST" name="Test" finished-at="2025-02-17T21:40:22 IST" duration-ms="51981">
       <class name="dsAlgoTests.DataStructureTest">
-        <test-method is-config="true" signature="setupSuite()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:21:15 IST" name="setupSuite" finished-at="2025-02-14T04:21:15 IST" duration-ms="47" status="PASS">
+        <test-method is-config="true" signature="setupSuite()[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:39:30 IST" name="setupSuite" finished-at="2025-02-17T21:39:30 IST" duration-ms="15" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setupSuite -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:21:15 IST" name="setup" finished-at="2025-02-14T04:21:24 IST" duration-ms="8969" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:39:30 IST" name="setup" finished-at="2025-02-17T21:39:36 IST" duration-ms="5807" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,23 +22,21 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:21:24 IST" name="DataStructureIntroductionPage" finished-at="2025-02-14T04:21:29 IST" duration-ms="4133" status="PASS">
+        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:39:36 IST" name="DataStructureIntroductionPage" finished-at="2025-02-17T21:39:39 IST" duration-ms="3186" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DataStructureIntroductionPage -->
-        <test-method retried="true" signature="checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:21:29 IST" name="checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage" finished-at="2025-02-14T04:21:31 IST" duration-ms="2583" status="SKIP">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:39:39 IST" name="checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage" finished-at="2025-02-17T21:39:39 IST" duration-ms="28" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
             <message>
-              <![CDATA[Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.]]>
+              <![CDATA['java.lang.String org.testng.ITestResult.id()']]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.
-at org.testng.Assert.fail(Assert.java:99)
-at dsAlgoTests.DataStructureTest.checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage(DataStructureTest.java:85)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.testng.ITestResult.id()'
+at com.aventstack.chaintest.plugins.ChainTestListener.beforeInvocation(ChainTestListener.java:108)
+at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)
+at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:56)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:573)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -49,31 +47,36 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:21:31 IST" name="tearDownTest" finished-at="2025-02-14T04:21:32 IST" duration-ms="1138" status="PASS">
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:39:40 IST" name="tearDownTest" finished-at="2025-02-17T21:39:40 IST" duration-ms="715" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage status=SKIP method=DataStructureTest.checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3] output={null}]]]>
+                <![CDATA[[TestResult name=checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage status=FAILURE method=DataStructureTest.checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:21:32 IST" name="setup" finished-at="2025-02-14T04:21:36 IST" duration-ms="3817" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:39:40 IST" name="setup" finished-at="2025-02-17T21:39:43 IST" duration-ms="3023" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -84,25 +87,23 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:21:36 IST" name="DataStructureIntroductionPage" finished-at="2025-02-14T04:21:39 IST" duration-ms="3129" status="PASS">
+        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:39:43 IST" name="DataStructureIntroductionPage" finished-at="2025-02-17T21:39:46 IST" duration-ms="2756" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DataStructureIntroductionPage -->
-        <test-method signature="checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:21:39 IST" name="checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage" finished-at="2025-02-14T04:21:41 IST" duration-ms="1840" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="navigateToDataStructureIntroductionPagePracticeQuestions()[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:39:46 IST" name="navigateToDataStructureIntroductionPagePracticeQuestions" finished-at="2025-02-17T21:39:46 IST" duration-ms="6" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
             <message>
-              <![CDATA[Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.]]>
+              <![CDATA['java.lang.String org.testng.ITestResult.id()']]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test failed: Expected an error message when clicking the 'Run' button without entering code, but no message was displayed.
-at org.testng.Assert.fail(Assert.java:99)
-at dsAlgoTests.DataStructureTest.checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage(DataStructureTest.java:85)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.testng.ITestResult.id()'
+at com.aventstack.chaintest.plugins.ChainTestListener.beforeInvocation(ChainTestListener.java:108)
+at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)
+at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:56)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:573)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
@@ -111,61 +112,36 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:21:41 IST" name="tearDownTest" finished-at="2025-02-14T04:21:42 IST" duration-ms="862" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage status=FAILURE method=DataStructureTest.checkErrorMessageWhenExecutingWithoutCodeInDataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:21:42 IST" name="setup" finished-at="2025-02-14T04:21:45 IST" duration-ms="3167" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:21:45 IST" name="DataStructureIntroductionPage" finished-at="2025-02-14T04:21:49 IST" duration-ms="3399" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DataStructureIntroductionPage -->
-        <test-method signature="navigateToDataStructureIntroductionPagePracticeQuestions()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:21:49 IST" name="navigateToDataStructureIntroductionPagePracticeQuestions" finished-at="2025-02-14T04:21:50 IST" duration-ms="1037" status="PASS">
+          </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToDataStructureIntroductionPagePracticeQuestions -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:21:50 IST" name="tearDownTest" finished-at="2025-02-14T04:21:51 IST" duration-ms="718" status="PASS">
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:39:46 IST" name="tearDownTest" finished-at="2025-02-17T21:39:47 IST" duration-ms="841" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=navigateToDataStructureIntroductionPagePracticeQuestions status=SUCCESS method=DataStructureTest.navigateToDataStructureIntroductionPagePracticeQuestions()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3] output={null}]]]>
+                <![CDATA[[TestResult name=navigateToDataStructureIntroductionPagePracticeQuestions status=FAILURE method=DataStructureTest.navigateToDataStructureIntroductionPagePracticeQuestions()[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:21:51 IST" name="setup" finished-at="2025-02-14T04:21:54 IST" duration-ms="3024" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:39:47 IST" name="setup" finished-at="2025-02-17T21:39:50 IST" duration-ms="3027" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -176,83 +152,21 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:21:54 IST" name="DataStructureIntroductionPage" finished-at="2025-02-14T04:21:57 IST" duration-ms="2962" status="PASS">
+        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:39:50 IST" name="DataStructureIntroductionPage" finished-at="2025-02-17T21:39:53 IST" duration-ms="2402" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DataStructureIntroductionPage -->
-        <test-method signature="navigatetoTimeComplexityModule()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:21:57 IST" name="navigatetoTimeComplexityModule" finished-at="2025-02-14T04:21:57 IST" duration-ms="687" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigatetoTimeComplexityModule -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:21:57 IST" name="tearDownTest" finished-at="2025-02-14T04:21:58 IST" duration-ms="1021" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=navigatetoTimeComplexityModule status=SUCCESS method=DataStructureTest.navigatetoTimeComplexityModule()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:21:58 IST" name="setup" finished-at="2025-02-14T04:22:02 IST" duration-ms="3260" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:22:02 IST" name="DataStructureIntroductionPage" finished-at="2025-02-14T04:22:05 IST" duration-ms="3814" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DataStructureIntroductionPage -->
-        <test-method signature="navigatetoTimeComplexitytryeditor()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:22:05 IST" name="navigatetoTimeComplexitytryeditor" finished-at="2025-02-14T04:22:07 IST" duration-ms="1438" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- navigatetoTimeComplexitytryeditor -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:22:07 IST" name="tearDownTest" finished-at="2025-02-14T04:22:07 IST" duration-ms="649" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=navigatetoTimeComplexitytryeditor status=SUCCESS method=DataStructureTest.navigatetoTimeComplexitytryeditor()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:22:07 IST" name="setup" finished-at="2025-02-14T04:22:11 IST" duration-ms="3099" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:22:11 IST" name="DataStructureIntroductionPage" finished-at="2025-02-14T04:22:13 IST" duration-ms="2616" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- DataStructureIntroductionPage -->
-        <test-method retried="true" signature="seeListOfPracticeQuestionsonDataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:22:13 IST" name="seeListOfPracticeQuestionsonDataStructureIntroductionPage" finished-at="2025-02-14T04:22:14 IST" duration-ms="908" status="SKIP">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="navigatetoTimeComplexityModule()[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:39:53 IST" name="navigatetoTimeComplexityModule" finished-at="2025-02-17T21:39:53 IST" duration-ms="3" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
             <message>
-              <![CDATA[No practice questions found on the Practice Questions Page!]]>
+              <![CDATA['java.lang.String org.testng.ITestResult.id()']]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: No practice questions found on the Practice Questions Page!
-at org.testng.Assert.fail(Assert.java:99)
-at dsAlgoTests.DataStructureTest.seeListOfPracticeQuestionsonDataStructureIntroductionPage(DataStructureTest.java:75)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.testng.ITestResult.id()'
+at com.aventstack.chaintest.plugins.ChainTestListener.beforeInvocation(ChainTestListener.java:108)
+at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)
+at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:56)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:573)
 at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
 at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
@@ -263,31 +177,36 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- seeListOfPracticeQuestionsonDataStructureIntroductionPage -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:22:14 IST" name="tearDownTest" finished-at="2025-02-14T04:22:15 IST" duration-ms="514" status="PASS">
+        </test-method> <!-- navigatetoTimeComplexityModule -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:39:53 IST" name="tearDownTest" finished-at="2025-02-17T21:39:54 IST" duration-ms="842" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=seeListOfPracticeQuestionsonDataStructureIntroductionPage status=SKIP method=DataStructureTest.seeListOfPracticeQuestionsonDataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3] output={null}]]]>
+                <![CDATA[[TestResult name=navigatetoTimeComplexityModule status=FAILURE method=DataStructureTest.navigatetoTimeComplexityModule()[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:22:15 IST" name="setup" finished-at="2025-02-14T04:22:18 IST" duration-ms="2954" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:39:54 IST" name="setup" finished-at="2025-02-17T21:39:57 IST" duration-ms="3372" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -298,25 +217,23 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:22:18 IST" name="DataStructureIntroductionPage" finished-at="2025-02-14T04:22:20 IST" duration-ms="2619" status="PASS">
+        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:39:57 IST" name="DataStructureIntroductionPage" finished-at="2025-02-17T21:39:59 IST" duration-ms="2273" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DataStructureIntroductionPage -->
-        <test-method signature="seeListOfPracticeQuestionsonDataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:22:20 IST" name="seeListOfPracticeQuestionsonDataStructureIntroductionPage" finished-at="2025-02-14T04:22:21 IST" duration-ms="846" status="FAIL">
-          <exception class="java.lang.AssertionError">
+        <test-method signature="navigatetoTimeComplexitytryeditor()[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:39:59 IST" name="navigatetoTimeComplexitytryeditor" finished-at="2025-02-17T21:39:59 IST" duration-ms="5" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
             <message>
-              <![CDATA[No practice questions found on the Practice Questions Page!]]>
+              <![CDATA['java.lang.String org.testng.ITestResult.id()']]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: No practice questions found on the Practice Questions Page!
-at org.testng.Assert.fail(Assert.java:99)
-at dsAlgoTests.DataStructureTest.seeListOfPracticeQuestionsonDataStructureIntroductionPage(DataStructureTest.java:75)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.retryFailed(TestInvoker.java:213)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:58)
+              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.testng.ITestResult.id()'
+at com.aventstack.chaintest.plugins.ChainTestListener.beforeInvocation(ChainTestListener.java:108)
+at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)
+at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:56)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:573)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
 at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
@@ -325,31 +242,36 @@ at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
 at org.testng.TestRunner.privateRun(TestRunner.java:794)
 at org.testng.TestRunner.run(TestRunner.java:596)
 at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.access$000(SuiteRunner.java:28)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:418)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1575)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- seeListOfPracticeQuestionsonDataStructureIntroductionPage -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:22:21 IST" name="tearDownTest" finished-at="2025-02-14T04:22:22 IST" duration-ms="429" status="PASS">
+        </test-method> <!-- navigatetoTimeComplexitytryeditor -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:40:00 IST" name="tearDownTest" finished-at="2025-02-17T21:40:00 IST" duration-ms="751" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=seeListOfPracticeQuestionsonDataStructureIntroductionPage status=FAILURE method=DataStructureTest.seeListOfPracticeQuestionsonDataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3] output={null}]]]>
+                <![CDATA[[TestResult name=navigatetoTimeComplexitytryeditor status=FAILURE method=DataStructureTest.navigatetoTimeComplexitytryeditor()[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:22:24 IST" name="setup" finished-at="2025-02-14T04:22:27 IST" duration-ms="2945" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:40:00 IST" name="setup" finished-at="2025-02-17T21:40:03 IST" duration-ms="2863" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -360,11 +282,76 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:22:27 IST" name="DataStructureIntroductionPage" finished-at="2025-02-14T04:22:29 IST" duration-ms="2839" status="PASS">
+        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:40:03 IST" name="DataStructureIntroductionPage" finished-at="2025-02-17T21:40:06 IST" duration-ms="2587" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DataStructureIntroductionPage -->
-        <test-method signature="verifyCodeExecutionforDataStructureIntroductionPage(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:22:29 IST" name="verifyCodeExecutionforDataStructureIntroductionPage" data-provider="codeExecutionData" finished-at="2025-02-14T04:22:32 IST" duration-ms="2202" status="PASS">
+        <test-method signature="seeListOfPracticeQuestionsonDataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:40:06 IST" name="seeListOfPracticeQuestionsonDataStructureIntroductionPage" finished-at="2025-02-17T21:40:06 IST" duration-ms="4" status="FAIL">
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['java.lang.String org.testng.ITestResult.id()']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.testng.ITestResult.id()'
+at com.aventstack.chaintest.plugins.ChainTestListener.beforeInvocation(ChainTestListener.java:108)
+at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)
+at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:56)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:573)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- seeListOfPracticeQuestionsonDataStructureIntroductionPage -->
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:40:06 IST" name="tearDownTest" finished-at="2025-02-17T21:40:07 IST" duration-ms="878" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=seeListOfPracticeQuestionsonDataStructureIntroductionPage status=FAILURE method=DataStructureTest.seeListOfPracticeQuestionsonDataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownTest -->
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:40:09 IST" name="setup" finished-at="2025-02-17T21:40:12 IST" duration-ms="2829" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:40:12 IST" name="DataStructureIntroductionPage" finished-at="2025-02-17T21:40:14 IST" duration-ms="2400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DataStructureIntroductionPage -->
+        <test-method signature="verifyCodeExecutionforDataStructureIntroductionPage(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:40:14 IST" name="verifyCodeExecutionforDataStructureIntroductionPage" data-provider="codeExecutionData" finished-at="2025-02-17T21:40:14 IST" duration-ms="2" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -377,21 +364,56 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
               </value>
             </param>
           </params>
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['java.lang.String org.testng.ITestResult.id()']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.testng.ITestResult.id()'
+at com.aventstack.chaintest.plugins.ChainTestListener.beforeInvocation(ChainTestListener.java:108)
+at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)
+at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:56)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:573)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCodeExecutionforDataStructureIntroductionPage -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:22:32 IST" name="tearDownTest" finished-at="2025-02-14T04:22:32 IST" duration-ms="744" status="PASS">
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:40:15 IST" name="tearDownTest" finished-at="2025-02-17T21:40:15 IST" duration-ms="806" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyCodeExecutionforDataStructureIntroductionPage status=SUCCESS method=DataStructureTest.verifyCodeExecutionforDataStructureIntroductionPage(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3] output={null}]]]>
+                <![CDATA[[TestResult name=verifyCodeExecutionforDataStructureIntroductionPage status=FAILURE method=DataStructureTest.verifyCodeExecutionforDataStructureIntroductionPage(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownTest -->
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:22:32 IST" name="setup" finished-at="2025-02-14T04:22:35 IST" duration-ms="2598" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:40:15 IST" name="setup" finished-at="2025-02-17T21:40:18 IST" duration-ms="2916" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -402,11 +424,11 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:22:35 IST" name="DataStructureIntroductionPage" finished-at="2025-02-14T04:22:38 IST" duration-ms="2790" status="PASS">
+        <test-method is-config="true" signature="DataStructureIntroductionPage()[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:40:18 IST" name="DataStructureIntroductionPage" finished-at="2025-02-17T21:40:21 IST" duration-ms="2704" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- DataStructureIntroductionPage -->
-        <test-method signature="verifyCodeExecutionforDataStructureIntroductionPage(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:22:38 IST" name="verifyCodeExecutionforDataStructureIntroductionPage" data-provider="codeExecutionData" finished-at="2025-02-14T04:22:40 IST" duration-ms="1861" status="PASS">
+        <test-method signature="verifyCodeExecutionforDataStructureIntroductionPage(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:40:21 IST" name="verifyCodeExecutionforDataStructureIntroductionPage" data-provider="codeExecutionData" finished-at="2025-02-17T21:40:21 IST" duration-ms="23" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -419,14 +441,49 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
               </value>
             </param>
           </params>
+          <exception class="java.lang.NoSuchMethodError">
+            <message>
+              <![CDATA['java.lang.String org.testng.ITestResult.id()']]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NoSuchMethodError: 'java.lang.String org.testng.ITestResult.id()'
+at com.aventstack.chaintest.plugins.ChainTestListener.beforeInvocation(ChainTestListener.java:108)
+at org.testng.internal.invokers.InvokedMethodListenerInvoker.invokeListener(InvokedMethodListenerInvoker.java:56)
+at org.testng.internal.BaseInvoker.runInvokedMethodListeners(BaseInvoker.java:56)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:573)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NoSuchMethodError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyCodeExecutionforDataStructureIntroductionPage -->
-        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3]" started-at="2025-02-14T04:22:40 IST" name="tearDownTest" finished-at="2025-02-14T04:22:40 IST" duration-ms="567" status="PASS">
+        <test-method is-config="true" signature="tearDownTest(org.testng.ITestResult)[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff]" started-at="2025-02-17T21:40:21 IST" name="tearDownTest" finished-at="2025-02-17T21:40:22 IST" duration-ms="1038" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyCodeExecutionforDataStructureIntroductionPage status=SUCCESS method=DataStructureTest.verifyCodeExecutionforDataStructureIntroductionPage(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1cd629b3] output={null}]]]>
+                <![CDATA[[TestResult name=verifyCodeExecutionforDataStructureIntroductionPage status=FAILURE method=DataStructureTest.verifyCodeExecutionforDataStructureIntroductionPage(java.lang.String,java.lang.String)[pri:0, instance:dsAlgoTests.DataStructureTest@1b6e1eff] output={null}]]]>
               </value>
             </param>
           </params>
@@ -434,6 +491,6 @@ at java.base/java.lang.Thread.run(Thread.java:1575)
           </reporter-output>
         </test-method> <!-- tearDownTest -->
       </class> <!-- dsAlgoTests.DataStructureTest -->
-    </test> <!-- ChromeTest -->
+    </test> <!-- Test -->
   </suite> <!-- CrossBrowserSuite -->
 </testng-results>
